@@ -4,12 +4,13 @@ import NavBar from './navbar';
 import AboutMe from './aboutme';
 import Shapes from './shapes';
 import Backdrop from '../assets/paper-3164718.jpg';
+import Social from './social';
 
 const Hero = Styled.section`
   background: url(${Backdrop});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50% 0%;
   width: 100%;
   height: 100%;
 `;
@@ -26,16 +27,21 @@ class hero extends Component {
 
   render() {
     return (
-      <Hero className="hero is-fullheight" style={this.style}>
+      <Hero className="hero is-large" style={this.style}>
         <div className="hero-head">
           <NavBar />
         </div>
         <div className="hero-body">
           <Shapes />
           <div className="container" style={{ zIndex: '300' }}>
-            <div className="columns is-centered is-gapless">
+            <div className="columns is-centered is-multiline">
+              <div className="column is-2" />
               <div className="column is-8">
                 <AboutMe />
+              </div>
+              <div className="column is-2" />
+              <div className="column is-4">
+                <Social />
               </div>
             </div>
           </div>

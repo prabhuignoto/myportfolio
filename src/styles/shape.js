@@ -58,7 +58,15 @@ const ShapeContent = Styled.div`
 
 const Shape = Styled.div`
   height: 100%;
-  width: 33%;
+  width: ${(p) => {
+    switch (p.type) {
+      case 4: return '15%';
+      case 1: return '25%';
+      case 2: return '30%';
+      case 3: return '30%';
+      default: return '35%';
+    }
+  }};
   /* width: ${p => (p.animation === 'expand' ? '35%' : '33%')}; */
   /* animation-name:  ${p => (p.animation === 'expand' ? Expand : Collapse)}; */
   animation-duration: 400ms;
@@ -67,14 +75,13 @@ const Shape = Styled.div`
   animation-iteration-count: 1;
   cursor: pointer;
   z-index: ${p => (p.animation === 'expand' ? 100 : 0)};
-  filter: ${p => (p.animation !== 'expand' ? 'opacity(0.8)' : 'opacity(0.8)')};
   background:  ${(p) => {
     switch (p.type) {
-      case 4: return 'rgba(0, 0, 0, 0.7)';
-      case 1: return 'rgba(0, 0, 0, 0.4)';
-      case 2: return 'rgba(0, 0, 0, 0.6)';
-      case 3: return 'rgba(0, 0, 0, 0.3)';
-      default: return '#fff';
+      // case 4: return 'rgba(0, 0, 0, 0.6)';
+      case 1: return 'rgba(0, 0, 0, 0.8)';
+      // case 2: return 'rgba(0, 0, 0, 0.4)';
+      // case 3: return 'rgba(0, 0, 0, 0.3)';
+      default: return 'transparent';
     }
   }};
 `;

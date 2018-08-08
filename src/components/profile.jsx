@@ -5,15 +5,15 @@ import ProfilePic from '../assets/profile-pic.png';
 const Wrapper = Styled.figure`
   display: block;
   position: absolute;
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   /* left: -5rem;
   top: -5rem; */
-  left: 0;
-  right: 0;
+  right: -3rem;
   margin-left: auto;
   margin-right:auto;
-  bottom: -5rem;
+  top: -3rem;
+  /* transform: translateY(-50%); */
 `;
 
 const Image = Styled.div`

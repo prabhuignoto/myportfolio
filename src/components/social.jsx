@@ -5,8 +5,8 @@ import {
 
 const Social = () => (
   <div
-    className="box"
-    style={{ background: '#fff' }}
+    className="box is-paddingless"
+    style={{ background: 'transparent' }}
   >
     <Wrapper>
       <Item>

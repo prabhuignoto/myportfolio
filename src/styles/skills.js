@@ -54,7 +54,6 @@ const Wrapper = Styled.div`
   padding: 1rem;
 `;
 
-
 const Box = ({ title, items }) => (
   <Wrapper>
     <Hdr>

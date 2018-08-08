@@ -33,7 +33,7 @@ const data = [
     tech: ['react', 'typescript', 'redux', 'saga'],
     git: 'https://github.com/prabhuignoto/react-dark-weather',
     description:
-      'A Beautiful Weather app that displays weather conditions in real time. Easily search for a location that you are interested in, and get the accurate forecast.',
+      'A Beautiful Weather app that displays weather conditions in real time.',
     appUrl: '',
     logo: WeathernowLogo,
   },
@@ -82,14 +82,9 @@ const Projects = () => (
                     {x.name}
                   </Name>
                 </Header> */}
-              <ImageWrapper className="card-image is-hidden-mobile">
-                <Figure className="img">
-                  <Img src={x.image} alt={x.name} className="image" />
-                </Figure>
-              </ImageWrapper>
-              <div className="card-content">
+              <div className="card-content is-paddingless" style={{ padding: '0.5rem'}}>
                 <CardContentWrapper>
-                  <a href={x.appUrl} target="new">
+                  <a href={x.appUrl} target="new" style={{ height: '5rem' }}>
                     <ApplogoWrapper>
                       <AppLogo src={x.logo} className="image" />
                     </ApplogoWrapper>
@@ -99,6 +94,11 @@ const Projects = () => (
                   </AppDescription>
                 </CardContentWrapper>
               </div>
+              <ImageWrapper className="card-image is-hidden-mobile">
+                <Figure className="img">
+                  <Img src={x.image} alt={x.name} className="image" />
+                </Figure>
+              </ImageWrapper>
               <Footer className="card-footer">
                 <FooterWrapper className="is-centered is-multiline">
                   <BuiltWith tech={x.tech} showLabel={false} />

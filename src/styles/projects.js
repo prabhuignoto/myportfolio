@@ -14,6 +14,8 @@ const Wrapper = Styled.div`
 
 const Project = Styled.div`
   position: relative;
+  /* box-shadow: none; */
+  margin-bottom: 2.5rem;
   &:after {
     content: '';
     display: block;
@@ -70,16 +72,16 @@ const Img = Styled.div`
 
 const Figure = Styled.figure`
   height: 100%;
-  padding: 0.75rem;
+  padding: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
 `;
 
 const Footer = Styled.footer`
   width: 100%;
   padding: 0.5rem 0.25rem;
+  border-top: none;
 `;
 
 const FooterWrapper = Styled.div`
@@ -92,10 +94,11 @@ const FooterWrapper = Styled.div`
 `;
 
 const ApplogoWrapper = Styled.figure`
-  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
+  margin-top: 1rem;
 `;
 
 const AppLogo = Styled.img`
@@ -103,12 +106,13 @@ const AppLogo = Styled.img`
 `;
 
 const AppDescription = Styled.p`
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
-  width: 100%;
+  width: 80%;
   text-align: center;
   padding: 1rem;
-  min-height: 8rem;
+  min-height: 2rem;
+  margin-top: 1rem;
 `;
 
 const CardContentWrapper = Styled.div`
