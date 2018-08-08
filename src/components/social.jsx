@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Wrapper, Icon, Label, Item,
+  Wrapper, Icon, Item, IconWrapper,
 } from '../styles/social';
 
 const Social = () => (
@@ -8,24 +8,21 @@ const Social = () => (
     className="box is-paddingless"
     style={{ background: 'transparent' }}
   >
-    <Wrapper>
-      <Item>
-        <Icon type="linkedin" />
-        {/* <Label>
-          {'Linkedin'}
-        </Label> */}
+    <Wrapper role="list">
+      <Item role="listitem">
+        <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new">
+          <Icon type="linkedin" />
+        </IconWrapper>
       </Item>
-      <Item>
-        <Icon type="github" />
-        {/* <Label>
-          {'Github'}
-        </Label> */}
+      <Item role="listitem">
+        <IconWrapper href="http://github.com/prabhuignoto" target="new">
+          <Icon type="github" />
+        </IconWrapper>
       </Item>
-      <Item>
-        <Icon type="stack" />
-        {/* <Label>
-          {'StackOverflow'}
-        </Label> */}
+      <Item role="listitem">
+        <IconWrapper href="http://stackoverflow.com/users/1329529/prabhu-murthy?tab=profile" target="new">
+          <Icon type="stack" />
+        </IconWrapper>
       </Item>
     </Wrapper>
   </div>

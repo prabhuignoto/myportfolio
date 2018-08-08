@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
+import Img from 'gatsby-image';
 import NavBar from './navbar';
 import AboutMe from './aboutme';
 import Shapes from './shapes';
-import Backdrop from '../assets/paper-3164718.jpg';
+// import Backdrop from '../assets/paper-3164718.jpg';
 import Social from './social';
 
 const Hero = Styled.section`
-  background: url(${Backdrop});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+`;
+
+const HeroBackdrop = Styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 `;
@@ -28,6 +34,9 @@ class hero extends Component {
   render() {
     return (
       <Hero className="hero is-large" style={this.style}>
+        <HeroBackdrop>
+          <Img sizes={this.props.heroImage.sizes} />
+        </HeroBackdrop>
         <div className="hero-head">
           <NavBar />
         </div>
@@ -40,7 +49,7 @@ class hero extends Component {
                 <AboutMe />
               </div>
               <div className="column is-2" />
-              <div className="column is-4">
+              <div className="column is-6-desktop">
                 <Social />
               </div>
             </div>
@@ -54,6 +63,7 @@ class hero extends Component {
   }
 }
 
-hero.propTypes = {};
+hero.propTypes = {
+};
 
 export default hero;
