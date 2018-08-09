@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
@@ -17,10 +16,12 @@ module.exports = {
         head: true,
       },
     },
+    'gatsby-plugin-nprogress',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
-    'gatsby-plugin-manifest'],
+    'gatsby-plugin-manifest'
+  ],
 };
