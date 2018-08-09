@@ -4,8 +4,8 @@ import Img from 'gatsby-image';
 import NavBar from './navbar';
 import AboutMe from './aboutme';
 import Shapes from './shapes';
-// import Backdrop from '../assets/paper-3164718.jpg';
 import Social from './social';
+import Profile from './profile';
 
 const Hero = Styled.section`
   position: relative;
@@ -42,14 +42,19 @@ class hero extends Component {
           <Shapes heroImage={this.props.heroImage}/>
           <div className="container" style={{ zIndex: '300' }}>
             <div className="columns is-centered is-multiline">
-              <div className="column is-2" />
-              <div className="column is-8">
-                <AboutMe profileImage={this.props.profileImage} />
+              <div className="column is-12">
+                <Profile profileImage={this.props.profileImage} />
               </div>
-              <div className="column is-2" />
-              <div className="column is-6-desktop">
+              <div className="column is-2"></div>
+              <div className="column is-8">
+                <AboutMe />
+              </div>
+              <div className="column is-2"></div>
+              <div className="column is-3" />
+              <div className="column is-6">
                 <Social linkedinSVG={this.props.linkedinSVG}/>
               </div>
+              <div className="column is-3"></div>
             </div>
           </div>
         </div>
