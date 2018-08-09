@@ -31,15 +31,15 @@ class hero extends Component {
 
   render() {
     return (
-      <Hero className="hero is-large" style={this.style}>
+      <Hero className="hero is-fullheight" style={this.style}>
         <HeroBackdrop>
-          <Img sizes={this.props.heroImage.sizes} className="priored" outerWrapperClassName="reddit" />
+          <Img sizes={this.props.heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
         </HeroBackdrop>
         <div className="hero-head">
           <NavBar />
         </div>
         <div className="hero-body">
-          <Shapes />
+          <Shapes heroImage={this.props.heroImage}/>
           <div className="container" style={{ zIndex: '300' }}>
             <div className="columns is-centered is-multiline">
               <div className="column is-2" />

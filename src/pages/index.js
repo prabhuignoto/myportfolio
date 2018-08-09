@@ -4,7 +4,7 @@ import Hero from '../components/hero';
 import Experience from '../components/experience';
 import Projects from '../components/projects';
 import Skills from '../components/skills';
-import { Footer } from '../styles/projects';
+import Footer from '../components/footer';
 
 const IndexPage = (props) => {
   const {
@@ -31,7 +31,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: imageSharp(id: { regex: "/hero/"} ) {
+    heroImage: imageSharp(id: { regex: "/unsplash/"} ) {
       sizes(maxWidth: 3000) {
         ...GatsbyImageSharpSizes
       }

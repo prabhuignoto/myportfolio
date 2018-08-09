@@ -1,6 +1,7 @@
 import Styled, {
   keyframes,
 } from 'styled-components';
+import page from '../assets/hero.jpg';
 
 const Shapes = Styled.div`
   display: flex;
@@ -60,9 +61,7 @@ const Shape = Styled.div`
   height: 100%;
   width: ${(p) => {
     switch (p.type) {
-      case 4: return '15%';
-      case 1: return '25%';
-      case 2: return '30%';
+      case 1: return '100%';
       case 3: return '30%';
       default: return '35%';
     }
@@ -75,15 +74,20 @@ const Shape = Styled.div`
   animation-iteration-count: 1;
   cursor: pointer;
   z-index: ${p => (p.animation === 'expand' ? 100 : 0)};
-  background:  ${(p) => {
+  /* background: url(${page});
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* background:  ${(p) => {
     switch (p.type) {
       // case 4: return 'rgba(0, 0, 0, 0.6)';
-      case 1: return 'rgba(0, 0, 0, 0.8)';
-      // case 2: return 'rgba(0, 0, 0, 0.4)';
+      case 1: return 'rgba(0, 0, 0, 0.95)';
+      case 2: return 'rgba(0, 0, 0, 0.25)';
       // case 3: return 'rgba(0, 0, 0, 0.3)';
       default: return 'transparent';
     }
-  }};
+  }}; */
+  clip-path: polygon(35% 0%,100% 0%,65% 100%,0% 100%);
+  box-shadow: 0 0 10px 1 rgba(0,0,0,0.5);
 `;
 
 export {

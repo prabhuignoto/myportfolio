@@ -1,25 +1,13 @@
 import React, { Component } from 'react';
 import { Shapes, Shape, ShapeContent } from '../styles/shape';
+import Img from 'gatsby-image';
 
 const sectionData = [
   {
     name: 'Skills',
     id: 'skills',
     type: 1,
-  }, {
-    name: 'Projects',
-    id: 'my-projects',
-    type: 2,
-  }, {
-    name: 'Experience',
-    id: 'experience',
-    type: 3,
-  },
-  {
-    name: 'Contact',
-    id: 'contact',
-    type: 4,
-  },
+  } 
 ];
 
 class ShapeView extends Component {
@@ -57,10 +45,12 @@ class ShapeView extends Component {
   }
 }
 
-const ShapesView = () => (
+const ShapesView = (props) => (
   <Shapes className="is-hidden-touch">
     {sectionData.map(x => (
-      <ShapeView key={x.name} type={x.type} name={x.name} />
+      <ShapeView key={x.name} type={x.type} name={x.name}>
+        <Img sizes={props.heroImage.sizes} alt="hero-image-mirror" />
+      </ShapeView>
     ))}
   </Shapes>
 );
