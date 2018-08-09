@@ -633,4 +633,5 @@ pre tt:after {
 }
 .hero-image-wrapper {
   filter: blur(3px) sepia(0.1) brightness(1.5);
+  transform: scale(1.025);
 }

@@ -18,25 +18,21 @@ const Shapes = Styled.div`
   margin-right: auto;
 `;
 
-const Expand = keyframes`
+const Collapse = keyframes`
   0% {
-    transform: skew(-0deg) ;
-    width: 33%;
+    clip-path: polygon(35% 0%,100% 0%,65% 100%,0% 100%);
   }
   100% {
-    transform: skew(-0deg) ;
-    width: 35%;
+    clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
   }
 `;
 
-const Collapse = keyframes`
+const Expand = keyframes`
   0% {
-    transform: skew(-0deg) ;
-    width: 35%;
+    clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
   }
   100% {
-    transform: skew(-0deg) ;
-    width: 33%;
+    clip-path: polygon(35% 0%,100% 0%,65% 100%,0% 100%);
   }
 `;
 
@@ -68,12 +64,12 @@ const Shape = Styled.div`
   }};
   /* width: ${p => (p.animation === 'expand' ? '35%' : '33%')}; */
   /* animation-name:  ${p => (p.animation === 'expand' ? Expand : Collapse)}; */
-  animation-duration: 400ms;
+  /* animation-duration: 400ms;
   animation-timing-function: ease;
   transform-origin: center;
   animation-iteration-count: 1;
-  cursor: pointer;
-  z-index: ${p => (p.animation === 'expand' ? 100 : 0)};
+  cursor: pointer; */
+  /* z-index: ${p => (p.animation === 'expand' ? 100 : 0)}; */
   /* background: url(${page});
   background-size: cover;
   background-repeat: no-repeat; */
@@ -86,7 +82,7 @@ const Shape = Styled.div`
       default: return 'transparent';
     }
   }}; */
-  clip-path: polygon(35% 0%,100% 0%,65% 100%,0% 100%);
+  clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
   box-shadow: 0 0 10px 1 rgba(0,0,0,0.5);
 `;
 

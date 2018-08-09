@@ -5,14 +5,14 @@ class navbar extends Component {
     super(props);
     this.state = {};
     this.style = {
-      background: '#13293D',
-      color: '#fff',
+      background: 'rgba(255,255,255,0.9)',
+      color: '#000',
     };
   }
 
   render() {
     return (
-      <nav className="navbar is-transparent">
+      <nav className="navbar is-transparent" style={this.style}>
         <div className="container">
           <div className="navbar-brand">
             <div className="navbar-item">

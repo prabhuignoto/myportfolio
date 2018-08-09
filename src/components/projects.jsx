@@ -67,16 +67,16 @@ const data = [
     appUrl: 'https://nutrivue.netlify.com',
     logo: 'nutrivueLogo',
   },
-  // {
-  //   name: 'Todeur',
-  //   image: 'TodeurImg',
-  //   tech: ['react', 'redux'],
-  //   git: 'https://github.com/prabhuignoto/eatthatfrog',
-  //   description:
-  //     'Ever worried about the nutrients that make up your food. Nutrivue is here to help you dissect that for you',
-  //   appUrl: 'https://nutrivue.netlify.com',
-  //   logo: '',
-  // },
+  {
+    name: 'Todeur',
+    mock: 'newSquirrelMock',
+    tech: ['react', 'redux'],
+    git: 'https://github.com/prabhuignoto/eatthatfrog',
+    description:
+      'Ever worried about the nutrients that make up your food. Nutrivue is here to help you dissect that for you',
+    appUrl: 'https://nutrivue.netlify.com',
+    logo: 'newSquirrelLogo',
+  },
 ];
 
 const Projects = (props) => (

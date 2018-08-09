@@ -7,7 +7,7 @@ const Header = Styled.header`
   font-size: 1.75rem;
   color: ${p => p.color};
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   position: relative;
 `;

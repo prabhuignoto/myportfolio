@@ -3,6 +3,7 @@ import Styled from 'styled-components';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
+import Description from './description';
 
 const Content = Styled.div`
   position: relative;
@@ -29,7 +30,8 @@ const Skills = () => (
   <section className="section" style={{ background: '#247BA0' }}>
     <div className="container">
       <SectionHeader title="Technical Skills" color="#fff" />
-      <div className="tile is-ancestor">
+      <Description text="" />
+        <div className="tile is-ancestor">
         <div className="tile is-vertical is-8">
           <div className="tile">
             <div className="tile is-parent is-vertical">

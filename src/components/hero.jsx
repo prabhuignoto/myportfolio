@@ -50,7 +50,7 @@ class hero extends Component {
                 <AboutMe />
               </div>
               <div className="column is-2"></div>
-              <div className="column is-3" />
+              {/* <div className="column is-3" /> */}
               <div className="column is-6">
                 <Social linkedinSVG={this.props.linkedinSVG}/>
               </div>

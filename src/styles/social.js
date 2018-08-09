@@ -34,7 +34,10 @@ const Item = Styled.div`
 const IconWrapper = Styled.a`
   height: 100%;
   width: 100%;
-  display: block;
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 `;
 
 const Icon = Styled.i`
@@ -65,7 +68,12 @@ const Icon = Styled.i`
 
 const Label = Styled.span`
   display: block;
-  flex-basis: 70%;
+  width: 100px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.9);
+  white-space: nowrap;
+  text-align: center;
 `;
 
 export {

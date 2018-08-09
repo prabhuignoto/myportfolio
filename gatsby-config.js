@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Prabhu Murthy',
   },
   plugins: [{
       resolve: 'gatsby-source-filesystem',
@@ -22,6 +22,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
-    'gatsby-plugin-manifest'
+    'gatsby-plugin-manifest',
+    'gatsby-plugin-netlify-cache',
   ],
 };
