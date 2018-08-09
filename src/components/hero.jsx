@@ -17,7 +17,6 @@ const HeroBackdrop = Styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
 `;
 
 class hero extends Component {
