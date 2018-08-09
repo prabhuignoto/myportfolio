@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
+import Img from 'gatsby-image';
 import ProfilePic from '../assets/profile-pic.png';
 
 const Wrapper = Styled.figure`
@@ -32,9 +33,9 @@ const Image = Styled.div`
   }
 `;
 
-const Profile = () => (
+const Profile = props => (
   <Wrapper>
-    <Image />
+    <Img sizes={props.profileImage.sizes} />
   </Wrapper>
 );
 

@@ -11,7 +11,7 @@ class AboutMe extends Component {
   render() {
     return (
       <div className="box" style={{ position: 'relative' }}>
-        <Profile />
+        <Profile profileImage={this.props.profileImage} />
         <About>
           {'Hi there. This is Prabhu Murthy and this is my storyu'}
         </About>

@@ -58,7 +58,6 @@ const GitIconText = Styled.span`
 
 const ImageWrapper = Styled.div`
   width: 100%;
-  height: 20rem;
 `;
 
 const Img = Styled.div`
@@ -71,7 +70,9 @@ const Img = Styled.div`
 `;
 
 const Figure = Styled.figure`
-  height: 100%;
+  /* width: 25rem; */
+  width: auto;
+  height: 23rem;
   padding: 0.25rem;
   display: flex;
   align-items: center;
@@ -104,6 +105,12 @@ const ApplogoWrapper = Styled.figure`
 const AppLogo = Styled.img`
   border-radius: 4px;
 `;
+
+const AppImageWrapper = Styled.div`
+  display: block;
+  height: 3rem;
+  width: 14rem;
+`
 
 const AppDescription = Styled.p`
   font-size: 1rem;
@@ -138,4 +145,5 @@ export {
   GitIconText,
   GitIcon,
   GitLink,
+  AppImageWrapper
 };

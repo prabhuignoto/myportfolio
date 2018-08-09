@@ -36,6 +36,7 @@
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "7.9.1",
+    "gatsby-plugin-purgecss": "^2.0.2",
     "prettier": "^1.13.7"
   },
   "repository": {

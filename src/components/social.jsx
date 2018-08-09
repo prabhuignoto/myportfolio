@@ -2,8 +2,9 @@ import React from 'react';
 import {
   Wrapper, Icon, Item, IconWrapper,
 } from '../styles/social';
+import Img from 'gatsby-image';
 
-const Social = () => (
+const Social = props => (
   <div
     className="box is-paddingless"
     style={{ background: 'transparent' }}
@@ -12,6 +13,7 @@ const Social = () => (
       <Item role="listitem">
         <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new">
           <Icon type="linkedin" />
+          {/* <Img sizes={props.linkedinSVG.sizes} /> */}
         </IconWrapper>
       </Item>
       <Item role="listitem">

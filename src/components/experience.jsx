@@ -5,6 +5,7 @@ import JPMC from '../assets/jpmc.png';
 import Juniper from '../assets/juniper.jpg';
 import TechM from '../assets/techm.jpg';
 import SectionHeader from './section-header';
+import Img from "gatsby-image";
 
 const Wrapper = Styled.div`
   display: flex;
@@ -55,7 +56,7 @@ const Text = Styled.p`
   color: #247BA0;
 `;
 
-const Experience = () => (
+const Experience = (props) => (
   <Wrapper className="section">
     <div className="container">
       <SectionHeader title="Experience" />
@@ -68,28 +69,28 @@ const Experience = () => (
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Image src={Juniper} alt="Juniper Networks" />
+              <Img sizes={props.juniperLogo.sizes} alt="Juniper Networks" />
             </Figure>
           </Company>
         </div>
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Image src={Honeywell} alt="Honeywell" />
+              <Img sizes={props.honeywellLogo.sizes} alt="Honeywell" />
             </Figure>
           </Company>
         </div>
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Image src={JPMC} alt="JP Morgan Chase" />
+              <Img sizes={props.jpmcLogo.sizes} alt="JP Morgan Chase" />
             </Figure>
           </Company>
         </div>
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Image src={TechM} alt="Tech Mahindra" />
+              <Img sizes={props.techmLogo.sizes} alt="Tech Mahindra" />
             </Figure>
           </Company>
         </div>

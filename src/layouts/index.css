@@ -623,3 +623,7 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.gatsby-image-wrapper,  .gatsby-image-outer-wrapper {
+  height: 100%;
+  width: 100%;
+}

@@ -8,8 +8,6 @@ import Shapes from './shapes';
 import Social from './social';
 
 const Hero = Styled.section`
-  width: 100%;
-  height: 100%;
   position: relative;
 `;
 
@@ -19,6 +17,7 @@ const HeroBackdrop = Styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  border: 1px solid red;
 `;
 
 class hero extends Component {
@@ -35,7 +34,7 @@ class hero extends Component {
     return (
       <Hero className="hero is-large" style={this.style}>
         <HeroBackdrop>
-          <Img sizes={this.props.heroImage.sizes} />
+          <Img sizes={this.props.heroImage.sizes} className="priored" outerWrapperClassName="reddit" />
         </HeroBackdrop>
         <div className="hero-head">
           <NavBar />
@@ -46,11 +45,11 @@ class hero extends Component {
             <div className="columns is-centered is-multiline">
               <div className="column is-2" />
               <div className="column is-8">
-                <AboutMe />
+                <AboutMe profileImage={this.props.profileImage} />
               </div>
               <div className="column is-2" />
               <div className="column is-6-desktop">
-                <Social />
+                <Social linkedinSVG={this.props.linkedinSVG}/>
               </div>
             </div>
           </div>
