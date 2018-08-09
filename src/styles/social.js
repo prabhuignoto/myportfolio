@@ -23,8 +23,8 @@ const Item = Styled.div`
   border-radius: 50%;
   background: rgba(0,0,0,0.45);
   box-shadow: inset 0 0 10px 1px rgba(0,0,0,0.8);
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   &:hover {
     background: rgba(255,255,255,0.15);
     box-shadow: inset 0 0 10px 1px rgba(0,0,0,0.95);

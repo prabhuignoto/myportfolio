@@ -10,12 +10,12 @@ const IndexPage = (props) => {
   const {
     heroImage, profileImage, honeywellLogo, juniperLogo, techmLogo, jpmcLogo,
     weathernowLogo, weathernowMock, nutrivueLogo, nutrivueMock, newSquirrelLogo,
-    newSquirrelMock
+    newSquirrelMock, toolImage
   } = props.data;
   return (<div>
     <Hero heroImage={heroImage} profileImage={profileImage}/>
     <Projects {...props}/>
-    <Skills />
+    <Skills toolImage={toolImage}/>
     <Experience  honeywellLogo={honeywellLogo} juniperLogo={juniperLogo} techmLogo={techmLogo} jpmcLogo={jpmcLogo}/>
     <Footer />
   </div>)
@@ -32,7 +32,12 @@ export default IndexPage;
 export const pageQuery = graphql`
   query HeroImageQuery {
     heroImage: imageSharp(id: { regex: "/unsplash/"} ) {
-      sizes(maxWidth: 3000) {
+      sizes(maxWidth: 2000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    toolImage: imageSharp(id: { regex: "/andyone/"}) {
+      sizes(maxWidth: 2000) {
         ...GatsbyImageSharpSizes
       }
     }

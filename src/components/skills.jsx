@@ -4,6 +4,7 @@ import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
 import Description from './description';
+import Img from 'gatsby-image';
 
 const Content = Styled.div`
   position: relative;
@@ -26,10 +27,28 @@ const Content = Styled.div`
   }
 `;
 
-const Skills = () => (
-  <section className="section" style={{ background: '#247BA0' }}>
+const SkillBackdrop = Styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+`;
+
+const toolImageStyle = {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  height: '100%',
+  width: '100%',
+};
+
+const Skills = (props) => (
+  <section className="section" style={{position: 'relative'}}>
+    <SkillBackdrop>
+      <Img sizes={props.toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper" />
+      <Img sizes={props.toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper-2" />
+    </SkillBackdrop>
     <div className="container">
-      <SectionHeader title="Technical Skills" color="#fff" />
+      <SectionHeader title="Tools &amp; Frameworks" color="#fff" />
       <Description text="" />
         <div className="tile is-ancestor">
         <div className="tile is-vertical is-8">

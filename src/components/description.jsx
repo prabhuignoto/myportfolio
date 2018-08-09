@@ -6,7 +6,7 @@ const DescriptionWrapper = Styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 1rem;
 `;
 

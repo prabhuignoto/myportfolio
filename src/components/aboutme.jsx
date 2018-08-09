@@ -9,9 +9,14 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <div className="box" style={{ position: 'relative' }}>
-        <About>
-          {'Hi there. This is Prabhu Murthy and this is my storyu'}
+      <div className="box" style={{ position: 'relative', backgroundColor: 'transparent' }}>
+        <About className="content">
+          <p>
+            {`Hey I'm Prabhu Murthy`}
+          </p>
+          <p>
+            {`I'm a fullstack javascript developer, designer and very passionate about developing apps that scale well. `}
+          </p>
         </About>
       </div>
     );

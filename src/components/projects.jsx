@@ -1,7 +1,8 @@
 import React from 'react';
 import BuiltWith from './builtwith';
 import SectionHeader from './section-header';
-import TodeurImg from '../assets/todeur.png';
+import Description from "./description";
+
 import {
   Wrapper,
   Section,
@@ -83,6 +84,7 @@ const Projects = (props) => (
   <Section className="section projects">
     <Wrapper className="container">
       <SectionHeader title="Projects" />
+      <Description text="I Design and develop Apps that are beautiful, responsive and highly performant. These are some of my recent works." color="#000" />
       <div className="columns is-centered is-multiline">
         {data.map(x => (
           <div className="column is-four-fifths-tablet is-half-desktop">
@@ -109,7 +111,7 @@ const Projects = (props) => (
                   </AppDescription>
                 </CardContentWrapper>
               </div>
-              <ImageWrapper className="card-image is-hidden-mobile">
+              <ImageWrapper className="card-image">
                 <Figure className="img">
                   <Image
                     sizes={props.data[x.mock].sizes}

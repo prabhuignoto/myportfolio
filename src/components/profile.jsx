@@ -61,8 +61,6 @@ const Profile = props => (
       <TaglineItem>Developer</TaglineItem>
       <Separator className="is-hidden-mobile"></Separator>
       <TaglineItem>Designer</TaglineItem>
-      <Separator className="is-hidden-mobile"></Separator>
-      <TaglineItem>UX</TaglineItem>
     </Tagline>
   </Wrapper>
 );
