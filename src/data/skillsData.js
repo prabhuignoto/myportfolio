@@ -27,10 +27,10 @@ export const reactTools = [{
   icon: 'VueSVG',
 }, {
   name: 'Recompose',
-  icon: {},
+  icon: '',
 }, {
   name: 'Reselect',
-  icon: {},
+  icon: '',
 }];
 
 export const www = [{

@@ -5,20 +5,27 @@ import Experience from '../components/experience';
 import Projects from '../components/projects';
 import Skills from '../components/skills';
 import Footer from '../components/footer';
+import ProjectsData from '../data/projects';
 
 const IndexPage = (props) => {
   const {
-    heroImage, profileImage, honeywellLogo, juniperLogo, techmLogo, jpmcLogo,
-    weathernowLogo, weathernowMock, nutrivueLogo, nutrivueMock, newSquirrelLogo,
-    newSquirrelMock, toolImage
-  } = props.data;
-  return (<div>
-    <Hero heroImage={heroImage} profileImage={profileImage}/>
-    <Projects {...props}/>
-    <Skills toolImage={toolImage}/>
-    <Experience  honeywellLogo={honeywellLogo} juniperLogo={juniperLogo} techmLogo={techmLogo} jpmcLogo={jpmcLogo}/>
-    <Footer />
-  </div>)
+    data: {
+      heroImage, profileImage, honeywellLogo, juniperLogo, techmLogo, jpmcLogo, toolImage,
+    },
+  } = props;
+  const projectsData = ProjectsData.map(x => Object.assign({}, x, {
+    mock: props.data[x.mock],
+    logo: props.data[x.logo],
+  }));
+  return (
+    <div>
+      <Hero heroImage={heroImage} profileImage={profileImage} />
+      <Projects data={projectsData} />
+      <Skills toolImage={toolImage} />
+      <Experience honeywellLogo={honeywellLogo} juniperLogo={juniperLogo} techmLogo={techmLogo} jpmcLogo={jpmcLogo} />
+      <Footer />
+    </div>
+  );
 };
 
 IndexPage.propTypes = {

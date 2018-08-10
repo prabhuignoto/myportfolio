@@ -51,7 +51,7 @@ class hero extends Component {
               </div>
               <div className="column is-2"></div>
               {/* <div className="column is-3" /> */}
-              <div className="column is-6">
+              <div className="column is-4">
                 <Social linkedinSVG={this.props.linkedinSVG}/>
               </div>
               <div className="column is-3"></div>

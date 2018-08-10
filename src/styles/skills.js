@@ -2,6 +2,7 @@ import Styled from 'styled-components';
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as Images from './images';
+import { uiFworkBoxes } from '../data/skillsData';
 
 const List = Styled.ul`
   /* width: 100%; */
@@ -61,7 +62,7 @@ const Box = ({ title, items }) => (
     </Hdr>
     <List>
       {items.map(x => (
-        <ListItem>
+        <ListItem key={x.name}>
           <ImgWrapper>
             <Img src={Images[x.icon]} className="image" />
           </ImgWrapper>
@@ -75,11 +76,15 @@ const Box = ({ title, items }) => (
 );
 
 Box.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
   })).isRequired,
+};
+
+Box.defaultProps = {
+  title: '',
 };
 
 export default Box;

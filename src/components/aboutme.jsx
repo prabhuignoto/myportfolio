@@ -15,7 +15,7 @@ class AboutMe extends Component {
             {`Hey I'm Prabhu Murthy`}
           </p>
           <p>
-            {`I'm a fullstack javascript developer, designer and very passionate about developing apps that scale well. `}
+            {`I'm a fullstack javascript developer, designer and very passionate about developing apps that scale well.`}
           </p>
         </About>
       </div>

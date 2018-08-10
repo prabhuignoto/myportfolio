@@ -1,10 +1,12 @@
 import React from 'react';
 import Styled from 'styled-components';
+import Img from 'gatsby-image';
+import { object } from 'prop-types';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
 import Description from './description';
-import Img from 'gatsby-image';
+
 
 const Content = Styled.div`
   position: relative;
@@ -33,24 +35,16 @@ const SkillBackdrop = Styled.div`
   height: 100%;
 `;
 
-const toolImageStyle = {
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  height: '100%',
-  width: '100%',
-};
-
-const Skills = (props) => (
-  <section className="section" style={{position: 'relative'}}>
+const Skills = ({ toolImage }) => (
+  <section className="section" style={{ position: 'relative' }}>
     <SkillBackdrop>
-      <Img sizes={props.toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper" />
-      <Img sizes={props.toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper-2" />
+      <Img sizes={toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper" />
+      <Img sizes={toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper-2" />
     </SkillBackdrop>
     <div className="container">
       <SectionHeader title="Tools &amp; Frameworks" color="#fff" />
       <Description text="" />
-        <div className="tile is-ancestor">
+      <div className="tile is-ancestor">
         <div className="tile is-vertical is-8">
           <div className="tile">
             <div className="tile is-parent is-vertical">
@@ -93,5 +87,9 @@ const Skills = (props) => (
     </div>
   </section>
 );
+
+Skills.propTypes = {
+  toolImage: object.isRequired,
+};
 
 export default Skills;
