@@ -30,10 +30,10 @@ export const ItemLabel = Styled.span`
 `;
 
 export const Item = Styled.div`
-  padding: 1rem;
+  padding: 0.75rem;
   width: 0.75rem;
   height: 0.75rem;
-  margin: 0.25rem;
+  margin: 0 0.5rem 0 0;
   background: url(${(p) => {
     if (p.name === 'react') {
       return ReactSVG;

@@ -32,15 +32,15 @@ export default [
     appUrl: 'https://nutrivue.netlify.com',
     logo: 'nutrivueLogo',
   },
-  {
-    id: 4,
-    name: 'Todeur',
-    mock: 'newSquirrelMock',
-    tech: ['react', 'redux'],
-    git: 'https://github.com/prabhuignoto/eatthatfrog',
-    description:
-      'Ever worried about the nutrients that make up your food. Nutrivue is here to help you dissect that for you',
-    appUrl: 'https://nutrivue.netlify.com',
-    logo: 'newSquirrelLogo',
-  },
+  // {
+  //   id: 4,
+  //   name: 'Todeur',
+  //   mock: 'newSquirrelMock',
+  //   tech: ['react', 'redux'],
+  //   git: 'https://github.com/prabhuignoto/eatthatfrog',
+  //   description:
+  //     'Ever worried about the nutrients that make up your food. Nutrivue is here to help you dissect that for you',
+  //   appUrl: 'https://nutrivue.netlify.com',
+  //   logo: 'newSquirrelLogo',
+  // },
 ];

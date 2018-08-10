@@ -32,7 +32,6 @@ export const Text = Styled.div`
   font-size: 0.9rem;
   font-family: 'Lato', sans-serif;
   margin: 0 0.25rem;
-  font-weight: 700;
 `;
 
 export const GatsbyWrapper = Styled.div`

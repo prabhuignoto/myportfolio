@@ -38,7 +38,7 @@ const Img = Styled.img`
 const ListItemText = Styled.span`
   display: block;
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1rem;
 `;
 
 const Hdr = Styled.header`

@@ -4,7 +4,9 @@ import { string } from 'prop-types';
 
 const Header = Styled.header`
   width: 100%;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
   color: ${p => p.color};
   padding: 1rem;
   margin-bottom: 1rem;

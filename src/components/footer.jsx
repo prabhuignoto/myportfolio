@@ -15,7 +15,7 @@ const FooterView = () => (
         <div className="column is-6-desktop">
           <FooterWrapper>
             <Text>
-              {'Designed by me and Built with'}
+              {'Designed by me and built with'}
             </Text>
             <img height="18" width="18" src={HeartSVG} alt="love" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
             <GatsbyWrapper>

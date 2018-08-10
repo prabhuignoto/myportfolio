@@ -112,12 +112,12 @@ const AppImageWrapper = Styled.div`
   display: block;
   height: 3rem;
   width: 14rem;
-`
+`;
 
 const AppDescription = Styled.p`
   font-size: 1rem;
   font-weight: 700;
-  width: 80%;
+  width: 100%;
   text-align: center;
   padding: 1rem;
   min-height: 2rem;
@@ -147,5 +147,5 @@ export {
   GitIconText,
   GitIcon,
   GitLink,
-  AppImageWrapper
+  AppImageWrapper,
 };

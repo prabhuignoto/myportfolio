@@ -5,6 +5,7 @@ import SectionHeader from './section-header';
 import {
   Wrapper, Company, Figure, Text,
 } from '../styles/experience';
+import Description from './description';
 
 const ImgStyle = {
   filter: 'opacity(0.75) grayscale(99%)',
@@ -16,11 +17,7 @@ const Experience = ({
   <Wrapper className="section">
     <div className="container">
       <SectionHeader title="Experience" />
-      <div className="content">
-        <Text>
-          {'11+ years of product experience with Industries spanning telecom, fire controls, finance. Proud to be associated with some great names in the industry.'}
-        </Text>
-      </div>
+      <Description color="#006494" text="11+ years of product experience with Industries spanning telecom, fire controls, finance. Proud to be associated with some great names in the industry." />
       <div className="columns is-centered is-multiline" style={{ marginTop: '2rem' }}>
         <div className="column is-2 is-hidden-tablet is-flex-desktop" />
         <div className="column">

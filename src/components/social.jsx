@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Wrapper, Item, IconWrapper,
 } from '../styles/social';
+import MailSVG from '../assets/envelope-solid.svg';
 
 class Social extends Component {
   constructor(props) {
@@ -47,6 +48,20 @@ class Social extends Component {
               width="26px"
               alt="stackoverflow"
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg"
+              style={{ marginBottom: 0, marginRight: '0.25rem' }}
+            />
+            {/* <Label>
+              {'StackOverflow'}
+            </Label> */}
+          </IconWrapper>
+        </Item>
+        <Item role="listitem">
+          <IconWrapper href="mailto:prabhu.m.murthy@gmail.com" target="new" title="Get in Touch">
+            <img
+              height="28px"
+              width="28px"
+              alt="stackoverflow"
+              src={MailSVG}
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
             />
             {/* <Label>

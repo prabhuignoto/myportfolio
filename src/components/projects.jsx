@@ -42,8 +42,8 @@ const gatsbyImgStyle = {
 const Projects = ({ data }) => (
   <Section className="section projects">
     <Wrapper className="container">
-      <SectionHeader title="Projects" />
-      <Description text="I Design and develop Apps that are beautiful, responsive and highly performant. These are some of my recent works." color="#006494" />
+      <SectionHeader title="My Recent Work" />
+      <Description text="I design and develop Apps that are beautiful, responsive and highly performant." color="#006494" />
       <div className="columns is-centered is-multiline">
         {data.map(x => (
           <div className="column is-half-tablet is-one-third-desktop" key={x.id}>
