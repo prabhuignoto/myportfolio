@@ -14,7 +14,7 @@ const Hero = Styled.section`
 
 const HeroBackdrop = Styled.div`
   position: absolute;
-  top: 0;
+  top: -1rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -31,14 +31,14 @@ class hero extends Component {
   }
 
   render() {
-    const { heroImage, profileImage } = this.props;
+    const { heroImage, profileImage, prabhuLogo } = this.props;
     return (
       <Hero className="hero is-fullheight" style={this.style}>
         <HeroBackdrop>
           <Img sizes={heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
         </HeroBackdrop>
         <div className="hero-head">
-          <NavBar />
+          <NavBar prabhuLogo={prabhuLogo} />
         </div>
         <div className="hero-body">
           <Shapes heroImage={heroImage} />
@@ -71,6 +71,7 @@ class hero extends Component {
 hero.propTypes = {
   heroImage: object.isRequired,
   profileImage: object.isRequired,
+  prabhuLogo: object.isRequired,
 };
 
 export default hero;

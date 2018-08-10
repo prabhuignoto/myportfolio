@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Wrapper, Item, IconWrapper, Label,
+  Wrapper, Item, IconWrapper,
 } from '../styles/social';
 
 class Social extends Component {
@@ -13,7 +13,7 @@ class Social extends Component {
     return (
       <Wrapper role="list">
         <Item role="listitem">
-          <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new">
+          <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new" title="LinkedIn">
             <img
               height="26px"
               width="26px"
@@ -21,13 +21,13 @@ class Social extends Component {
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
             />
-            <Label>
+            {/* <Label>
               {'Linkedin'}
-            </Label>
+            </Label> */}
           </IconWrapper>
         </Item>
         <Item role="listitem">
-          <IconWrapper href="http://github.com/prabhuignoto" target="new">
+          <IconWrapper href="http://github.com/prabhuignoto" target="new" title="Github">
             <img
               height="26px"
               width="26px"
@@ -35,13 +35,13 @@ class Social extends Component {
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
             />
-            <Label>
+            {/* <Label>
               {'Github'}
-            </Label>
+            </Label> */}
           </IconWrapper>
         </Item>
         <Item role="listitem">
-          <IconWrapper href="http://stackoverflow.com/users/128px9529/prabhu-murthy?tab=profile" target="new">
+          <IconWrapper href="http://stackoverflow.com/users/128px9529/prabhu-murthy?tab=profile" target="new" title="StackOverflow">
             <img
               height="26px"
               width="26px"
@@ -49,9 +49,9 @@ class Social extends Component {
               src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg"
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
             />
-            <Label>
+            {/* <Label>
               {'StackOverflow'}
-            </Label>
+            </Label> */}
           </IconWrapper>
         </Item>
       </Wrapper>

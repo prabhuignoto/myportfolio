@@ -1,4 +1,19 @@
 import React, { Component } from 'react';
+import Img from 'gatsby-image';
+import { any } from 'prop-types';
+import Styled from 'styled-components';
+import Social from './social';
+
+const LogoWrapper = Styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const LogoStyle = {
+  width: '5rem',
+  height: '5rem',
+};
 
 class navbar extends Component {
   constructor(props) {
@@ -11,24 +26,21 @@ class navbar extends Component {
   }
 
   render() {
+    const { prabhuLogo } = this.props;
     return (
-      <nav className="navbar is-transparent" style={this.style}>
+      <nav className="navbar" style={this.style}>
         <div className="container">
           <div className="navbar-brand">
-            <div className="navbar-item">
-              <i className="brand-logo" />
+            <div className="navbar-item" style={{ padding: 0 }}>
+              <LogoWrapper>
+                <Img sizes={prabhuLogo.sizes} alt="PM" style={LogoStyle} imgStyle={{ marginBottom: 0, maxHeight: '100%' }} />
+              </LogoWrapper>
             </div>
           </div>
           <div className="navbar-menu">
             <div className="navbar-end">
-              <div className="navbar-item">
-                {'Home'}
-              </div>
-              <div className="navbar-item">
-                {'My Projects'}
-              </div>
-              <div className="navbar-item">
-                {'Contact'}
+              <div className="navbar-item" style={{ padding: 0 }}>
+                <Social />
               </div>
             </div>
           </div>
@@ -37,5 +49,9 @@ class navbar extends Component {
     );
   }
 }
+
+navbar.propTypes = {
+  prabhuLogo: any,
+};
 
 export default navbar;

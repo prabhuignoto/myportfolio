@@ -8,9 +8,9 @@ const Wrapper = Styled.div`
   align-items: center;
   flex-direction: row;
   width: 100%;
-  /* min-width: 4rem; */
+  min-width: 12rem;
   justify-content: space-evenly;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-radius: 3px;
 `;
 
@@ -20,11 +20,7 @@ const Item = Styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  /* background: rgba(0,0,0,0.45); */
-  /* box-shadow: inset 0 0 10px 1px rgba(0,0,0,0.8); */
   &:hover {
-    /* background: rgba(255,255,255,0.15); */
-    /* box-shadow: inset 0 0 10px 1px rgba(0,0,0,0.95); */
   }
 `;
 
@@ -64,12 +60,13 @@ const Icon = Styled.i`
 
 const Label = Styled.span`
   display: block;
-  /* width: 100px; */
   font-size: 0.8rem;
-  color: #000;
-  /* text-shadow: 2px 1px 2px rgba(0,0,0,0.9); */
+  color: #13293d;
   white-space: nowrap;
   text-align: center;
+  &:hover {
+    color: #247ba0;
+  }
 `;
 
 export {

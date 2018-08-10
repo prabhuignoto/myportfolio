@@ -43,7 +43,7 @@ const Projects = ({ data }) => (
   <Section className="section projects">
     <Wrapper className="container">
       <SectionHeader title="Projects" />
-      <Description text="I Design and develop Apps that are beautiful, responsive and highly performant. These are some of my recent works." color="#000" />
+      <Description text="I Design and develop Apps that are beautiful, responsive and highly performant. These are some of my recent works." color="#006494" />
       <div className="columns is-centered is-multiline">
         {data.map(x => (
           <div className="column is-four-fifths-tablet is-half-desktop" key={x.id}>

@@ -28,23 +28,17 @@ justify-content: center;
 `;
 
 export const Figure = Styled.figure`
-width: 70%;
-display: flex;
-align-items: center;
-justify-content: center;
-`;
-
-export const Image = Styled.img`
-filter: grayscale(100%) opacity(0.5);
-&:hover {
-  filter: grayscale(0%);
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
 `;
 
 export const Text = Styled.p`
-font-size: 1.5rem;
-font-weight: 500;
-width: 100%;
-text-align: center;
-color: #247BA0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  color: #247BA0;
 `;

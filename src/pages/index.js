@@ -10,7 +10,7 @@ import ProjectsData from '../data/projects';
 const IndexPage = (props) => {
   const {
     data: {
-      heroImage, profileImage, honeywellLogo, juniperLogo, techmLogo, jpmcLogo, toolImage,
+      heroImage, profileImage, honeywellLogo, juniperLogo, techmLogo, jpmcLogo, toolImage, prabhuLogo,
     },
   } = props;
   const projectsData = ProjectsData.map(x => Object.assign({}, x, {
@@ -19,7 +19,7 @@ const IndexPage = (props) => {
   }));
   return (
     <div>
-      <Hero heroImage={heroImage} profileImage={profileImage} />
+      <Hero heroImage={heroImage} profileImage={profileImage} prabhuLogo={prabhuLogo} />
       <Projects data={projectsData} />
       <Skills toolImage={toolImage} />
       <Experience honeywellLogo={honeywellLogo} juniperLogo={juniperLogo} techmLogo={techmLogo} jpmcLogo={jpmcLogo} />
@@ -40,6 +40,11 @@ export const pageQuery = graphql`
   query HeroImageQuery {
     heroImage: imageSharp(id: { regex: "/unsplash/"} ) {
       sizes(maxWidth: 2000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    prabhuLogo: imageSharp(id: { regex: "/prabhu/"}) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }

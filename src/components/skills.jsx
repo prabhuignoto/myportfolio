@@ -36,11 +36,11 @@ const SkillBackdrop = Styled.div`
 `;
 
 const Skills = ({ toolImage }) => (
-  <section className="section" style={{ position: 'relative' }}>
-    <SkillBackdrop>
+  <section className="section" style={{ position: 'relative', backgroundColor: '#006494' }}>
+    {/* <SkillBackdrop>
       <Img sizes={toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper" />
       <Img sizes={toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper-2" />
-    </SkillBackdrop>
+    </SkillBackdrop> */}
     <div className="container">
       <SectionHeader title="Tools &amp; Frameworks" color="#fff" />
       <Description text="" />
