@@ -12,24 +12,26 @@ const FooterView = () => (
         <div className="column is-3-desktop">
           <Social />
         </div>
-        <div className="column is-6-desktop">
+        <div className="column is-3-desktop">
           <FooterWrapper>
             <Text>
               {'Designed by me and built with'}
             </Text>
             <img height="18" width="18" src={HeartSVG} alt="love" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
-            <GatsbyWrapper>
-              <Text>
-                {'Powered By'}
-              </Text>
-              <Link href="www.gatsbyjs.org" target="new">
-                <img height="18" width="20" src={GatsbySVG} alt="gatsby" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
-                <Text>
-                  {'Gatsby'}
-                </Text>
-              </Link>
-            </GatsbyWrapper>
           </FooterWrapper>
+        </div>
+        <div className="column is-3-desktop">
+          <GatsbyWrapper>
+            <Text>
+              {'Powered By'}
+            </Text>
+            <Link href="www.gatsbyjs.org" target="new">
+              <img height="18" width="20" src={GatsbySVG} alt="gatsby" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
+              <Text>
+                {'Gatsby'}
+              </Text>
+            </Link>
+          </GatsbyWrapper>
         </div>
         <div className="column is-3-desktop">
           <Copyright>

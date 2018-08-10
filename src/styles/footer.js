@@ -39,7 +39,7 @@ export const GatsbyWrapper = Styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 `;
 
 export const Copyright = Styled.div`
