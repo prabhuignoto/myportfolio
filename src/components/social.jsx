@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Wrapper, Icon, Item, IconWrapper, Label,
+  Wrapper, Item, IconWrapper, Label,
 } from '../styles/social';
 
 class Social extends Component {
@@ -11,37 +11,50 @@ class Social extends Component {
 
   render() {
     return (
-      <div
-        className="box is-paddingless"
-        style={{ background: 'transparent' }}
-      >
-        <Wrapper role="list">
-          <Item role="listitem">
-            <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new">
-              <Icon type="linkedin" />
-              <Label>
-                {'Linkedin'}
-              </Label>
-            </IconWrapper>
-          </Item>
-          <Item role="listitem">
-            <IconWrapper href="http://github.com/prabhuignoto" target="new">
-              <Icon type="github" />
-              <Label>
-                {'brahmi'}
-              </Label>
-            </IconWrapper>
-          </Item>
-          <Item role="listitem">
-            <IconWrapper href="http://stackoverflow.com/users/1329529/prabhu-murthy?tab=profile" target="new">
-              <Icon type="stack" />
-              <Label>
-                {'Stack'}
-              </Label>
-            </IconWrapper>
-          </Item>
-        </Wrapper>
-      </div>
+      <Wrapper role="list">
+        <Item role="listitem">
+          <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new">
+            <img
+              height="26px"
+              width="26px"
+              alt="linkedin"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+              style={{ marginBottom: 0, marginRight: '0.25rem' }}
+            />
+            <Label>
+              {'Linkedin'}
+            </Label>
+          </IconWrapper>
+        </Item>
+        <Item role="listitem">
+          <IconWrapper href="http://github.com/prabhuignoto" target="new">
+            <img
+              height="26px"
+              width="26px"
+              alt="github"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+              style={{ marginBottom: 0, marginRight: '0.25rem' }}
+            />
+            <Label>
+              {'Github'}
+            </Label>
+          </IconWrapper>
+        </Item>
+        <Item role="listitem">
+          <IconWrapper href="http://stackoverflow.com/users/128px9529/prabhu-murthy?tab=profile" target="new">
+            <img
+              height="26px"
+              width="26px"
+              alt="stackoverflow"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg"
+              style={{ marginBottom: 0, marginRight: '0.25rem' }}
+            />
+            <Label>
+              {'StackOverflow'}
+            </Label>
+          </IconWrapper>
+        </Item>
+      </Wrapper>
     );
   }
 }

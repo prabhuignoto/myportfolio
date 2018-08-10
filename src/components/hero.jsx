@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import Img from 'gatsby-image';
+import { object } from 'prop-types';
 import NavBar from './navbar';
 import AboutMe from './aboutme';
 import Shapes from './shapes';
-import Social from './social';
 import Profile from './profile';
+
 
 const Hero = Styled.section`
   position: relative;
@@ -30,31 +31,32 @@ class hero extends Component {
   }
 
   render() {
+    const { heroImage, profileImage } = this.props;
     return (
       <Hero className="hero is-fullheight" style={this.style}>
         <HeroBackdrop>
-          <Img sizes={this.props.heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
+          <Img sizes={heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
         </HeroBackdrop>
         <div className="hero-head">
           <NavBar />
         </div>
         <div className="hero-body">
-          <Shapes heroImage={this.props.heroImage}/>
+          <Shapes heroImage={heroImage} />
           <div className="container" style={{ zIndex: '300' }}>
             <div className="columns is-centered is-multiline">
               <div className="column is-12">
-                <Profile profileImage={this.props.profileImage} />
+                <Profile profileImage={profileImage} />
               </div>
-              <div className="column is-2"></div>
+              <div className="column is-2" />
               <div className="column is-8">
                 <AboutMe />
               </div>
-              <div className="column is-2"></div>
+              <div className="column is-2" />
               {/* <div className="column is-3" /> */}
               <div className="column is-4">
-                <Social linkedinSVG={this.props.linkedinSVG}/>
+                {/* <Social /> */}
               </div>
-              <div className="column is-3"></div>
+              <div className="column is-3" />
             </div>
           </div>
         </div>
@@ -67,6 +69,8 @@ class hero extends Component {
 }
 
 hero.propTypes = {
+  heroImage: object.isRequired,
+  profileImage: object.isRequired,
 };
 
 export default hero;

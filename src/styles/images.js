@@ -25,6 +25,7 @@ import GatsbySVG from '../assets/gatsby.svg';
 import NextSVG from '../assets/next.svg';
 import jquerySVG from '../assets/jquery-1.svg';
 import BulmaSVG from '../assets/bulma.svg';
+import HeartSVG from '../assets/heart-solid.svg';
 
 export {
   VueSVG,
@@ -53,4 +54,5 @@ export {
   NextSVG,
   BulmaSVG,
   jquerySVG,
+  HeartSVG,
 };
