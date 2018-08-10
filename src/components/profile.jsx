@@ -1,19 +1,15 @@
 import React from 'react';
 import Styled from 'styled-components';
 import Img from 'gatsby-image';
-import ProfilePic from '../assets/profile-pic.png';
+import { any } from 'prop-types';
 
 const Wrapper = Styled.figure`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* position: absolute; */
-  /* top: -5rem; */ */
-  /* right: -3rem; */
   margin-left: auto;
   margin-right:auto;
-  /* top: -3rem; */
 `;
 
 const ImageWrapper = Styled.div`
@@ -52,17 +48,25 @@ const Separator = Styled.span`
   background: rgba(255,255,255,0.8);
 `;
 
-const Profile = props => (
+const Profile = ({ profileImage }) => (
   <Wrapper>
     <ImageWrapper>
-      <Img sizes={props.profileImage.sizes} className="profile-image-wrapper"/>
+      <Img sizes={profileImage.sizes} className="profile-image-wrapper" />
     </ImageWrapper>
     <Tagline>
-      <TaglineItem>Developer</TaglineItem>
-      <Separator className="is-hidden-mobile"></Separator>
-      <TaglineItem>Designer</TaglineItem>
+      <TaglineItem>
+        {'Developer'}
+      </TaglineItem>
+      <Separator className="is-hidden-mobile" />
+      <TaglineItem>
+        {'Designer'}
+      </TaglineItem>
     </Tagline>
   </Wrapper>
 );
+
+Profile.propTypes = {
+  profileImage: any,
+};
 
 export default Profile;

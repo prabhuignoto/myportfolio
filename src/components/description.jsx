@@ -1,5 +1,7 @@
-import React from 'react'
-import Styled from "styled-components";
+import React from 'react';
+import Styled from 'styled-components';
+import { string } from 'prop-types';
+
 
 const DescriptionWrapper = Styled.div`
   display: flex;
@@ -14,16 +16,21 @@ const DescriptionContent = Styled.span`
   display: block;
   font-size: 1.2rem;
   font-family: 'Lato', sans-serif;
-  color: ${p => p.color ? p.color : '#fff'};
+  color: ${p => (p.color ? p.color : '#fff')};
 `;
 
 
-const Description = (props) => {
-  return (
-    <DescriptionWrapper>
-      <DescriptionContent color={props.color}>{props.text}</DescriptionContent>
-    </DescriptionWrapper>
-  )
+const Description = ({ color, text }) => (
+  <DescriptionWrapper>
+    <DescriptionContent color={color}>
+      {text}
+    </DescriptionContent>
+  </DescriptionWrapper>
+);
+
+Description.propTypes = {
+  color: string.isRequired,
+  text: string.isRequired,
 };
 
-export default Description
+export default Description;
