@@ -46,7 +46,7 @@ const Projects = ({ data }) => (
       <Description text="I Design and develop Apps that are beautiful, responsive and highly performant. These are some of my recent works." color="#006494" />
       <div className="columns is-centered is-multiline">
         {data.map(x => (
-          <div className="column is-four-fifths-tablet is-half-desktop" key={x.id}>
+          <div className="column is-half-tablet is-one-third-desktop" key={x.id}>
             <Project className="card">
               <div className="card-content is-paddingless" style={{ padding: '0.5rem' }}>
                 <CardContentWrapper>
@@ -75,16 +75,17 @@ const Projects = ({ data }) => (
                 </Figure>
               </ImageWrapper>
               <Footer className="card-footer">
-                <FooterWrapper className="is-centered is-multiline">
+                <FooterWrapper className="">
                   <BuiltWith tech={x.tech} showLabel={false} />
                   <GitLink
                     href={x.git}
                     target="new"
                     className="is-pulled-right"
+                    title="View this Project on Github"
                   >
                     <GitIcon />
                     <GitIconText>
-                      {'View this Project on Github'}
+                      {/* {'View this Project on Github'} */}
                     </GitIconText>
                   </GitLink>
                 </FooterWrapper>

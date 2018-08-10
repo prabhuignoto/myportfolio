@@ -1,8 +1,8 @@
 import React from 'react';
-import { GatsbySVG, HeartSVG } from '../styles/images';
+import { GatsbySVG, HeartSVG, CopyrightSVG } from '../styles/images';
 import Social from './social';
 import {
-  Footer, FooterWrapper, Text, GatsbyWrapper, Link,
+  Footer, FooterWrapper, Text, GatsbyWrapper, Link, Copyright,
 } from '../styles/footer';
 
 const FooterView = () => (
@@ -12,26 +12,35 @@ const FooterView = () => (
         <div className="column is-3-desktop">
           <Social />
         </div>
-        <div className="column is-4-desktop">
+        <div className="column is-6-desktop">
           <FooterWrapper>
             <Text>
               {'Designed by me and Built with'}
             </Text>
             <img height="18" width="18" src={HeartSVG} alt="love" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
+            <GatsbyWrapper>
+              <Text>
+                {'Powered By'}
+              </Text>
+              <Link href="www.gatsbyjs.org" target="new">
+                <img height="18" width="20" src={GatsbySVG} alt="gatsby" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
+                <Text>
+                  {'Gatsby'}
+                </Text>
+              </Link>
+            </GatsbyWrapper>
           </FooterWrapper>
         </div>
-        <div className="column is-4-desktop">
-          <GatsbyWrapper>
+        <div className="column is-3-desktop">
+          <Copyright>
             <Text>
-              {'Powered By'}
+              {'2018'}
             </Text>
-            <Link href="www.gatsbyjs.org" target="new">
-              <img height="20" width="20" src={GatsbySVG} alt="gatsby" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
-              <Text>
-                {'Gatsby'}
-              </Text>
-            </Link>
-          </GatsbyWrapper>
+            <img src={CopyrightSVG} alt="copyright" height="13" width="13" style={{ marginBottom: 0 }} />
+            <Text>
+              {'Prabhu Murthy'}
+            </Text>
+          </Copyright>
         </div>
       </div>
     </div>

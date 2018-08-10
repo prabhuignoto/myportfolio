@@ -26,6 +26,7 @@ import NextSVG from '../assets/next.svg';
 import jquerySVG from '../assets/jquery-1.svg';
 import BulmaSVG from '../assets/bulma.svg';
 import HeartSVG from '../assets/heart-solid.svg';
+import CopyrightSVG from '../assets/copyright-regular.svg';
 
 export {
   VueSVG,
@@ -55,4 +56,5 @@ export {
   BulmaSVG,
   jquerySVG,
   HeartSVG,
+  CopyrightSVG,
 };

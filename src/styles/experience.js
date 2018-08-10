@@ -5,6 +5,7 @@ display: flex;
 min-height: 35rem;
 justify: center;
 align-items: center;
+margin-top: 2rem;
 `;
 
 export const Company = Styled.div`

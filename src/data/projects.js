@@ -17,7 +17,7 @@ export default [
     tech: ['react', 'typescript', 'redux', 'saga'],
     git: 'https://github.com/prabhuignoto/react-news',
     description:
-      'Read Top headlines and search millions of news articles from the web. Headlines can be filtered based on category and country.',
+      'Read Top headlines and search millions of news articles from across the web.',
     appUrl: 'https://newsquirrel.netlify.com',
     logo: 'newSquirrelLogo',
   },
@@ -28,7 +28,7 @@ export default [
     tech: ['vue'],
     git: 'https://github.com/prabhuignoto/nutrivue',
     description:
-      'Ever worried about the nutrients that make up your food. Nutrivue is here to help you dissect that for you',
+      'Get to know about the nutrients that make up your food.',
     appUrl: 'https://nutrivue.netlify.com',
     logo: 'nutrivueLogo',
   },

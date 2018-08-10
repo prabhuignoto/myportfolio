@@ -10,7 +10,7 @@ export const Wrapper = Styled.div`
   align-items: center;
   justify-content: flex-start;
   margin: 0.5rem;
-  margin-left: 1rem;
+  margin-right: auto;
   font-size: 1rem;
   flex-wrap: wrap;
 `;
@@ -31,8 +31,8 @@ export const ItemLabel = Styled.span`
 
 export const Item = Styled.div`
   padding: 1rem;
-  width: 1rem;
-  height: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
   margin: 0.25rem;
   background: url(${(p) => {
     if (p.name === 'react') {

@@ -22,7 +22,7 @@ export const Link = Styled.a`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.1rem;
   margin-left: 0.25rem;
 `;
 
@@ -31,7 +31,7 @@ export const Text = Styled.div`
   white-space: nowrap;
   font-size: 0.9rem;
   font-family: 'Lato', sans-serif;
-  margin-right: 0.25rem;
+  margin: 0 0.25rem;
   font-weight: 700;
 `;
 
@@ -40,4 +40,15 @@ export const GatsbyWrapper = Styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  margin-left: 2rem;
+`;
+
+export const Copyright = Styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 0.5rem;
 `;

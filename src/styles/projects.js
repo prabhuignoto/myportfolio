@@ -92,7 +92,7 @@ const FooterWrapper = Styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
 `;
 

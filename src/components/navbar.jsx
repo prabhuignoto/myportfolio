@@ -11,7 +11,7 @@ const LogoWrapper = Styled.div`
 `;
 
 const LogoStyle = {
-  width: '5rem',
+  width: '6rem',
   height: '5rem',
 };
 

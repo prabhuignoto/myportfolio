@@ -6,11 +6,11 @@ import { Item, ItemWrapper, Wrapper } from '../styles/builtwith';
 const BuiltWith = ({ tech }) => (
   <Wrapper>
     <span style={{ fontSize: '0.8rem', fontWeight: 'bold' }}>
-      {'Built With'}
+      {/* {'Built With'} */}
     </span>
-    <ItemWrapper>
+    <ItemWrapper title={`Built with ${tech.join(', ')}`}>
       {tech.map(x => (
-        <Item name={x} title={x} key={x} />
+        <Item name={x} key={x} />
       ))}
     </ItemWrapper>
   </Wrapper>
