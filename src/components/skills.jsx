@@ -10,6 +10,7 @@ import Description from './description';
 
 const Content = Styled.div`
   position: relative;
+  box-shadow: 0 0 13px 5px rgba(0,0,0,0.2);
   &::before {
     content: '${p => p.heading}';
     display: block;
@@ -29,20 +30,11 @@ const Content = Styled.div`
   }
 `;
 
-const SkillBackdrop = Styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-`;
 
-const Skills = ({ toolImage }) => (
+const Skills = () => (
   <section className="section" style={{ position: 'relative', backgroundColor: '#006494' }}>
-    {/* <SkillBackdrop>
-      <Img sizes={toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper" />
-      <Img sizes={toolImage.sizes} outerWrapperClassName="tool-image-outer-wrapper-2" />
-    </SkillBackdrop> */}
     <div className="container">
-      <SectionHeader title="Tools &amp; Frameworks" color="#fff" />
+      <SectionHeader title="Tools &amp; Frameworks that I'm good with" color="#fff" />
       <Description text="" />
       <div className="tile is-ancestor">
         <div className="tile is-vertical is-8">

@@ -45,7 +45,8 @@ const Separator = Styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.9);
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.9);
 `;
 
 const Profile = ({ profileImage }) => (
