@@ -22,8 +22,8 @@ const ListItem = Styled.li`
 `;
 
 const ImgWrapper = Styled.div`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 1rem;
   display: flex;
   align-items: center;

@@ -42,9 +42,6 @@ const FooterView = () => (
             <Text>
               {'Prabhu Murthy'}
             </Text>
-            <a href="http://pdfmyurl.com/saveaspdf?url=http://prabhumurthy.netlify.com">
-              {'Download this page as PDF'}
-            </a>
           </Copyright>
         </div>
       </div>
