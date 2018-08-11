@@ -34,7 +34,7 @@ const Content = Styled.div`
 const Skills = () => (
   <section className="section" style={{ position: 'relative', backgroundColor: '#006494' }}>
     <div className="container">
-      <SectionHeader title="Tools &amp; Frameworks that I'm good with" color="#fff" />
+      <SectionHeader title="Tools &amp; Frameworks that I'm good at" color="#fff" />
       <Description text="" />
       <div className="tile is-ancestor">
         <div className="tile is-vertical is-8">

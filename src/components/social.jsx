@@ -42,7 +42,7 @@ class Social extends Component {
           </IconWrapper>
         </Item>
         <Item role="listitem">
-          <IconWrapper href="http://stackoverflow.com/users/128px9529/prabhu-murthy?tab=profile" target="new" title="StackOverflow">
+          <IconWrapper href="http://stackoverflow.com/users/1329529/prabhu-murthy?tab=profile" target="new" title="StackOverflow">
             <img
               height="20px"
               width="20px"
