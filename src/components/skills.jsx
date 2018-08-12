@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Styled from 'styled-components';
-import Img from 'gatsby-image';
 import { object } from 'prop-types';
+import ScrollReveal from 'scrollreveal';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
 import Description from './description';
-
 
 const Content = Styled.div`
   position: relative;
@@ -30,58 +29,77 @@ const Content = Styled.div`
   }
 `;
 
+const Container = Styled.section`
+`;
 
-const Skills = () => (
-  <section className="section" style={{ position: 'relative', backgroundColor: '#006494' }}>
-    <div className="container">
-      <SectionHeader title="Tools &amp; Frameworks that I'm good at" color="#fff" />
-      <Description text="" />
-      <div className="tile is-ancestor">
-        <div className="tile is-vertical is-8">
-          <div className="tile">
-            <div className="tile is-parent is-vertical">
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="UI Libs">
-                <Skillbox title="" items={Data.uiFworkBoxes} />
-              </Content>
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="UI Libs">
-                <Skillbox title="" items={Data.reactTools} />
-              </Content>
+
+export default class Skills extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    ScrollReveal().reveal(this.refs.skillsContainer, {
+      delay: 200,
+      duration: 1000,
+      scale: 0.75,
+      opacity: 0.5,
+    });
+  }
+
+  render() {
+    return (
+      <Container className="section" style={{ position: 'relative', backgroundColor: '#006494' }}>
+        <div className="container" ref="skillsContainer">
+          <SectionHeader title="Tools &amp; Frameworks that I'm good at" color="#fff" />
+          <Description text="" />
+          <div className="tile is-ancestor">
+            <div className="tile is-vertical is-8">
+              <div className="tile">
+                <div className="tile is-parent is-vertical">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="UI Libs">
+                    <Skillbox title="" items={Data.uiFworkBoxes} />
+                  </Content>
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="UI Libs">
+                    <Skillbox title="" items={Data.reactTools} />
+                  </Content>
+                </div>
+                <div className="tile is-parent is-vertical">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Server">
+                    <Skillbox title="" items={Data.Node} />
+                  </Content>
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="React F/W">
+                    <Skillbox title="" items={Data.reactFW} />
+                  </Content>
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Testing F/W">
+                    <Skillbox title="" items={Data.test} />
+                  </Content>
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Type System">
+                    <Skillbox title="" items={Data.types} />
+                  </Content>
+                </div>
+              </div>
             </div>
             <div className="tile is-parent is-vertical">
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Server">
-                <Skillbox title="" items={Data.Node} />
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="HTML &amp; Styling">
+                <Skillbox title="" items={Data.www} />
               </Content>
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="React F/W">
-                <Skillbox title="" items={Data.reactFW} />
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Tool Chain">
+                <Skillbox title="" items={Data.ToolChain} />
               </Content>
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Testing F/W">
-                <Skillbox title="" items={Data.test} />
-              </Content>
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Type System">
-                <Skillbox title="" items={Data.types} />
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Editors">
+                <Skillbox title="" items={Data.Editors} />
               </Content>
             </div>
           </div>
         </div>
-        <div className="tile is-parent is-vertical">
-          <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="HTML &amp; Styling">
-            <Skillbox title="" items={Data.www} />
-          </Content>
-          <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Tool Chain">
-            <Skillbox title="" items={Data.ToolChain} />
-          </Content>
-          <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Editors">
-            <Skillbox title="" items={Data.Editors} />
-          </Content>
-        </div>
-      </div>
+      </Container>
+    );
+  }
+}
 
-    </div>
-  </section>
-);
 
 Skills.propTypes = {
   toolImage: object.isRequired,
 };
-
-export default Skills;

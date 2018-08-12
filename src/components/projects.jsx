@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Image from 'gatsby-image';
 import {
   shape, string, arrayOf, any, number,
 } from 'prop-types';
+import ScrollReveal from 'scrollreveal';
 import BuiltWith from './builtwith';
 import SectionHeader from './section-header';
 import Description from './description';
 
+
 import {
   Wrapper,
-  Section,
   AppDescription,
   CardContentWrapper,
   ApplogoWrapper,
@@ -39,64 +40,84 @@ const gatsbyImgStyle = {
 };
 
 
-const Projects = ({ data }) => (
-  <Section className="section projects">
-    <Wrapper className="container">
-      <SectionHeader title="My Recent Work" />
-      <Description text="I design and develop Apps that are beautiful, responsive and highly performant." color="#006494" />
-      <div className="columns is-centered is-multiline">
-        {data.map(x => (
-          <div className="column is-half-tablet is-one-third-desktop" key={x.id}>
-            <Project className="card">
-              <div className="card-content is-paddingless" style={{ padding: '0.5rem' }}>
-                <CardContentWrapper>
-                  <a href={x.appUrl} target="new" style={{ height: '5rem', width: '100%' }}>
-                    <ApplogoWrapper>
-                      <AppImageWrapper>
-                        <Image
-                          sizes={x.logo.sizes}
-                          imgStyle={gatsbyImgStyle}
-                        />
-                      </AppImageWrapper>
-                    </ApplogoWrapper>
-                  </a>
-                  <AppDescription>
-                    {x.description}
-                  </AppDescription>
-                </CardContentWrapper>
+export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    ScrollReveal().reveal(this.refs.projectsContainer, {
+      delay: 200,
+      duration: 1000,
+      scale: 0.75,
+      opacity: 0.5,
+    });
+  }
+
+  render() {
+    const { data } = this.props;
+    return (
+      <div className="section projects" ref="projectsContainer">
+        <Wrapper className="container">
+          <SectionHeader title="My Recent Work" />
+          <Description text="I design and develop Apps that are beautiful, responsive and highly performant." color="#006494" />
+          <div className="columns is-centered is-multiline">
+            {data.map(x => (
+              <div className="column is-half-tablet is-one-third-desktop" key={x.id}>
+                <Project className="card">
+                  <div className="card-content is-paddingless" style={{ padding: '0.5rem' }}>
+                    <CardContentWrapper>
+                      <a href={x.appUrl} target="new" style={{ height: '5rem', width: '100%' }}>
+                        <ApplogoWrapper>
+                          <AppImageWrapper>
+                            <Image
+                              sizes={x.logo.sizes}
+                              imgStyle={gatsbyImgStyle}
+                            />
+                          </AppImageWrapper>
+                        </ApplogoWrapper>
+                      </a>
+                      <AppDescription>
+                        {x.description}
+                      </AppDescription>
+                    </CardContentWrapper>
+                  </div>
+                  <ImageWrapper className="card-image">
+                    <Figure className="img">
+                      <Image
+                        sizes={x.mock.sizes}
+                        alt={x.name}
+                        imgStyle={gatsbyImgStyle}
+                      />
+                    </Figure>
+                  </ImageWrapper>
+                  <Footer className="card-footer">
+                    <FooterWrapper className="">
+                      <BuiltWith tech={x.tech} showLabel={false} />
+                      <GitLink
+                        href={x.git}
+                        target="new"
+                        className="is-pulled-right"
+                        title="View this Project on Github"
+                      >
+                        <GitIcon />
+                        <GitIconText>
+                          {/* {'View this Project on Github'} */}
+                        </GitIconText>
+                      </GitLink>
+                    </FooterWrapper>
+                  </Footer>
+                </Project>
               </div>
-              <ImageWrapper className="card-image">
-                <Figure className="img">
-                  <Image
-                    sizes={x.mock.sizes}
-                    alt={x.name}
-                    imgStyle={gatsbyImgStyle}
-                  />
-                </Figure>
-              </ImageWrapper>
-              <Footer className="card-footer">
-                <FooterWrapper className="">
-                  <BuiltWith tech={x.tech} showLabel={false} />
-                  <GitLink
-                    href={x.git}
-                    target="new"
-                    className="is-pulled-right"
-                    title="View this Project on Github"
-                  >
-                    <GitIcon />
-                    <GitIconText>
-                      {/* {'View this Project on Github'} */}
-                    </GitIconText>
-                  </GitLink>
-                </FooterWrapper>
-              </Footer>
-            </Project>
+            ))}
           </div>
-        ))}
+        </Wrapper>
       </div>
-    </Wrapper>
-  </Section>
-);
+    );
+  }
+}
+
 
 Projects.propTypes = {
   data: arrayOf(shape({
@@ -110,5 +131,3 @@ Projects.propTypes = {
     logo: any,
   })).isRequired,
 };
-
-export default Projects;
