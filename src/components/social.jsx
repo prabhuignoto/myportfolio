@@ -3,6 +3,7 @@ import {
   Wrapper, Item, IconWrapper,
 } from '../styles/social';
 import MailSVG from '../assets/envelope-solid.svg';
+import { GithubSVG, LinkedinSVG, StackSVG } from '../styles/images.js';
 
 class Social extends Component {
   constructor(props) {
@@ -16,10 +17,10 @@ class Social extends Component {
         <Item role="listitem">
           <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new" title="LinkedIn">
             <img
-              height="20px"
-              width="20px"
+              height="25px"
+              width="25px"
               alt="linkedin"
-              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+              src={LinkedinSVG}
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
             />
             {/* <Label>
@@ -30,10 +31,10 @@ class Social extends Component {
         <Item role="listitem">
           <IconWrapper href="http://github.com/prabhuignoto" target="new" title="Github">
             <img
-              height="20px"
-              width="20px"
+              height="25px"
+              width="25px"
               alt="github"
-              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+              src={GithubSVG}
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
             />
             {/* <Label>
@@ -44,10 +45,10 @@ class Social extends Component {
         <Item role="listitem">
           <IconWrapper href="http://stackoverflow.com/users/1329529/prabhu-murthy?tab=profile" target="new" title="StackOverflow">
             <img
-              height="20px"
-              width="20px"
+              height="25px"
+              width="25px"
               alt="stackoverflow"
-              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg"
+              src={StackSVG}
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
             />
             {/* <Label>
@@ -58,8 +59,8 @@ class Social extends Component {
         <Item role="listitem">
           <IconWrapper href="mailto:prabhu.m.murthy@gmail.com" target="new" title="Get in Touch">
             <img
-              height="20px"
-              width="20px"
+              height="25px"
+              width="25px"
               alt="stackoverflow"
               src={MailSVG}
               style={{ marginBottom: 0, marginRight: '0.25rem' }}

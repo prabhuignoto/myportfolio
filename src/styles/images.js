@@ -27,6 +27,9 @@ import jquerySVG from '../assets/jquery-1.svg';
 import BulmaSVG from '../assets/bulma.svg';
 import HeartSVG from '../assets/heart-solid.svg';
 import CopyrightSVG from '../assets/copyright-regular.svg';
+import GithubSVG from '../assets/github-brands.svg';
+import StackSVG from '../assets/stack-overflow-brands.svg';
+import LinkedinSVG from '../assets/linkedin-brands.svg';
 
 export {
   VueSVG,
@@ -57,4 +60,7 @@ export {
   jquerySVG,
   HeartSVG,
   CopyrightSVG,
+  GithubSVG,
+  StackSVG,
+  LinkedinSVG,
 };

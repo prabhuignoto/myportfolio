@@ -51,7 +51,7 @@ export default class Projects extends Component {
       sr().reveal(this.refs.projectsContainer, {
         delay: 200,
         duration: 1000,
-        scale: 0.75,
+        scale: 0.85,
         opacity: 0.5,
       });
     } catch (ex) {
@@ -65,7 +65,7 @@ export default class Projects extends Component {
       <div className="section projects" ref="projectsContainer">
         <Wrapper className="container">
           <SectionHeader title="My Recent Work" />
-          <Description text="I design and develop Apps that are beautiful, responsive and highly performant." color="#006494" />
+          <Description text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works" color="#006494" />
           <div className="columns is-centered is-multiline">
             {data.map(x => (
               <div className="column is-half-tablet is-one-third-desktop" key={x.id}>

@@ -6,7 +6,7 @@ const Section = Styled.div`
 `;
 
 const Wrapper = Styled.div`
-  min-height: 30rem;
+  min-height: 80vh;
   padding: 3rem 3rem;
   font-family: 'Lato', sans-serif;
   z-index:1;

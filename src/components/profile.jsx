@@ -31,7 +31,7 @@ const Tagline = Styled.ul`
 
 const TaglineItem = Styled.li`
   margin: 0.5rem 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   position: relative;
   color: #fff;
@@ -46,7 +46,7 @@ const Separator = Styled.span`
   height: 10px;
   border-radius: 50%;
   background: rgba(255,255,255,0.9);
-  text-shadow: 2px 1px 2px rgba(0,0,0,0.9);
+  text-shadow: 2px 1px 2px rgba(0,0,0,1);
 `;
 
 const Profile = ({ profileImage }) => (
@@ -56,11 +56,11 @@ const Profile = ({ profileImage }) => (
     </ImageWrapper>
     <Tagline>
       <TaglineItem>
-        {'Developer'}
+        {'UI Developer'}
       </TaglineItem>
       <Separator className="is-hidden-mobile" />
       <TaglineItem>
-        {'Designer'}
+        {'Interface Designer'}
       </TaglineItem>
     </Tagline>
   </Wrapper>

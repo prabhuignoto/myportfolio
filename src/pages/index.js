@@ -1,9 +1,9 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Hero from '../components/hero';
 import Experience from '../components/experience';
 import Projects from '../components/projects';
-import Skills from '../components/skills';
+import Tools from '../components/tools';
 import Footer from '../components/footer';
 import ProjectsData from '../data/projects';
 
@@ -32,7 +32,7 @@ export default class Index extends Component {
       <div>
         <Hero heroImage={heroImage} profileImage={profileImage} prabhuLogo={prabhuLogo} />
         <Projects data={projectsData} />
-        <Skills toolImage={toolImage} />
+        <Tools toolImage={toolImage} />
         <Experience
           honeywellLogo={honeywellLogo}
           juniperLogo={juniperLogo}
