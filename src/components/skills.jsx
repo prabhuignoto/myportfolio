@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { object } from 'prop-types';
-import ScrollReveal from 'scrollreveal';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
@@ -40,12 +39,17 @@ export default class Skills extends Component {
   }
 
   componentDidMount() {
-    ScrollReveal().reveal(this.refs.skillsContainer, {
-      delay: 200,
-      duration: 1000,
-      scale: 0.75,
-      opacity: 0.5,
-    });
+    try {
+      const sr = require('scrollreveal');
+      sr().reveal(this.refs.skillsContainer, {
+        delay: 200,
+        duration: 1000,
+        scale: 0.75,
+        opacity: 0.5,
+      });
+    } catch (ex) {
+      console.error(ex);
+    }
   }
 
   render() {
