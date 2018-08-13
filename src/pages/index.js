@@ -55,7 +55,7 @@ Index.propTypes = {
 export const pageQuery = graphql`
   query HeroImageQuery {
     heroImage: imageSharp(id: { regex: "/unsplash/"} ) {
-      sizes(maxWidth: 2000) {
+      sizes(maxWidth: 2800) {
         ...GatsbyImageSharpSizes
       }
     }
