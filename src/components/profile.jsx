@@ -60,7 +60,7 @@ const Profile = ({ profileImage }) => (
       </TaglineItem>
       <Separator className="is-hidden-mobile" />
       <TaglineItem>
-        {'Interface Designer'}
+        {'Designer'}
       </TaglineItem>
     </Tagline>
   </Wrapper>

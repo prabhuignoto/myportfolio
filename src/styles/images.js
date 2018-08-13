@@ -30,6 +30,7 @@ import CopyrightSVG from '../assets/copyright-regular.svg';
 import GithubSVG from '../assets/github-brands.svg';
 import StackSVG from '../assets/stack-overflow-brands.svg';
 import LinkedinSVG from '../assets/linkedin-brands.svg';
+import ChevronDownSVG from '../assets/chevron-circle-down-solid.svg';
 
 export {
   VueSVG,
@@ -63,4 +64,5 @@ export {
   GithubSVG,
   StackSVG,
   LinkedinSVG,
+  ChevronDownSVG,
 };

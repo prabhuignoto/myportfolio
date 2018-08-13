@@ -6,10 +6,24 @@ import NavBar from './navbar';
 import AboutMe from './aboutme';
 import Shapes from './shapes';
 import Profile from './profile';
-
+import { ChevronDownSVG } from '../styles/images';
 
 const Hero = Styled.section`
   position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: url(${ChevronDownSVG});
+  }
 `;
 
 const HeroBackdrop = Styled.div`
