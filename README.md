@@ -1,26 +1,27 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Code for the Portfolio website (prabhumurthy.netlify.com)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+![Website front](/src/assets/md-file-screenshot.jpg)
 
-## Install
+## Running the App
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
+The App is designed and built using <a href="http://gatsbyjs.org">Gatsby JS</a>.
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
+To run the app you need to install the dependencies first.
+Follow these steps to get the application running in you local
 
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+  - Clone the website to your local and navigate to the directory where you have cloned and run
+    ```javascript
+        npm install
+    ```
+    Or
+    ```javascript
+      yarn install
+    ```
+  - Now you can run the server on development mode:
+    ```javascript
+      yarn develop
+    ```
+  - To produce the final Build:
+    ```javascript
+      yarn build
+    ```
