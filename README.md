@@ -12,7 +12,7 @@ Follow these steps to get the application running in you local
 Clone the website to your local and navigate to the directory where you have cloned and run
 
 ```javascript
-    npm install
+  npm install
 ```
 
   Or
