@@ -15,7 +15,7 @@ Clone the website to your local and navigate to the directory where you have clo
     npm install
 ```
 
-    Or
+   Or
 
 ```javascript
   yarn install
