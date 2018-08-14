@@ -1,8 +1,8 @@
-# Code for the Portfolio website (prabhumurthy.netlify.com)
+## Code for my Portfolio website
 
 ![Website front](/src/assets/md-file-screenshot.jpg)
 
-## Running the App
+### Running the App
 
 The App is designed and built using <a href="http://gatsbyjs.org">Gatsby JS</a>.
 
@@ -15,7 +15,7 @@ Clone the website to your local and navigate to the directory where you have clo
     npm install
 ```
 
-    Or
+  Or
 
 ```javascript
   yarn install
