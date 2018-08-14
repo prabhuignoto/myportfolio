@@ -1,4 +1,4 @@
-## Code for my prabhumurthy.netlify.com
+## Code for prabhumurthy.netlify.com
 
 ![Website front](/src/assets/md-file-screenshot.jpg)
 
