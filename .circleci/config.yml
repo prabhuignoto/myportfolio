@@ -34,4 +34,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: jest && codecov -t ef54bcef-8695-43f7-b161-bf18566e8fca
+      - run: yarn cover
