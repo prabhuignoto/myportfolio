@@ -1,6 +1,8 @@
 [![CircleCI](https://circleci.com/gh/prabhuignoto/myportfolio.svg?style=svg)](https://circleci.com/gh/prabhuignoto/myportfolio)
+[![codecov](https://codecov.io/gh/prabhuignoto/myportfolio/branch/master/graph/badge.svg)](https://codecov.io/gh/prabhuignoto/myportfolio)
 
-## Code for prabhumurthy.netlify.com
+
+### Portfolio Code for prabhumurthy.netlify.com
 
 ![Website front](/src/assets/md-file-screenshot.jpg)
 
