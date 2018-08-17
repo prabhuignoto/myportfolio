@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tools renders correctly 1`] = `
+<styled.section
+  className="section"
+  style={
+    Object {
+      "backgroundColor": "#006494",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <SectionHeader
+      color="#fff"
+      title="Tools & Frameworks that I'm good at"
+    />
+    <div
+      className="tile is-ancestor"
+    >
+      <div
+        className="tile is-vertical is-8"
+      >
+        <div
+          className="tile"
+        >
+          <div
+            className="tile is-parent is-vertical"
+          >
+            <styled.div
+              className="tile is-child box"
+              heading="UI Libs"
+              style={
+                Object {
+                  "background": "#fff",
+                  "boxShadow": "",
+                }
+              }
+            >
+              <Box
+                items={
+                  Array [
+                    Object {
+                      "icon": "jsSVG",
+                      "name": "JavaScript",
+                    },
+                    Object {
+                      "icon": "ReactSVG",
+                      "name": "React JS",
+                    },
+                    Object {
+                      "icon": "VueSVG",
+                      "name": "Vue JS",
+                    },
+                    Object {
+                      "icon": "jquerySVG",
+                      "name": "jQuery",
+                    },
+                  ]
+                }
+                title=""
+              />
+            </styled.div>
+            <styled.div
+              className="tile is-child box"
+              heading="UI Libs"
+              style={
+                Object {
+                  "background": "#fff",
+                  "boxShadow": "",
+                }
+              }
+            >
+              <Box
+                items={
+                  Array [
+                    Object {
+                      "icon": "ReduxSVG",
+                      "name": "Redux",
+                    },
+                    Object {
+                      "icon": "SagaSVG",
+                      "name": "Redux-Saga",
+                    },
+                    Object {
+                      "icon": "ReactRouterSVG",
+                      "name": "React-Router",
+                    },
+                    Object {
+                      "icon": "VueSVG",
+                      "name": "Vuex",
+                    },
+                    Object {
+                      "icon": "",
+                      "name": "Recompose",
+                    },
+                    Object {
+                      "icon": "",
+                      "name": "Reselect",
+                    },
+                  ]
+                }
+                title=""
+              />
+            </styled.div>
+          </div>
+          <div
+            className="tile is-parent is-vertical"
+          >
+            <styled.div
+              className="tile is-child box"
+              heading="Server"
+              style={
+                Object {
+                  "background": "#fff",
+                  "boxShadow": "",
+                }
+              }
+            >
+              <Box
+                items={
+                  Array [
+                    Object {
+                      "icon": "NodeSVG",
+                      "name": "Node JS",
+                    },
+                    Object {
+                      "icon": "ExpressSVG",
+                      "name": "Express JS",
+                    },
+                    Object {
+                      "icon": "SailsSVG",
+                      "name": "Sails JS",
+                    },
+                  ]
+                }
+                title=""
+              />
+            </styled.div>
+            <styled.div
+              className="tile is-child box"
+              heading="React F/W"
+              style={
+                Object {
+                  "background": "#fff",
+                  "boxShadow": "",
+                }
+              }
+            >
+              <Box
+                items={
+                  Array [
+                    Object {
+                      "icon": "NextSVG",
+                      "name": "Next JS",
+                    },
+                    Object {
+                      "icon": "GatsbySVG",
+                      "name": "Gatsby JS",
+                    },
+                  ]
+                }
+                title=""
+              />
+            </styled.div>
+            <styled.div
+              className="tile is-child box"
+              heading="Testing F/W"
+              style={
+                Object {
+                  "background": "#fff",
+                  "boxShadow": "",
+                }
+              }
+            >
+              <Box
+                items={
+                  Array [
+                    Object {
+                      "icon": "jestSVG",
+                      "name": "Jest",
+                    },
+                    Object {
+                      "icon": "karmaSVG",
+                      "name": "Karma",
+                    },
+                    Object {
+                      "icon": "MochaSVG",
+                      "name": "Mocha JS",
+                    },
+                  ]
+                }
+                title=""
+              />
+            </styled.div>
+            <styled.div
+              className="tile is-child box"
+              heading="Type System"
+              style={
+                Object {
+                  "background": "#fff",
+                  "boxShadow": "",
+                }
+              }
+            >
+              <Box
+                items={
+                  Array [
+                    Object {
+                      "icon": "tsSVG",
+                      "name": "Typescript",
+                    },
+                    Object {
+                      "icon": "flowSVG",
+                      "name": "Flow",
+                    },
+                  ]
+                }
+                title=""
+              />
+            </styled.div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="tile is-parent is-vertical"
+      >
+        <styled.div
+          className="tile is-child box"
+          heading="HTML & Styling"
+          style={
+            Object {
+              "background": "#fff",
+              "boxShadow": "",
+            }
+          }
+        >
+          <Box
+            items={
+              Array [
+                Object {
+                  "icon": "HTMLSVG",
+                  "name": "HTML 5",
+                },
+                Object {
+                  "icon": "CSS3SVG",
+                  "name": "CSS 3",
+                },
+                Object {
+                  "icon": "SassSVG",
+                  "name": "SASS",
+                },
+                Object {
+                  "icon": "BulmaSVG",
+                  "name": "Bulma",
+                },
+              ]
+            }
+            title=""
+          />
+        </styled.div>
+        <styled.div
+          className="tile is-child box"
+          heading="Tool Chain"
+          style={
+            Object {
+              "background": "#fff",
+              "boxShadow": "",
+            }
+          }
+        >
+          <Box
+            items={
+              Array [
+                Object {
+                  "icon": "WebpackSVG",
+                  "name": "Webpack",
+                },
+                Object {
+                  "icon": "GruntSVG",
+                  "name": "Grunt",
+                },
+                Object {
+                  "icon": "GulpSVG",
+                  "name": "Gulp",
+                },
+              ]
+            }
+            title=""
+          />
+        </styled.div>
+        <styled.div
+          className="tile is-child box"
+          heading="Editors"
+          style={
+            Object {
+              "background": "#fff",
+              "boxShadow": "",
+            }
+          }
+        >
+          <Box
+            items={
+              Array [
+                Object {
+                  "icon": "vsSVG",
+                  "name": "Visual Studio Code",
+                },
+                Object {
+                  "icon": "atomSVG",
+                  "name": "Atom",
+                },
+              ]
+            }
+            title=""
+          />
+        </styled.div>
+      </div>
+    </div>
+  </div>
+</styled.section>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`aboutme renders correctly 1`] = `
+<styled.div>
+  <span
+    style={
+      Object {
+        "fontSize": "0.8rem",
+        "fontWeight": "bold",
+      }
+    }
+  />
+  <styled.div
+    title="Built with react, typescript, gatsby"
+  >
+    <styled.div
+      key="react"
+      name="react"
+    />
+    <styled.div
+      key="typescript"
+      name="typescript"
+    />
+    <styled.div
+      key="gatsby"
+      name="gatsby"
+    />
+  </styled.div>
+</styled.div>
+`;

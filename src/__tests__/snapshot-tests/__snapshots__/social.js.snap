@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Social renders correctly 1`] = `
+<styled.div
+  role="list"
+>
+  <styled.div
+    role="listitem"
+  >
+    <styled.a
+      href="http://www.linkedin.com/in/prabhu-murthy-09b36637"
+      target="new"
+      title="LinkedIn"
+    >
+      <img
+        alt="linkedin"
+        height="25px"
+        src={[Function]}
+        style={
+          Object {
+            "marginBottom": 0,
+            "marginRight": "0.25rem",
+          }
+        }
+        width="25px"
+      />
+    </styled.a>
+  </styled.div>
+  <styled.div
+    role="listitem"
+  >
+    <styled.a
+      href="http://github.com/prabhuignoto"
+      target="new"
+      title="Github"
+    >
+      <img
+        alt="github"
+        height="25px"
+        src={[Function]}
+        style={
+          Object {
+            "marginBottom": 0,
+            "marginRight": "0.25rem",
+          }
+        }
+        width="25px"
+      />
+    </styled.a>
+  </styled.div>
+  <styled.div
+    role="listitem"
+  >
+    <styled.a
+      href="http://stackoverflow.com/users/1329529/prabhu-murthy?tab=profile"
+      target="new"
+      title="StackOverflow"
+    >
+      <img
+        alt="stackoverflow"
+        height="25px"
+        src={[Function]}
+        style={
+          Object {
+            "marginBottom": 0,
+            "marginRight": "0.25rem",
+          }
+        }
+        width="25px"
+      />
+    </styled.a>
+  </styled.div>
+  <styled.div
+    role="listitem"
+  >
+    <styled.a
+      href="mailto:prabhu.m.murthy@gmail.com"
+      target="new"
+      title="Get in Touch"
+    >
+      <img
+        alt="stackoverflow"
+        height="25px"
+        src={[Function]}
+        style={
+          Object {
+            "marginBottom": 0,
+            "marginRight": "0.25rem",
+          }
+        }
+        width="25px"
+      />
+    </styled.a>
+  </styled.div>
+</styled.div>
+`;

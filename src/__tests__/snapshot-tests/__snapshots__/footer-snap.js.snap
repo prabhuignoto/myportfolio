@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<styled.footer>
+  <div
+    className="container"
+  >
+    <div
+      className="columns is-centered is-multiline"
+    >
+      <div
+        className="column is-3-desktop"
+      >
+        <Social />
+      </div>
+      <div
+        className="column is-3-desktop"
+      >
+        <styled.div>
+          <styled.div>
+            Designed by me and built with
+          </styled.div>
+          <img
+            alt="love"
+            height="18"
+            src={[Function]}
+            style={
+              Object {
+                "margin": "0 0.25rem",
+                "marginBottom": "0",
+              }
+            }
+            width="18"
+          />
+        </styled.div>
+      </div>
+      <div
+        className="column is-3-desktop"
+      >
+        <styled.div>
+          <styled.div>
+            Powered By
+          </styled.div>
+          <styled.a
+            href="www.gatsbyjs.org"
+            target="new"
+          >
+            <img
+              alt="gatsby"
+              height="18"
+              src={[Function]}
+              style={
+                Object {
+                  "margin": "0 0.25rem",
+                  "marginBottom": "0",
+                }
+              }
+              width="20"
+            />
+            <styled.div>
+              Gatsby
+            </styled.div>
+          </styled.a>
+        </styled.div>
+      </div>
+      <div
+        className="column is-3-desktop"
+      >
+        <styled.div>
+          <styled.div>
+            2018
+          </styled.div>
+          <img
+            alt="copyright"
+            height="13"
+            src={[Function]}
+            style={
+              Object {
+                "marginBottom": 0,
+              }
+            }
+            width="13"
+          />
+          <styled.div>
+            Prabhu Murthy
+          </styled.div>
+        </styled.div>
+      </div>
+    </div>
+  </div>
+</styled.footer>
+`;

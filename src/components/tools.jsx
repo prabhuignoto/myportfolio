@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
-import { object } from 'prop-types';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
-import Description from './description';
 
 const Content = Styled.div`
   position: relative;
@@ -59,7 +57,6 @@ export default class Skills extends Component {
       <Container className="section" style={{ position: 'relative', backgroundColor: '#006494' }}>
         <div className="container" ref="skillsContainer">
           <SectionHeader title="Tools &amp; Frameworks that I'm good at" color="#fff" />
-          <Description text="" />
           <div className="tile is-ancestor">
             <div className="tile is-vertical is-8">
               <div className="tile">
@@ -104,8 +101,3 @@ export default class Skills extends Component {
     );
   }
 }
-
-
-Skills.propTypes = {
-  toolImage: object.isRequired,
-};

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`aboutme renders correctly 1`] = `
+<div
+  className="box"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "boxShadow": "none",
+      "position": "relative",
+    }
+  }
+>
+  <styled.div
+    className="content"
+  >
+    <p>
+      Hey I'm Prabhu Murthy
+    </p>
+    <p>
+      I'm a fullstack javascript developer, designer and very passionate about developing apps that scale well.
+    </p>
+  </styled.div>
+</div>
+`;
