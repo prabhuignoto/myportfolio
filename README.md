@@ -3,11 +3,11 @@
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
-# Modern frontend dev portfolio
+## Modern frontend dev portfolio
 
 ![Website front](/src/assets/md-file-screenshot.jpg)
 
-## Installing
+### Installing
 
 Clone the project locally and run the following command to install the dependencies first.
 
@@ -15,7 +15,7 @@ Clone the project locally and run the following command to install the dependenc
 npm install
 ```
 
-## Development Mode
+### Development Mode
 
 To start the project in development mode
 
@@ -23,13 +23,13 @@ To start the project in development mode
 npm run develop
 ```
 
-## Testing
+### Testing
 
 ```javascript
 npm run test
 ```
 
-## Deployment
+### Deployment
 
 To generate the production build, please run
 
@@ -37,7 +37,7 @@ To generate the production build, please run
 npm run build
 ```
 
-## Built With
+### Built With
 
 * [Gatsby JS](https://www.gatsbyjs.org/) - Static site generator for React.
 * [React JS](https://reactjs.org/) - Library for creating user interfaces.
@@ -45,6 +45,6 @@ npm run build
 
 * **Prabhu Murthy** - *Initial work* - [PrabhuIgnoto](https://github.com/prabhuignoto)
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
