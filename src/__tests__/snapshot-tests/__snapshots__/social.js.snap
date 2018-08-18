@@ -74,6 +74,28 @@ exports[`Social renders correctly 1`] = `
     role="listitem"
   >
     <styled.a
+      href="https://twitter.com/prabhumurthy2"
+      target="new"
+      title="Twitter"
+    >
+      <img
+        alt="twitter"
+        height="25px"
+        src={[Function]}
+        style={
+          Object {
+            "marginBottom": 0,
+            "marginRight": "0.25rem",
+          }
+        }
+        width="25px"
+      />
+    </styled.a>
+  </styled.div>
+  <styled.div
+    role="listitem"
+  >
+    <styled.a
       href="mailto:prabhu.m.murthy@gmail.com"
       target="new"
       title="Get in Touch"

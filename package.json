@@ -5,6 +5,7 @@
   "author": "prabhu.m.murthy@gmail.com",
   "dependencies": {
     "@types/jest": "^23.3.1",
+    "enzyme-adapter-react-15": "^1.0.6",
     "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.46",
@@ -18,9 +19,8 @@
     "gatsby-plugin-sharp": "^1.6.48",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-sharp": "^1.6.27",
-    "popmotion-pose": "^2.1.0",
     "prop-types": "^15.6.2",
-    "react": "^16.4.2",
+    "react": "15.6.2",
     "react-helmet": "^5.2.0",
     "scrollreveal": "^4.0.0",
     "styled-components": "^3.4.1"
@@ -40,7 +40,6 @@
     "@types/react": "^16.4.7",
     "codecov": "^3.0.4",
     "enzyme": "^3.4.3",
-    "enzyme-adapter-react-16": "^1.2.0",
     "enzyme-to-json": "^3.3.4",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "17.0.0",
@@ -53,8 +52,9 @@
     "jest": "^23.5.0",
     "jest-svg-transformer": "^1.0.0",
     "prettier": "^1.13.7",
-    "react-dom": "^15.6.0",
-    "react-router-dom": "^4.1.1"
+    "react-dom": "15.6.2",
+    "react-router-dom": "^4.1.1",
+    "react-test-renderer": "15.6.2"
   },
   "repository": {
     "type": "git",

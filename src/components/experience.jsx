@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import { any } from 'prop-types';
 import SectionHeader from './section-header';
 import {
-  Wrapper, Company, Figure, Text,
+  Wrapper, Company, Figure,
 } from '../styles/experience';
 import Description from './description';
 

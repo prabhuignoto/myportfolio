@@ -3,7 +3,7 @@
 
 module.exports = {
   // All imported modules in your tests should be mocked automatically
-  // automock: false,
+  // automock: true,
 
   // Stop running tests after the first failure
   // bail: false,
@@ -171,7 +171,15 @@ module.exports = {
   // ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
-  // unmockedModulePathPatterns: undefined,
+  // unmockedModulePathPatterns: [
+  //   '<rootDir>/node_modules/react',
+  //   '<rootDir>/node_modules/react-dom',
+  //   '<rootDir>/node_modules/react-router',
+  //   '<rootDir>/node_modules/fbjs',
+  //   '<rootDir>/node_modules/events',
+  //   '<rootDir>/node_modules/object-assign',
+  //   '<rootDir>/node_modules/lodash',
+  // ],
 
   // Indicates whether each individual test should be reported during the run
   // verbose: null,

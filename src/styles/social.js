@@ -8,7 +8,7 @@ const Wrapper = Styled.div`
   align-items: center;
   flex-direction: row;
   width: 100%;
-  min-width: 12rem;
+  min-width: 16rem;
   justify-content: space-evenly;
   padding: 1rem 0;
   border-radius: 3px;
