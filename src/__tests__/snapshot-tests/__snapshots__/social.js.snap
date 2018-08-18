@@ -14,7 +14,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="linkedin"
-        height="25px"
+        height="20px"
         src={[Function]}
         style={
           Object {
@@ -22,7 +22,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="25px"
+        width="20px"
       />
     </styled.a>
   </styled.div>
@@ -36,7 +36,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="github"
-        height="25px"
+        height="20px"
         src={[Function]}
         style={
           Object {
@@ -44,7 +44,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="25px"
+        width="20px"
       />
     </styled.a>
   </styled.div>
@@ -58,7 +58,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="stackoverflow"
-        height="25px"
+        height="20px"
         src={[Function]}
         style={
           Object {
@@ -66,7 +66,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="25px"
+        width="20px"
       />
     </styled.a>
   </styled.div>
@@ -80,7 +80,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="twitter"
-        height="25px"
+        height="20px"
         src={[Function]}
         style={
           Object {
@@ -88,7 +88,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="25px"
+        width="20px"
       />
     </styled.a>
   </styled.div>
@@ -102,7 +102,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="stackoverflow"
-        height="25px"
+        height="20px"
         src={[Function]}
         style={
           Object {
@@ -110,7 +110,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="25px"
+        width="20px"
       />
     </styled.a>
   </styled.div>
