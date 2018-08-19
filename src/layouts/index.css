@@ -731,6 +731,8 @@ pre tt:after {
   filter: blur(1.5px) sepia(0.1) brightness(1.5);
   transform: scale(1.025);
   clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
+  top: -2rem;
+  position: absolute;
 }
 
 .tool-image-outer-wrapper,
