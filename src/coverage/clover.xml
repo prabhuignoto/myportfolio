@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1534666537641" clover="3.2.0">
-  <project timestamp="1534666537641" name="All files">
+<coverage generated="1534668576650" clover="3.2.0">
+  <project timestamp="1534668576650" name="All files">
     <metrics statements="81" coveredstatements="58" conditionals="4" coveredconditionals="0" methods="27" coveredmethods="21" elements="112" coveredelements="79" complexity="0" loc="81" ncloc="81" packages="1" files="14" classes="14">
       <file name="aboutme.jsx" path="D:\Projects\my-portfolio\src\components\aboutme.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -68,7 +68,7 @@
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="9" count="2" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
       </file>
       <file name="projects.jsx" path="D:\Projects\my-portfolio\src\components\projects.jsx">
         <metrics statements="18" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>

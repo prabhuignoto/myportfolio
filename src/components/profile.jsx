@@ -19,10 +19,6 @@ const Profile = ({ profileImage }) => (
       <TaglineItem>
         {'Fullstack developer'}
       </TaglineItem>
-      <Separator className="is-hidden-mobile" />
-      <TaglineItem>
-        {'UI Architect'}
-      </TaglineItem>
     </Tagline>
   </Wrapper>
 );
