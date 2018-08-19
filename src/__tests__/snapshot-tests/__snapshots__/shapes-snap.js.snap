@@ -12,7 +12,9 @@ exports[`Renders Shape correctly 1`] = `
     <Image
       Tag="div"
       alt="hero-image-mirror"
+      className="shape-image-wrapper"
       fadeIn={true}
+      outerWrapperClassName="shape-image-outer-wrapper"
       sizes={
         Object {
           "sizes": Object {

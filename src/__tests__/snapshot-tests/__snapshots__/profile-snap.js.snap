@@ -32,5 +32,6 @@ exports[`Profile view renders correctly 1`] = `
       Fullstack developer
     </styled.li>
   </styled.ul>
+  <Clock />
 </styled.figure>
 `;
