@@ -4,6 +4,7 @@ import { any } from 'prop-types';
 import {
   Wrapper, ImageWrapper, Tagline, TaglineItem, Separator,
 } from '../styles/profile';
+import Clock from './clock';
 
 
 const Profile = ({ profileImage }) => (
@@ -20,6 +21,7 @@ const Profile = ({ profileImage }) => (
         {'Fullstack developer'}
       </TaglineItem>
     </Tagline>
+    <Clock />
   </Wrapper>
 );
 

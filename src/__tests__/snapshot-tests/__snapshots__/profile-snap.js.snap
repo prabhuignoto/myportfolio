@@ -31,12 +31,6 @@ exports[`Profile view renders correctly 1`] = `
     <styled.li>
       Fullstack developer
     </styled.li>
-    <styled.span
-      className="is-hidden-mobile"
-    />
-    <styled.li>
-      UI Architect
-    </styled.li>
   </styled.ul>
 </styled.figure>
 `;

@@ -29,12 +29,13 @@ const Tagline = Styled.ul`
 const TaglineItem = Styled.li`
   margin: 0.5rem 2rem;
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 700;
   position: relative;
   color: #fff;
   text-shadow: 2px 1px 2px rgba(0,0,0,1);
   font-family: 'Comfortaa', sans-serif;
   text-transform: uppercase;
+  white-space: nowrap;
 `;
 
 const Separator = Styled.span`

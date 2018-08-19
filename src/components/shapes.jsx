@@ -31,7 +31,7 @@ const ShapesView = ({ heroImage }) => (
   <Shapes className="is-hidden-touch">
     {sectionData.map(x => (
       <ShapeView key={x.name} type={x.type} name={x.name}>
-        <Img sizes={heroImage.sizes} alt="hero-image-mirror" />
+        <Img sizes={heroImage.sizes} alt="hero-image-mirror" className="shape-image-wrapper" outerWrapperClassName="shape-image-outer-wrapper"/>
       </ShapeView>
     ))}
   </Shapes>

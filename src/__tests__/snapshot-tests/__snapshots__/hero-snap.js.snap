@@ -2,7 +2,7 @@
 
 exports[`Renders Hero correctly 1`] = `
 <styled.section
-  className="hero is-medium"
+  className="hero is-large"
   style={
     Object {
       "position": "relative",

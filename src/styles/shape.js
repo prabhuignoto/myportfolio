@@ -42,8 +42,9 @@ const Shape = Styled.div`
       default: return '35%';
     }
   }};
-  clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
+  /* clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%); */
   box-shadow: 0 0 10px 1 rgba(0,0,0,0.5);
+  /* filter: blur(2px) sepia(0.5) brightness(1.1) scale(1.1); */
 `;
 
 export {
