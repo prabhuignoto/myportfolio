@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders navbar correctly 1`] = `
+<nav
+  className="navbar"
+  style={
+    Object {
+      "background": "rgba(255,255,255,0.9)",
+      "color": "#000",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="navbar-brand"
+    >
+      <div
+        className="navbar-item"
+        style={
+          Object {
+            "padding": 0,
+          }
+        }
+      >
+        <styled.div>
+          <Image
+            Tag="div"
+            alt="PM"
+            fadeIn={true}
+            imgStyle={
+              Object {
+                "marginBottom": 0,
+                "maxHeight": "100%",
+              }
+            }
+            sizes={
+              Object {
+                "sizes": Object {
+                  "aspectRatio": 1,
+                  "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAACXUlEQVQ4y2NgoAcw9oxlMPGMA7NBtIlHLJOJJwjDxBDyBAFIoakXVKNHLKOpVzwTTM7CN5HJGCgGYgPFQfL4DUJ2lZF7LAtMTscx3F7dNsQWxjd0i2EBGYjuG1RvQm0zQrIVaIiUgWv0LPvg9P8uEdn/9VwiZ8qa+EjB5I3cYwiEnUcczGscQIOLrPyS3/kll/2Pyqn5V9I88V9SSdt/u6C0t0CDiq0DUjiQ9WD1MlCSGWpzg11ozv+wjCqgYbW/I7Nr/hU3TfhX1Tntd2FD/3/HiPz/Bm7RTZBwjmPG6mVozDFDw6jfLiTzf0RW9Q8g/g8zsLRl0n8g/ukUnvPfwDVqAtQhuA00RhjYYxeSBTLwV0h6xb/wzKp/RY39YEOBXv/lFJ4LNDC6B24gNm+DBJG83G0bnPk/OLX8V3JJy7+emUv+zV2x8V9976x/QC//cgS7MLqbgAtBBsZCDYydYh2Y8b+yY+r3hWu2/lu2Yef/zXsO/9+w88C/1snzv9sEZfwHWjoJZiAo6eBKh8zQJJRl4ZfyP7m09X/f7GW/F6ze8nf5pp1/J85d/juxuOW/OVAOqCYdkg5BLozFlWxiQWkPlsbstB3DjzmEZv3Pr+8DYxAbmMiPAX0ATuRaDmG4syDMluSSZgZthzBGeC5xikgEhtdjYDJ5CmQnw8SBljHOWb4B7jvsXobmEmDihXsfBIAJXNLKP1kcSS2zY2gGLL/jLyhgeRqmCBgM4kC2GRA7A9kiyJYb4yscMJNRLMwCViDmAmIhYLCwIgcPyQCbV4guB3FphBWm6MUb3QAA78UJHRu0QDgAAAAASUVORK5CYII=",
+                  "sizes": "(max-width: 600px) 100vw, 600px",
+                  "src": "/static/prabhu-965ac803796b53b5fb4f84668bef7a53-a778c.png",
+                  "srcSet": "/static/prabhu-965ac803796b53b5fb4f84668bef7a53-c5352.png 150w,
+/static/prabhu-965ac803796b53b5fb4f84668bef7a53-dbfa3.png 300w,
+/static/prabhu-965ac803796b53b5fb4f84668bef7a53-a778c.png 600w,
+/static/prabhu-965ac803796b53b5fb4f84668bef7a53-d1320.png 900w,
+/static/prabhu-965ac803796b53b5fb4f84668bef7a53-7ae2a.png 1200w",
+                },
+              }
+            }
+            style={
+              Object {
+                "height": "5rem",
+                "width": "6rem",
+              }
+            }
+          />
+        </styled.div>
+      </div>
+    </div>
+    <div
+      className="navbar-menu"
+    >
+      <div
+        className="navbar-end"
+      >
+        <div
+          className="navbar-item"
+          style={
+            Object {
+              "padding": 0,
+            }
+          }
+        >
+          <Social />
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

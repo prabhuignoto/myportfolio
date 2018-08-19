@@ -15,32 +15,13 @@ class ShapeView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animation: '',
     };
-    this.onMouseEnter = this.onMouseEnter.bind(this);
-    this.onMouseLeave = this.onMouseLeave.bind(this);
-  }
-
-  onMouseEnter() {
-    this.setState({
-      animation: 'expand',
-    });
-  }
-
-  onMouseLeave() {
-    this.setState({
-      animation: 'leave',
-    });
   }
 
   render() {
-    const { animation } = this.state;
     return (
       <Shape
         {...this.props}
-        onMouseEnter={this.onMouseEnter}
-        onMouseLeave={this.onMouseLeave}
-        animation={animation}
       />
     );
   }
