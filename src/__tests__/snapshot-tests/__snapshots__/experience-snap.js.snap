@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience renders correctly 1`] = `
+<styled.div
+  className="section"
+>
+  <div
+    className="container"
+  >
+    <SectionHeader
+      color="#000"
+      title="Experience"
+    />
+    <Description
+      color="#006494"
+      text="11+ years of product experience with Industries spanning telecom, fire controls, finance. Proud to be associated with some great names in the industry."
+    />
+    <div
+      className="columns is-centered is-multiline"
+      style={
+        Object {
+          "marginTop": "2rem",
+        }
+      }
+    >
+      <div
+        className="column is-2 is-hidden-tablet is-flex-desktop"
+      />
+      <div
+        className="column"
+      >
+        <styled.div
+          className=""
+        >
+          <styled.figure
+            className="image"
+          >
+            <Image
+              Tag="div"
+              alt="Juniper Networks"
+              fadeIn={true}
+              imgStyle={
+                Object {
+                  "filter": "opacity(0.75) grayscale(99%)",
+                }
+              }
+              sizes={
+                Object {
+                  "sizes": Object {
+                    "aspectRatio": 1.7793594306049823,
+                    "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEDBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHbjsAhh//EABoQAQABBQAAAAAAAAAAAAAAAAEAAhAREjH/2gAIAQEAAQUCVzvVDl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAADAQEAAAAAAAAAAAAAAAAAASEgMf/aAAgBAQAGPwKI4i4//8QAGRABAQADAQAAAAAAAAAAAAAAAREAITEg/9oACAEBAAE/IaxTm8RW6GY1L14//9oADAMBAAIAAwAAABAwz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQEAAwADAAAAAAAAAAAAAAERACFBIFGR/9oACAEBAAE/EDy4ghl78MAAG1HZ7mFoCKhzw//Z",
+                    "sizes": "(max-width: 800px) 100vw, 800px",
+                    "src": "/static/juniper-8e6e28faa3344163a1353c6269e02a85-381d6.jpg",
+                    "srcSet": "/static/juniper-8e6e28faa3344163a1353c6269e02a85-62f05.jpg 200w,
+/static/juniper-8e6e28faa3344163a1353c6269e02a85-dc2b4.jpg 400w,
+/static/juniper-8e6e28faa3344163a1353c6269e02a85-381d6.jpg 800w,
+/static/juniper-8e6e28faa3344163a1353c6269e02a85-41edc.jpg 1000w",
+                  },
+                }
+              }
+            />
+          </styled.figure>
+        </styled.div>
+      </div>
+      <div
+        className="column"
+      >
+        <styled.div
+          className=""
+        >
+          <styled.figure
+            className="image"
+          >
+            <Image
+              Tag="div"
+              alt="Honeywell"
+              fadeIn={true}
+              imgStyle={
+                Object {
+                  "filter": "opacity(0.75) grayscale(99%)",
+                }
+              }
+              sizes={
+                Object {
+                  "sizes": Object {
+                    "aspectRatio": 1.7793594306049823,
+                    "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAAB7LZihaP/xAAZEAEAAgMAAAAAAAAAAAAAAAABABICESD/2gAIAQEAAQUCu7uzFXj/xAAXEQADAQAAAAAAAAAAAAAAAAABEBFR/9oACAEDAQE/AaMX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAAAERIDIh/9oACAEBAAY/AsMwzqin/8QAGRABAAIDAAAAAAAAAAAAAAAAARARICFx/9oACAEBAAE/IaUckixG3bD/2gAMAwEAAgADAAAAEPj/AP/EABgRAQEAAwAAAAAAAAAAAAAAAAEAETHw/9oACAEDAQE/EOGZRdX/xAAXEQADAQAAAAAAAAAAAAAAAAABEBFR/9oACAECAQE/EIdX/8QAHBABAAEEAwAAAAAAAAAAAAAAAREAITFRIEFx/9oACAEBAAE/EFSUGEEJupcZY6tb2kxUQC5N8P/Z",
+                    "sizes": "(max-width: 800px) 100vw, 800px",
+                    "src": "/static/honeywell-dcf1a9d2f8b327078c2c78cc76caccfc-381d6.jpg",
+                    "srcSet": "/static/honeywell-dcf1a9d2f8b327078c2c78cc76caccfc-62f05.jpg 200w,
+/static/honeywell-dcf1a9d2f8b327078c2c78cc76caccfc-dc2b4.jpg 400w,
+/static/honeywell-dcf1a9d2f8b327078c2c78cc76caccfc-381d6.jpg 800w,
+/static/honeywell-dcf1a9d2f8b327078c2c78cc76caccfc-41edc.jpg 1000w",
+                  },
+                }
+              }
+            />
+          </styled.figure>
+        </styled.div>
+      </div>
+      <div
+        className="column"
+      >
+        <styled.div
+          className=""
+        >
+          <styled.figure
+            className="image"
+          >
+            <Image
+              Tag="div"
+              alt="JP Morgan Chase"
+              fadeIn={true}
+              imgStyle={
+                Object {
+                  "filter": "opacity(0.75) grayscale(99%)",
+                }
+              }
+              sizes={
+                Object {
+                  "sizes": Object {
+                    "aspectRatio": 1.7793594306049823,
+                    "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHcjaCGH//EABcQAQEBAQAAAAAAAAAAAAAAAAEAEiD/2gAIAQEAAQUCVtMcf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAIDAAAAAAAAAAAAAAAAAAAxESAy/9oACAEBAAY/AkZFFP/EABoQAQACAwEAAAAAAAAAAAAAAAEAESAhUXH/2gAIAQEAAT8hs6uTu4lLfDD/2gAMAwEAAgADAAAAEHDP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAQACAwAAAAAAAAAAAAAAAREAQSAhUf/aAAgBAQABPxATJm1lxAO26Ey7S9cP/9k=",
+                    "sizes": "(max-width: 800px) 100vw, 800px",
+                    "src": "/static/jpmc-68350d293ed19da651a37b79b2a584cc-381d6.jpg",
+                    "srcSet": "/static/jpmc-68350d293ed19da651a37b79b2a584cc-62f05.jpg 200w,
+/static/jpmc-68350d293ed19da651a37b79b2a584cc-dc2b4.jpg 400w,
+/static/jpmc-68350d293ed19da651a37b79b2a584cc-381d6.jpg 800w,
+/static/jpmc-68350d293ed19da651a37b79b2a584cc-41edc.jpg 1000w",
+                  },
+                }
+              }
+            />
+          </styled.figure>
+        </styled.div>
+      </div>
+      <div
+        className="column"
+      >
+        <styled.div
+          className=""
+        >
+          <styled.figure
+            className="image"
+          >
+            <Image
+              Tag="div"
+              alt="Tech Mahindra"
+              fadeIn={true}
+              imgStyle={
+                Object {
+                  "filter": "opacity(0.75) grayscale(99%)",
+                }
+              }
+              sizes={
+                Object {
+                  "sizes": Object {
+                    "aspectRatio": 1.7793594306049823,
+                    "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAetewZUT/8QAFxABAQEBAAAAAAAAAAAAAAAAAQMRIP/aAAgBAQABBQJoiUMHeP/EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/AYf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAICGx4f/aAAgBAQAGPwLCaX//xAAbEAABBQEBAAAAAAAAAAAAAAABABEhMUEgYf/aAAgBAQABPyEhGPqAWP4SGMZFcf/aAAwDAQACAAMAAAAQP9//xAAZEQACAwEAAAAAAAAAAAAAAAAAEQFBUaH/2gAIAQMBAT8QeOkqj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQEBAQADAAAAAAAAAAAAAAERIQAgMXH/2gAIAQEAAT8QhLCClfk4RvU9J5Y3qqjfD//Z",
+                    "sizes": "(max-width: 800px) 100vw, 800px",
+                    "src": "/static/techm-fca5f6f40a2652b8a788984060870d5f-381d6.jpg",
+                    "srcSet": "/static/techm-fca5f6f40a2652b8a788984060870d5f-62f05.jpg 200w,
+/static/techm-fca5f6f40a2652b8a788984060870d5f-dc2b4.jpg 400w,
+/static/techm-fca5f6f40a2652b8a788984060870d5f-381d6.jpg 800w,
+/static/techm-fca5f6f40a2652b8a788984060870d5f-41edc.jpg 1000w",
+                  },
+                }
+              }
+            />
+          </styled.figure>
+        </styled.div>
+      </div>
+      <div
+        className="column is-2 is-hidden-tablet is-flex-desktop"
+      />
+    </div>
+  </div>
+</styled.div>
+`;

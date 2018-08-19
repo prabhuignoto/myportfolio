@@ -21,7 +21,11 @@ module.exports = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: null,
+  collectCoverageFrom: [
+    '**/*.{jsx}',
+    '!**/node_modules/**',
+    '!**/vendor/**',
+  ],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
@@ -32,6 +36,7 @@ module.exports = {
     '<rootDir>/styles',
     '<rootDir>/enzyme-config.js',
     '<rootDir>/data',
+    '<rootDir>/__tests__/mocks',
   ],
 
   // A list of reporter names that Jest uses when writing coverage reports

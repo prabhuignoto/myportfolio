@@ -3,7 +3,7 @@ import {
   Wrapper, Item, IconWrapper,
 } from '../styles/social';
 import MailSVG from '../assets/envelope-solid.svg';
-import { GithubSVG, LinkedinSVG, StackSVG, TwitterSVG } from '../styles/images.js';
+import { GithubSVG, LinkedinSVG, StackSVG, TwitterSVG } from '../styles/images';
 
 class Social extends Component {
   constructor(props) {

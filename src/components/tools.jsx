@@ -1,36 +1,8 @@
 import React, { Component } from 'react';
-import Styled from 'styled-components';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
-
-const Content = Styled.div`
-  position: relative;
-  box-shadow: 0 0 13px 5px rgba(0,0,0,0.2);
-  &::before {
-    content: '${p => p.heading}';
-    display: block;
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    color: rgba(0, 0, 0, 0.7);
-    height: auto;
-    width: auto;
-    font-size: 0.75rem;
-    font-weight: 500;
-    background: #fff;
-    border-radius: 4px;
-    padding: 0.25rem 0.5rem;
-    background: #E8F1F2;
-    color: #000;
-  }
-`;
-
-
-const Container = Styled.section`
-  min-height: 80vh;
-`;
-
+import { Container, Content } from '../styles/tools';
 
 export default class Skills extends Component {
   constructor(props) {
@@ -39,17 +11,13 @@ export default class Skills extends Component {
   }
 
   componentDidMount() {
-    try {
-      const sr = require('scrollreveal');
-      sr().reveal(this.refs.skillsContainer, {
-        delay: 200,
-        duration: 1000,
-        scale: 0.85,
-        opacity: 0.5,
-      });
-    } catch (ex) {
-      console.error(ex);
-    }
+    const sr = require('scrollreveal');
+    sr().reveal(this.refs.skillsContainer, {
+      delay: 200,
+      duration: 1000,
+      scale: 0.85,
+      opacity: 0.5,
+    });
   }
 
   render() {

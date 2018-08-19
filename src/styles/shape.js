@@ -1,7 +1,5 @@
 import Styled, {
-  keyframes,
 } from 'styled-components';
-import page from '../assets/hero.jpg';
 
 const Shapes = Styled.div`
   display: flex;
@@ -16,24 +14,6 @@ const Shapes = Styled.div`
   top: 0;
   margin-left: auto;
   margin-right: auto;
-`;
-
-const Collapse = keyframes`
-  0% {
-    clip-path: polygon(35% 0%,100% 0%,65% 100%,0% 100%);
-  }
-  100% {
-    clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
-  }
-`;
-
-const Expand = keyframes`
-  0% {
-    clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
-  }
-  100% {
-    clip-path: polygon(35% 0%,100% 0%,65% 100%,0% 100%);
-  }
 `;
 
 const ShapeContent = Styled.div`
@@ -62,26 +42,6 @@ const Shape = Styled.div`
       default: return '35%';
     }
   }};
-  /* width: ${p => (p.animation === 'expand' ? '35%' : '33%')}; */
-  /* animation-name:  ${p => (p.animation === 'expand' ? Expand : Collapse)}; */
-  /* animation-duration: 400ms;
-  animation-timing-function: ease;
-  transform-origin: center;
-  animation-iteration-count: 1;
-  cursor: pointer; */
-  /* z-index: ${p => (p.animation === 'expand' ? 100 : 0)}; */
-  /* background: url(${page});
-  background-size: cover;
-  background-repeat: no-repeat; */
-  /* background:  ${(p) => {
-    switch (p.type) {
-      // case 4: return 'rgba(0, 0, 0, 0.6)';
-      case 1: return 'rgba(0, 0, 0, 0.95)';
-      case 2: return 'rgba(0, 0, 0, 0.25)';
-      // case 3: return 'rgba(0, 0, 0, 0.3)';
-      default: return 'transparent';
-    }
-  }}; */
   clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
   box-shadow: 0 0 10px 1 rgba(0,0,0,0.5);
 `;

@@ -14,7 +14,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
       link={[
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700,700i' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700,700i|Comfortaa' },
       ]}
     />
     <div
