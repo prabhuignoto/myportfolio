@@ -5,23 +5,24 @@ import {
   Wrapper, ImageWrapper, Tagline, TaglineItem, Separator,
 } from '../styles/profile';
 import Clock from './clock';
+import AboutMe from './aboutme';
 
 
 const Profile = ({ profileImage }) => (
   <Wrapper>
-    <ImageWrapper>
+    {/* <ImageWrapper>
       <Img sizes={profileImage.sizes} className="profile-image-wrapper" />
-    </ImageWrapper>
+    </ImageWrapper> */}
     <Tagline>
       <TaglineItem>
         {'Frontend engineer'}
       </TaglineItem>
-      <Separator className="is-hidden-mobile" />
+      {/* <Separator className="is-hidden-mobile" /> */}
       <TaglineItem>
         {'Fullstack developer'}
       </TaglineItem>
     </Tagline>
-    <Clock />
+    <AboutMe />
   </Wrapper>
 );
 

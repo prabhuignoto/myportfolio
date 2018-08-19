@@ -6,14 +6,14 @@ export default class Clock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: DateTime.local().toLocaleString(DateTime.TIME_WITH_SECONDS),
+      time: DateTime.local().toLocaleString(DateTime.DATETIME_MED),
     };
   }
 
   componentDidMount() {
     setInterval(() => {
       this.setState({
-        time: DateTime.local().toLocaleString(DateTime.TIME_WITH_SECONDS),
+        time: DateTime.local().toLocaleString(DateTime.DATETIME_MED),
       });
     }, 1000);
   }

@@ -12,7 +12,7 @@ const Wrapper = Styled.figure`
 const ImageWrapper = Styled.div`
   width: 12rem;
   height: 12rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 `;
 
 const Tagline = Styled.ul`
@@ -21,9 +21,10 @@ const Tagline = Styled.ul`
   justify-content: center;
   padding: 1rem;
   margin: 1rem;
-  /* background: rgba(255,255,255,0.7); */
+  background: rgba(255,255,255,0.8);
   border-radius: 3px;
   flex-wrap: wrap;
+  flex-direction: row;
 `;
 
 const TaglineItem = Styled.li`
@@ -31,8 +32,8 @@ const TaglineItem = Styled.li`
   font-size: 1.75rem;
   font-weight: 700;
   position: relative;
-  color: #fff;
-  text-shadow: 2px 1px 2px rgba(0,0,0,1);
+  color: #000;
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.5);
   font-family: 'Comfortaa', sans-serif;
   text-transform: uppercase;
   white-space: nowrap;

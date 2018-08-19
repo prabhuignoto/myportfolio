@@ -3,6 +3,7 @@ import Img from 'gatsby-image';
 import { any } from 'prop-types';
 import Styled from 'styled-components';
 import Social from './social';
+import Clock from './clock';
 
 const LogoWrapper = Styled.div`
   display: flex;
@@ -38,6 +39,9 @@ class navbar extends Component {
             </div>
           </div>
           <div className="navbar-menu">
+            <div className="navbar-start">
+              <Clock />
+            </div>
             <div className="navbar-end">
               <div className="navbar-item" style={{ padding: 0 }}>
                 <Social />

@@ -47,7 +47,7 @@ class hero extends Component {
   render() {
     const { heroImage, profileImage, prabhuLogo } = this.props;
     return (
-      <Hero className="hero is-large" style={this.style}>
+      <Hero className="hero is-medium" style={this.style}>
         <HeroBackdrop>
           <Img sizes={heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
         </HeroBackdrop>
@@ -58,12 +58,9 @@ class hero extends Component {
           <Shapes heroImage={heroImage} />
           <div className="container" style={{ zIndex: '300' }}>
             <div className="columns is-centered is-multiline">
-              <div className="column is-12">
-                <Profile profileImage={profileImage} />
-              </div>
               <div className="column is-2" />
-              <div className="column is-8">
-                <AboutMe />
+              <div className="column is-8-desktop">
+                <Profile profileImage={profileImage} />
               </div>
               <div className="column is-2" />
               {/* <div className="column is-3" /> */}

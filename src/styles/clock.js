@@ -12,10 +12,10 @@ const Wrapper = Styled.div`
 const TimeComponent = Styled.span`
   display: block;
   padding: 0.25rem;
-  color: #fff;
-  font-size: 1.25rem;
+  color: #000;
+  font-size: 1rem;
   font-weight: 700;
-  text-shadow: 2px 1px 2px rgba(0,0,0,1);
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.5);
   font-family: 'Lato', sans-serif;
 `;
 

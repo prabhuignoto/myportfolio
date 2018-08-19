@@ -718,8 +718,9 @@ pre tt:after {
 }
 
 .profile-image-wrapper {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+
 }
 
 .hero-image-wrapper {
@@ -728,10 +729,10 @@ pre tt:after {
 }
 
 .shape-image-wrapper {
-  filter: blur(1.5px) sepia(0.1) brightness(1.5);
-  transform: scale(1.025);
+  filter: blur(3px) sepia(0.25) brightness(1);
+  transform: scale(1.01);
   clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
-  top: -2rem;
+  top: -1rem;
   position: absolute;
 }
 
