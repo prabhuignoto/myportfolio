@@ -5,8 +5,7 @@
 
 ## Modern frontend dev portfolio
 
-![Website front](/src/assets/md-file-screenshot.jpg)
-
+![Website front](2018-08-20-00-13-26.png)
 ### Installing
 
 Clone the project locally and run the following command to install the dependencies first.
