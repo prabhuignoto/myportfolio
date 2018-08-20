@@ -3,10 +3,10 @@ import GitSVG from '../assets/github.svg';
 
 const Section = Styled.div`
   position: relative;
+  padding: 0;
 `;
 
 const Wrapper = Styled.div`
-  min-height: 80vh;
   padding: 3rem 3rem;
   font-family: 'Lato', sans-serif;
   z-index:1;

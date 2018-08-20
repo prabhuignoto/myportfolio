@@ -6,7 +6,7 @@ import Overflow from '../assets/stackoverflow-com.svg';
 const Wrapper = Styled.div`
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: ${p => (p.direction ? p.direction : 'row')};
   width: 100%;
   min-width: 16rem;
   justify-content: space-evenly;

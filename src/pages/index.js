@@ -6,6 +6,7 @@ import Projects from '../components/projects';
 import Tools from '../components/tools';
 import Footer from '../components/footer';
 import ProjectsData from '../data/projects';
+import Skills from '../components/techskills';
 
 
 export default class Index extends Component {
@@ -21,7 +22,7 @@ export default class Index extends Component {
     const {
       data: {
         heroImage, profileImage, honeywellLogo, juniperLogo,
-        techmLogo, jpmcLogo, toolImage, prabhuLogo,
+        techmLogo, jpmcLogo, toolImage, prabhuLogo, designPicture,
       },
     } = this.props;
     const projectsData = ProjectsData.map(x => Object.assign({}, x, {
@@ -32,6 +33,7 @@ export default class Index extends Component {
       <div>
         <Hero heroImage={heroImage} profileImage={profileImage} prabhuLogo={prabhuLogo} />
         <Projects data={projectsData} />
+        <Skills designPicture={designPicture} />
         <Tools toolImage={toolImage} />
         <Experience
           honeywellLogo={honeywellLogo}
@@ -61,6 +63,11 @@ export const pageQuery = graphql`
     }
     prabhuLogo: imageSharp(id: { regex: "/prabhu/"}) {
       sizes(maxWidth: 600) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    designPicture: imageSharp(id: { regex: "/design/"}) {
+      sizes(maxWidth: 1350) {
         ...GatsbyImageSharpSizes
       }
     }

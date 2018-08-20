@@ -3,27 +3,14 @@ import Styled from 'styled-components';
 import Img from 'gatsby-image';
 import { object } from 'prop-types';
 import NavBar from './navbar';
-import AboutMe from './aboutme';
+import ProfileImage from './profile-image';
 import Shapes from './shapes';
 import Profile from './profile';
-import { ChevronDownSVG } from '../styles/images';
+import AboutMe from './aboutme';
+
 
 const Hero = Styled.section`
   position: relative;
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background: url(${ChevronDownSVG});
-  }
 `;
 
 const HeroBackdrop = Styled.div`
@@ -39,7 +26,6 @@ class hero extends Component {
     super(props);
     this.state = {};
     this.style = {
-      // background: 'linear-gradient(45deg, rgba(232,241,242,1) 0%, rgba(36,123,160,1) 100%)',
       position: 'relative',
     };
   }
@@ -56,18 +42,32 @@ class hero extends Component {
         </div>
         <div className="hero-body">
           <Shapes heroImage={heroImage} />
-          <div className="container" style={{ zIndex: '300' }}>
+          <div
+            className="container"
+          >
             <div className="columns is-centered is-multiline">
-              <div className="column is-2" />
-              <div className="column is-8-desktop">
-                <Profile profileImage={profileImage} />
+              <div
+                className="column is-9-desktop"
+                style={{
+                  background: 'rgba(255,255,255, 0.97)',
+                  borderRadius: '4px',
+                  padding: '0rem 0rem 0rem',
+                  boxShadow: '0 0 10px 1px rgba(0,0,0,0.5)',
+                }}
+              >
+                <div className="columns is-centered is-multiline is-gapless">
+                  <div className="column is-3-desktop" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <ProfileImage profileImage={profileImage} />
+                  </div>
+                  <div className="column is-9-desktop">
+                    <AboutMe />
+                  </div>
+                  <div className="column is-12-desktop">
+                    <Profile />
+                  </div>
+                </div>
               </div>
-              <div className="column is-2" />
-              {/* <div className="column is-3" /> */}
-              <div className="column is-4">
-                {/* <Social /> */}
-              </div>
-              <div className="column is-3" />
+              {/* </div> */}
             </div>
           </div>
         </div>

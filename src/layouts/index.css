@@ -718,7 +718,7 @@ pre tt:after {
 }
 
 .profile-image-wrapper {
-  /* border-radius: 50%; */
+  border-radius: 50%;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
 
 }
@@ -729,7 +729,7 @@ pre tt:after {
 }
 
 .shape-image-wrapper {
-  filter: blur(3px) sepia(0.25) brightness(1);
+  filter: blur(1px) sepia(0.1) brightness(1.25);
   transform: scale(1.01);
   clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
   top: -1rem;
@@ -750,5 +750,5 @@ pre tt:after {
 }
 
 .tool-image-outer-wrapper {
-  filter: blur(2px) sepia(0.5) brightness(1.1) scale(1.1);
+  filter: blur(2px) sepia(0.25) brightness(1.1) scale(1.1);
 }

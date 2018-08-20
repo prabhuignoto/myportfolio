@@ -22,10 +22,10 @@ export default class Skills extends Component {
 
   render() {
     return (
-      <Container className="section" style={{ position: 'relative', backgroundColor: '#006494' }}>
+      <Container className="section" style={{ position: 'relative' }}>
         <div className="container" ref="skillsContainer">
-          <SectionHeader title="Tools &amp; Frameworks that I'm good at" color="#fff" />
-          <div className="tile is-ancestor">
+          <SectionHeader title="Tools &amp; Frameworks that I'm good at" color="#000" />
+          <div className="tile is-ancestor" style={{ marginTop: '1rem' }}>
             <div className="tile is-vertical is-8">
               <div className="tile">
                 <div className="tile is-parent is-vertical">

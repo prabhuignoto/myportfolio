@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const Footer = Styled.footer`
-  background: #e8f1f2;
+  background: #d8d8d7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@ export const Link = Styled.a`
 export const Text = Styled.div`
   display: block;
   white-space: nowrap;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-family: 'Lato', sans-serif;
   margin: 0 0.25rem;
 `;

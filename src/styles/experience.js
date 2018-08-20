@@ -3,8 +3,8 @@ import Styled from 'styled-components';
 export const Wrapper = Styled.div`
 display: flex;
 min-height: 35rem;
-justify: center;
-align-items: center;
+justify-content: center;
+align-items: flex-start;
 margin-top: 2rem;
 `;
 

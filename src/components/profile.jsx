@@ -1,18 +1,11 @@
 import React from 'react';
-import Img from 'gatsby-image';
-import { any } from 'prop-types';
 import {
-  Wrapper, ImageWrapper, Tagline, TaglineItem, Separator,
+  Wrapper, Tagline, TaglineItem,
 } from '../styles/profile';
-import Clock from './clock';
-import AboutMe from './aboutme';
 
 
-const Profile = ({ profileImage }) => (
+const Profile = () => (
   <Wrapper>
-    {/* <ImageWrapper>
-      <Img sizes={profileImage.sizes} className="profile-image-wrapper" />
-    </ImageWrapper> */}
     <Tagline>
       <TaglineItem>
         {'Frontend engineer'}
@@ -21,13 +14,15 @@ const Profile = ({ profileImage }) => (
       <TaglineItem>
         {'Fullstack developer'}
       </TaglineItem>
+      {/* <Separator className="is-hidden-mobile" /> */}
+      <TaglineItem>
+        {'UI Architect'}
+      </TaglineItem>
+      <TaglineItem>
+        {'Interface designer'}
+      </TaglineItem>
     </Tagline>
-    <AboutMe />
   </Wrapper>
 );
-
-Profile.propTypes = {
-  profileImage: any,
-};
 
 export default Profile;

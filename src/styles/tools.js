@@ -25,6 +25,7 @@ const Content = Styled.div`
 
 const Container = Styled.section`
   min-height: 80vh;
+  padding: 0;
 `;
 
 export {
