@@ -14,8 +14,8 @@ export default class techskills extends Component {
     return (
       <Wrapper className="section">
         <div className="container">
-          <SectionHeader title="My SKills" />
-          <Description text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works" color="#006494" />
+          <SectionHeader title="My SKills" color="#404040" />
+          {/* <Description text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works" color="#685b59" /> */}
           <ImageWrapper>
             <Img
               sizes={this.props.designPicture.sizes}
