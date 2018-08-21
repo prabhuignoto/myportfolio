@@ -18,7 +18,27 @@ exports[`aboutme renders correctly 1`] = `
       Hey I'm Prabhu Murthy
     </p>
     <p>
-      I'm a fullstack javascript developer, designer and very passionate about developing apps that scale well.
+      I'm a
+      <styled.span>
+        fullstack
+      </styled.span>
+      javascript developer, designer and very passionate about developing apps that scale very well.
+    </p>
+    <p>
+      My Core expertise is building frontend apps through 
+      <styled.span>
+        React/Vue
+      </styled.span>
+      and build app servers using Node
+      <styled.span>
+        (Express/Sails).
+      </styled.span>
+    </p>
+    <p>
+      I have extensive experience in designing and building web apps that are 
+      <styled.span>
+        highly secure & fast performing.
+      </styled.span>
     </p>
   </styled.div>
 </div>

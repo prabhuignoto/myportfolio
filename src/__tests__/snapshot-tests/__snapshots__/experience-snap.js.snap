@@ -12,7 +12,7 @@ exports[`Experience renders correctly 1`] = `
       title="Experience"
     />
     <Description
-      color="#006494"
+      color="#746764"
       text="11+ years of product experience with Industries spanning telecom, fire controls, finance. Proud to be associated with some great names in the industry."
     />
     <div

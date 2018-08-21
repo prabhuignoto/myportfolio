@@ -14,7 +14,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="linkedin"
-        height="20px"
+        height="23px"
         src={[Function]}
         style={
           Object {
@@ -22,7 +22,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="20px"
+        width="23px"
       />
     </styled.a>
   </styled.div>
@@ -36,7 +36,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="github"
-        height="20px"
+        height="23px"
         src={[Function]}
         style={
           Object {
@@ -44,7 +44,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="20px"
+        width="23px"
       />
     </styled.a>
   </styled.div>
@@ -58,7 +58,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="stackoverflow"
-        height="20px"
+        height="23px"
         src={[Function]}
         style={
           Object {
@@ -66,7 +66,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="20px"
+        width="23px"
       />
     </styled.a>
   </styled.div>
@@ -80,7 +80,7 @@ exports[`Social renders correctly 1`] = `
     >
       <img
         alt="twitter"
-        height="20px"
+        height="23px"
         src={[Function]}
         style={
           Object {
@@ -88,29 +88,7 @@ exports[`Social renders correctly 1`] = `
             "marginRight": "0.25rem",
           }
         }
-        width="20px"
-      />
-    </styled.a>
-  </styled.div>
-  <styled.div
-    role="listitem"
-  >
-    <styled.a
-      href="mailto:prabhu.m.murthy@gmail.com"
-      target="new"
-      title="Get in Touch"
-    >
-      <img
-        alt="stackoverflow"
-        height="20px"
-        src={[Function]}
-        style={
-          Object {
-            "marginBottom": 0,
-            "marginRight": "0.25rem",
-          }
-        }
-        width="20px"
+        width="23px"
       />
     </styled.a>
   </styled.div>

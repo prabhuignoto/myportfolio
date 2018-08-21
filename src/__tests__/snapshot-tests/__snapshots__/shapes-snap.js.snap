@@ -2,7 +2,7 @@
 
 exports[`Renders Shape correctly 1`] = `
 <styled.div
-  className="is-hidden-touch"
+  className=""
 >
   <ShapeView
     key="Skills"

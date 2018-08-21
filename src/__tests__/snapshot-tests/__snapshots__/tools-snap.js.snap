@@ -5,7 +5,6 @@ exports[`Tools renders correctly 1`] = `
   className="section"
   style={
     Object {
-      "backgroundColor": "#006494",
       "position": "relative",
     }
   }
@@ -14,11 +13,16 @@ exports[`Tools renders correctly 1`] = `
     className="container"
   >
     <SectionHeader
-      color="#fff"
+      color="#000"
       title="Tools & Frameworks that I'm good at"
     />
     <div
       className="tile is-ancestor"
+      style={
+        Object {
+          "marginTop": "2rem",
+        }
+      }
     >
       <div
         className="tile is-vertical is-8"

@@ -2,36 +2,16 @@
 
 exports[`Profile view renders correctly 1`] = `
 <styled.figure>
-  <styled.div>
-    <Image
-      Tag="div"
-      alt=""
-      className="profile-image-wrapper"
-      fadeIn={true}
-      sizes={
-        Object {
-          "aspectRatio": 0.7488888888888889,
-          "base64": "data:image/png;base64,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",
-          "sizes": "(max-width: 337px) 100vw, 337px",
-          "src": "/static/profile-pic-5f63cea8412d899c907ab76de9bdcb4f-8ac9e.png",
-          "srcSet": "/static/profile-pic-5f63cea8412d899c907ab76de9bdcb4f-3608f.png 84w,
-/static/profile-pic-5f63cea8412d899c907ab76de9bdcb4f-0b746.png 169w,
-/static/profile-pic-5f63cea8412d899c907ab76de9bdcb4f-8ac9e.png 337w",
-        }
-      }
-    />
-  </styled.div>
   <styled.ul>
     <styled.li>
       Frontend engineer
     </styled.li>
-    <styled.span
-      className="is-hidden-mobile"
-    />
     <styled.li>
       Fullstack developer
     </styled.li>
+    <styled.li>
+      UI Architect
+    </styled.li>
   </styled.ul>
-  <Clock />
 </styled.figure>
 `;
