@@ -65,7 +65,7 @@ export default class Projects extends Component {
       <div className="section projects" ref={this.ref}>
         <Wrapper className="container">
           <SectionHeader title="My Recent Work" color="#404040" />
-          <Description text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works" color="#ec6345" />
+          <Description text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works" color="#746764" />
           <div className="columns is-centered is-multiline">
             {data.map(x => (
               <div className="column is-half-tablet is-one-third-desktop" key={x.id}>

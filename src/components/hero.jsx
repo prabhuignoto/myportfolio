@@ -47,7 +47,7 @@ class hero extends Component {
           >
             <div className="columns is-centered is-multiline">
               <div
-                className="column is-9-desktop"
+                className="column is-12-desktop is-9-fullhd is-9-tablet"
                 style={{
                   background: 'rgba(255,255,255, 0.97)',
                   borderRadius: '4px',
@@ -56,13 +56,13 @@ class hero extends Component {
                 }}
               >
                 <div className="columns is-centered is-multiline is-gapless">
-                  <div className="column is-3-desktop" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                  <div className="column is-3-desktop is-12-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                     <ProfileImage profileImage={profileImage} />
                   </div>
-                  <div className="column is-9-desktop">
+                  <div className="column is-9-desktop is-12-tablet">
                     <AboutMe />
                   </div>
-                  <div className="column is-12-desktop">
+                  <div className="column is-12-desktop is-12-tablet">
                     <Profile />
                   </div>
                 </div>

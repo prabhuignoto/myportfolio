@@ -18,9 +18,6 @@ const Profile = () => (
       <TaglineItem>
         {'UI Architect'}
       </TaglineItem>
-      <TaglineItem>
-        {'Interface designer'}
-      </TaglineItem>
     </Tagline>
   </Wrapper>
 );

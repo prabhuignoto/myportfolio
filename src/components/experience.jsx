@@ -17,7 +17,7 @@ const Experience = ({
   <Wrapper className="section">
     <div className="container">
       <SectionHeader title="Experience" />
-      <Description color="#ec6345" text="11+ years of product experience with Industries spanning telecom, fire controls, finance. Proud to be associated with some great names in the industry." />
+      <Description color="#746764" text="11+ years of product experience with Industries spanning telecom, fire controls, finance. Proud to be associated with some great names in the industry." />
       <div className="columns is-centered is-multiline" style={{ marginTop: '2rem' }}>
         <div className="column is-2 is-hidden-tablet is-flex-desktop" />
         <div className="column">
