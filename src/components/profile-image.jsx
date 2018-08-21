@@ -16,7 +16,7 @@ const ProfileImage = ({ profileImage }) => (
         <IconWrapper>
           <Icon src={At} alt="at-email" />
         </IconWrapper>
-        <a href="mailto:prabhu.m.murthy@gmail.com" style={{ color: '#404040', marginRight: '0.25rem', fontSize: '1.5rem' }}>
+        <a href="mailto:prabhu.m.murthy@gmail.com" style={{ color: '#404040', marginRight: '0.25rem', fontSize: '1.25rem' }}>
           {'Email me'}
         </a>
       </LinkItem>
