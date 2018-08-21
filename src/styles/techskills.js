@@ -47,5 +47,6 @@ export const Overlay = Styled.div`
 export const ImageWrapper = Styled.div`
   display: block;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
+  margin-top: 2rem;
 `;

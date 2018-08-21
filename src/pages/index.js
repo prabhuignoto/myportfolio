@@ -68,7 +68,7 @@ export const pageQuery = graphql`
       }
     }
     designPicture: imageSharp(fluid: { originalName: { regex: "/design/"}}) {
-      sizes(maxWidth: 1350) {
+      sizes(maxWidth: 1800) {
         ...GatsbyImageSharpSizes
       }
     }

@@ -33,6 +33,8 @@ import LinkedinSVG from '../assets/linkedin-brands.svg';
 import ChevronDownSVG from '../assets/chevron-circle-down-solid.svg';
 import TwitterSVG from '../assets/twitter-brands.svg';
 import MailSVG from '../assets/envelope-solid.svg';
+import At from '../assets/at-solid.svg';
+import Mobile from '../assets/phone-solid.svg';
 
 export {
   VueSVG,
@@ -69,4 +71,6 @@ export {
   ChevronDownSVG,
   TwitterSVG,
   MailSVG,
+  At,
+  Mobile,
 };

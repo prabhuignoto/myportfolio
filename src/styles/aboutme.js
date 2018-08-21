@@ -16,18 +16,12 @@ export const About = Styled.div`
 
 export const Mark = Styled.span`
   position: relative;
-  /* background: #fee7e1; */
-  /* &::after {
-    content: '';
-    display: block;
-    width: 95%;
-    height: 1px;
-    background: #635655;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-  } */
-  /* margin: 0rem 0.1rem; */
-  padding: 0.25rem 0.5rem;
-  border-radius: 2px;
+`;
+
+export const ImageWrapper = Styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 3rem;
 `;

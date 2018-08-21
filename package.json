@@ -5,6 +5,7 @@
   "author": "prabhu.m.murthy@gmail.com",
   "dependencies": {
     "@types/luxon": "^1.2.2",
+    "enzyme-adapter-react-16": "^1.2.0",
     "gatsby": "next",
     "gatsby-image": "next",
     "gatsby-plugin-google-analytics": "^1.0.31",
@@ -12,6 +13,7 @@
     "gatsby-plugin-netlify-cache": "^0.1.0",
     "gatsby-plugin-offline": "^1.0.18",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-svg": "^1.1.1",
     "gatsby-plugin-sass": "^2.0.0-rc.0",
     "gatsby-plugin-sharp": "next",
     "gatsby-source-filesystem": "^1.5.39",
@@ -38,15 +40,12 @@
     "cover": "jest && codecov -t ef54bcef-8695-43f7-b161-bf18566e8fca"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
     "@types/enzyme": "^3.1.13",
-    "@types/enzyme-adapter-react-15": "^1.0.3",
     "@types/enzyme-to-json": "^1.5.2",
     "@types/jest": "^23.3.1",
     "@types/react": "^16.4.7",
     "codecov": "^3.0.4",
     "enzyme": "^3.4.3",
-    "enzyme-adapter-react-15": "^1.0.6",
     "enzyme-to-json": "^3.3.4",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "17.0.0",

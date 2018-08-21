@@ -4,7 +4,7 @@ import { string } from 'prop-types';
 
 const Header = Styled.header`
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
