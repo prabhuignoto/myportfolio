@@ -22,6 +22,5 @@ module.exports = {
   'gatsby-plugin-sharp',
   'gatsby-plugin-offline',
   'gatsby-plugin-manifest',
-  'gatsby-plugin-netlify-cache',
   ],
 };
