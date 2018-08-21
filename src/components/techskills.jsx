@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
-import ScrollReveal from 'scrollreveal';
+// import ScrollReveal from 'scrollreveal';
 import { Wrapper, ImageWrapper } from '../styles/techskills';
 import SectionHeader from './section-header';
 import Description from './description';
@@ -13,12 +13,12 @@ export default class techskills extends Component {
   }
 
   componentDidMount() {
-    ScrollReveal().reveal(this.ref.current, {
-      delay: 200,
-      duration: 1000,
-      scale: 0.85,
-      opacity: 0.5,
-    });
+    // ScrollReveal().reveal(this.ref.current, {
+    //   delay: 200,
+    //   duration: 1000,
+    //   scale: 0.85,
+    //   opacity: 0.5,
+    // });
   }
 
   render() {

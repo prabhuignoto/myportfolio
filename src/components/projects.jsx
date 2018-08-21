@@ -3,7 +3,7 @@ import Image from 'gatsby-image';
 import {
   shape, string, arrayOf, any, number,
 } from 'prop-types';
-import ScrollReveal from 'scrollreveal';
+// import ScrollReveal from 'scrollreveal';
 import BuiltWith from './builtwith';
 import SectionHeader from './section-header';
 import Description from './description';
@@ -47,16 +47,16 @@ export default class Projects extends Component {
   }
 
   componentDidMount() {
-    try {
-      ScrollReveal().reveal(this.ref.current, {
-        delay: 200,
-        duration: 1000,
-        scale: 0.85,
-        opacity: 0.5,
-      });
-    } catch (ex) {
-      console.error(ex);
-    }
+    // try {
+    //   ScrollReveal().reveal(this.ref.current, {
+    //     delay: 200,
+    //     duration: 1000,
+    //     scale: 0.85,
+    //     opacity: 0.5,
+    //   });
+    // } catch (ex) {
+    //   console.error(ex);
+    // }
   }
 
   render() {

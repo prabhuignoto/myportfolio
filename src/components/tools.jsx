@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollReveal from 'scrollreveal';
+// import ScrollReveal from 'scrollreveal';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
@@ -13,12 +13,12 @@ export default class Skills extends Component {
   }
 
   componentDidMount() {
-    ScrollReveal().reveal(this.ref.current, {
-      delay: 200,
-      duration: 1000,
-      scale: 0.85,
-      opacity: 0.5,
-    });
+    // ScrollReveal().reveal(this.ref.current, {
+    //   delay: 200,
+    //   duration: 1000,
+    //   scale: 0.85,
+    //   opacity: 0.5,
+    // });
   }
 
   render() {
