@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import Hero from '../components/hero';
 import Experience from '../components/experience';
 import Projects from '../components/projects';
@@ -7,7 +8,7 @@ import Tools from '../components/tools';
 import Footer from '../components/footer';
 import ProjectsData from '../data/projects';
 import Skills from '../components/techskills';
-
+import Layout from '../components/layout';
 
 export default class Index extends Component {
   constructor(props) {
@@ -30,7 +31,7 @@ export default class Index extends Component {
       logo: this.props.data[x.logo],
     }));
     return (
-      <div>
+      <Layout>
         <Hero heroImage={heroImage} profileImage={profileImage} prabhuLogo={prabhuLogo} />
         <Projects data={projectsData} />
         <Skills designPicture={designPicture} />
@@ -42,7 +43,7 @@ export default class Index extends Component {
           jpmcLogo={jpmcLogo}
         />
         <Footer />
-      </div>
+      </Layout>
     );
   }
 }
@@ -56,77 +57,77 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: imageSharp(id: { regex: "/red/"} ) {
+    heroImage: imageSharp(fluid:{ originalName:{ regex: "/red/"}} ) {
       sizes(maxWidth: 4000) {
         ...GatsbyImageSharpSizes
       }
     }
-    prabhuLogo: imageSharp(id: { regex: "/prabhu/"}) {
+    prabhuLogo: imageSharp(fluid:{ originalName: { regex: "/prabhu/"} }) {
       sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
-    designPicture: imageSharp(id: { regex: "/design/"}) {
+    designPicture: imageSharp(fluid: { originalName: { regex: "/design/"}}) {
       sizes(maxWidth: 1350) {
         ...GatsbyImageSharpSizes
       }
     }
-    toolImage: imageSharp(id: { regex: "/andyone/"}) {
+    toolImage: imageSharp(fluid: {originalName: { regex: "/andyone/"}}) {
       sizes(maxWidth: 2000) {
         ...GatsbyImageSharpSizes
       }
     }
-    profileImage: imageSharp(id: { regex: "/profile-pic/"}) {
+    profileImage: imageSharp(fluid: {originalName: { regex: "/profile-pic/"}}) {
       sizes(maxWidth: 337) {
         ...GatsbyImageSharpSizes
       }
     }
-    honeywellLogo: imageSharp(id: { regex: "/honeywell/"}) {
+    honeywellLogo: imageSharp(fluid: {originalName: { regex: "/honeywell/"}}) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    juniperLogo: imageSharp(id: { regex: "/juniper/"}) {
+    juniperLogo: imageSharp(fluid: { originalName: { regex: "/juniper/"}}) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    techmLogo: imageSharp(id: { regex: "/techm/"}) {
+    techmLogo: imageSharp(fluid: {originalName: { regex: "/techm/"}}) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    jpmcLogo: imageSharp(id: { regex: "/jpmc/"}) {
+    jpmcLogo: imageSharp(fluid: {originalName: { regex: "/jpmc/"}}) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    newSquirrelLogo: imageSharp(id: { regex: "/newsquirrel-logo/"}) {
+    newSquirrelLogo: imageSharp(fluid: {originalName: { regex: "/newsquirrel-logo/"}}) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    newSquirrelMock: imageSharp(id: { regex: "/newsquirrel-mockup/"}) {
+    newSquirrelMock: imageSharp(fluid: {originalName: { regex: "/newsquirrel-mockup/"}}) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    nutrivueLogo: imageSharp(id: { regex: "/nutrivue-logo/"}) {
+    nutrivueLogo: imageSharp(fluid: {originalName: { regex: "/nutrivue-logo/"}}) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    nutrivueMock: imageSharp(id: { regex: "/nutrivue-mockup/"}) {
+    nutrivueMock: imageSharp(fluid: {originalName: { regex: "/nutrivue-mockup/"}}) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    weathernowLogo: imageSharp(id: { regex: "/weathernow-logo/"}) {
+    weathernowLogo: imageSharp(fluid: {originalName: { regex: "/weathernow-logo/"}}) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    weathernowMock: imageSharp(id: { regex: "/weathernow-mock/"}) {
+    weathernowMock: imageSharp(fluid: {originalName: { regex: "/weathernow-mock/"}}) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }

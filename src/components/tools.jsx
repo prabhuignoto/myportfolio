@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollReveal from 'scrollreveal';
 import SectionHeader from './section-header';
 import Skillbox from '../styles/skills';
 import * as Data from '../data/skillsData';
@@ -8,11 +9,11 @@ export default class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.ref = React.createRef();
   }
 
   componentDidMount() {
-    const sr = require('scrollreveal');
-    sr().reveal(this.refs.skillsContainer, {
+    ScrollReveal().reveal(this.ref.current, {
       delay: 200,
       duration: 1000,
       scale: 0.85,
@@ -23,7 +24,7 @@ export default class Skills extends Component {
   render() {
     return (
       <Container className="section" style={{ position: 'relative' }}>
-        <div className="container" ref="skillsContainer">
+        <div className="container" ref={this.ref}>
           <SectionHeader title="Tools &amp; Frameworks that I'm good at" color="#000" />
           <div className="tile is-ancestor" style={{ marginTop: '1rem' }}>
             <div className="tile is-vertical is-8">

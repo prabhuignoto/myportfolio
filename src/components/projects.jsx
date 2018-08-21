@@ -3,10 +3,10 @@ import Image from 'gatsby-image';
 import {
   shape, string, arrayOf, any, number,
 } from 'prop-types';
+import ScrollReveal from 'scrollreveal';
 import BuiltWith from './builtwith';
 import SectionHeader from './section-header';
 import Description from './description';
-
 
 import {
   Wrapper,
@@ -43,12 +43,12 @@ export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.ref = React.createRef();
   }
 
   componentDidMount() {
     try {
-      const sr = require('scrollreveal');
-      sr().reveal(this.refs.projectsContainer, {
+      ScrollReveal().reveal(this.ref.current, {
         delay: 200,
         duration: 1000,
         scale: 0.85,
@@ -62,7 +62,7 @@ export default class Projects extends Component {
   render() {
     const { data } = this.props;
     return (
-      <div className="section projects" ref="projectsContainer">
+      <div className="section projects" ref={this.ref}>
         <Wrapper className="container">
           <SectionHeader title="My Recent Work" color="#404040" />
           <Description text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works" color="#685b59" />

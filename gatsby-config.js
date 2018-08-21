@@ -16,7 +16,6 @@ module.exports = {
       head: true,
     },
   },
-  'gatsby-plugin-nprogress',
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-sass',
   'gatsby-transformer-sharp',
