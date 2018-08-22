@@ -16,6 +16,7 @@ export const About = Styled.div`
 
 export const Mark = Styled.span`
   position: relative;
+  margin: 0 0.25rem;
 `;
 
 export const ImageWrapper = Styled.div`
