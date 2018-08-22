@@ -9,18 +9,10 @@ import techmLogo from '../mocks/techm-logo.json';
 
 it('Experience renders correctly', () => {
   const Wrapper = shallow(<Experience
-    juniperLogo={
-    { sizes: juniperLogo }
-  }
-    jpmcLogo={
-    { sizes: jpmcLogo }
-  }
-    honeywellLogo={
-    { sizes: honeywellLogo }
-  }
-    techmLogo={
-    { sizes: techmLogo }
-  }
+    juniperLogo={juniperLogo}
+    jpmcLogo={jpmcLogo}
+    honeywellLogo={honeywellLogo}
+    techmLogo={techmLogo}
   />);
   expect(toJSON(Wrapper)).toMatchSnapshot();
 });

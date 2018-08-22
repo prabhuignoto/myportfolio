@@ -5,9 +5,6 @@ import Profile from '../../components/profile';
 import ProfileImage from '../mocks/profile-image.json';
 
 it('Profile view renders correctly', () => {
-  const wrapper = shallow(<Profile profileImage={{
-    sizes: ProfileImage,
-  }}
-  />);
+  const wrapper = shallow(<Profile profileImage={ProfileImage} />);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });

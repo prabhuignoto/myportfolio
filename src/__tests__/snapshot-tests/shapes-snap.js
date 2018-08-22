@@ -5,9 +5,6 @@ import Shapes from '../../components/shapes';
 import HeroImage from '../mocks/hero-image.json';
 
 it('Renders Shape correctly', () => {
-  const wrapper = shallow(<Shapes heroImage={{
-    sizes: HeroImage,
-  }}
-  />);
+  const wrapper = shallow(<Shapes heroImage={HeroImage} />);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });

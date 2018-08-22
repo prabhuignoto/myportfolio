@@ -8,15 +8,9 @@ import HeroImage from '../mocks/hero-image.json';
 
 it('Renders Hero correctly', () => {
   const wrapper = shallow(<Hero
-    prabhuLogo={
-    { sizes: PrabhuLogo }
-  }
-    profileImage={
-    { sizes: ProfileImage }
-  }
-    heroImage={
-    { sizes: HeroImage }
-  }
+    prabhuLogo={PrabhuLogo}
+    profileImage={ProfileImage}
+    heroImage={HeroImage}
   />);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });
