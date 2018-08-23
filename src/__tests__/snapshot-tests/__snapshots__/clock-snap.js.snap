@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render clock correctly 1`] = `
+<styled.div
+  className="clock-wrapper"
+>
+  <styled.span>
+    Aug 23, 2018, 12:43 PM
+  </styled.span>
+</styled.div>
+`;
