@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/9</span>
+        <span class='fraction'>0/13</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/9</span>
+        <span class='fraction'>0/13</span>
       </div>
     </div>
     <p class="quiet">
@@ -88,12 +88,23 @@
 <a name='L40'></a><a href='#L40'>40</a>
 <a name='L41'></a><a href='#L41'>41</a>
 <a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -113,6 +124,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -126,6 +138,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -133,11 +151,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { Component } from 'react';</span>
 <span class="cstat-no" title="statement not covered" >import Img from 'gatsby-image';</span>
 // import ScrollReveal from 'scrollreveal';
+<span class="cstat-no" title="statement not covered" >import { shape } from 'prop-types';</span>
 <span class="cstat-no" title="statement not covered" >import { Wrapper, ImageWrapper } from '../styles/techskills';</span>
 <span class="cstat-no" title="statement not covered" >import SectionHeader from './section-header';</span>
 <span class="cstat-no" title="statement not covered" >import Description from './description';</span>
+<span class="cstat-no" title="statement not covered" >import ImgType from '../types';</span>
 &nbsp;
-export default class techskills extends Component {
+class TechSkills extends Component {
 <span class="fstat-no" title="function not covered" >  constructor(</span>props) <span class="cstat-no" title="statement not covered" >{</span>
     super(props);
 <span class="cstat-no" title="statement not covered" >    this.state = {};</span>
@@ -154,6 +174,7 @@ export default class techskills extends Component {
   }
 &nbsp;
   render() {
+    const { designPicture } = <span class="cstat-no" title="statement not covered" >this.props;</span>
 <span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;Wrapper className="section"&gt;
         &lt;div className="container" ref={this.ref} style={{ width: '100%' }}&gt;
@@ -161,7 +182,7 @@ export default class techskills extends Component {
           &lt;Description text="Building Applications with strong foundations is very essential for any robust web applications. I am skilled in these areas and i meticulously follow these principles during the design and development." color="#746764" /&gt;
           &lt;ImageWrapper&gt;
             &lt;Img
-              sizes={this.props.designPicture.sizes}
+              sizes={designPicture.sizes}
               className="design-image-wrapper"
               outerWrapperClassName="design-image-outer-wrapper"
               imgStyle={{ objectFit: 'contain' }}
@@ -172,13 +193,19 @@ export default class techskills extends Component {
     );
   }
 }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >TechSkills.propTypes = {</span>
+  designPicture: shape(ImgType).isRequired,
+};
+&nbsp;
+export default TechSkills;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Aug 23 2018 12:43:17 GMT+0530 (India Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Aug 23 2018 13:06:31 GMT+0530 (India Standard Time)
 </div>
 </div>
 <script src="prettify.js"></script>

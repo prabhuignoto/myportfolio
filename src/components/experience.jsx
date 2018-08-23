@@ -1,11 +1,12 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import { any } from 'prop-types';
+import { shape } from 'prop-types';
 import SectionHeader from './section-header';
 import {
   Wrapper, Company, Figure,
 } from '../styles/experience';
 import Description from './description';
+import ImgType from '../types';
 
 const ImgStyle = {
   filter: 'opacity(0.75) grayscale(99%)',
@@ -55,10 +56,10 @@ const Experience = ({
 );
 
 Experience.propTypes = {
-  juniperLogo: any,
-  honeywellLogo: any,
-  jpmcLogo: any,
-  techmLogo: any,
+  juniperLogo: shape(ImgType).isRequired,
+  honeywellLogo: shape(ImgType).isRequired,
+  jpmcLogo: shape(ImgType).isRequired,
+  techmLogo: shape(ImgType).isRequired,
 };
 
 export default Experience;

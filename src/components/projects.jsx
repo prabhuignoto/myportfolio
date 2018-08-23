@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Image from 'gatsby-image';
 import {
-  shape, string, arrayOf, any, number,
+  shape, string, arrayOf, number,
 } from 'prop-types';
 // import ScrollReveal from 'scrollreveal';
 import BuiltWith from './builtwith';
 import SectionHeader from './section-header';
 import Description from './description';
+import ImgType from '../types';
 
 import {
   Wrapper,
@@ -127,11 +128,11 @@ Projects.propTypes = {
   data: arrayOf(shape({
     id: number,
     name: string,
-    mock: any,
+    mock: shape(ImgType),
     tech: arrayOf(string),
     git: string,
     description: string,
     appUrl: string,
-    logo: any,
+    logo: shape(ImgType),
   })).isRequired,
 };

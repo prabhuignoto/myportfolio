@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
-import { any } from 'prop-types';
+import { shape } from 'prop-types';
 import { Shapes, Shape } from '../styles/shape';
+import ImgType from '../types';
 
 const sectionData = [
   {
@@ -38,7 +39,7 @@ const ShapesView = ({ heroImage }) => (
 );
 
 ShapesView.propTypes = {
-  heroImage: any,
+  heroImage: shape(ImgType).isRequired,
 };
 
 export default ShapesView;
