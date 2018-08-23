@@ -5,7 +5,7 @@ exports[`Render clock correctly 1`] = `
   className="clock-wrapper"
 >
   <styled.span>
-    Aug 23, 2018, 1:00 PM
+    Aug 23, 2018, 1:23 PM
   </styled.span>
 </styled.div>
 `;

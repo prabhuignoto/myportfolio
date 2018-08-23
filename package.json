@@ -37,7 +37,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "jest",
-    "cover": "jest && codecov -t ef54bcef-8695-43f7-b161-bf18566e8fca"
+    "cover": "jest -u && codecov -t ef54bcef-8695-43f7-b161-bf18566e8fca"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.13",
