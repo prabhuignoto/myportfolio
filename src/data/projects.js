@@ -7,7 +7,7 @@ export default [
     git: 'https://github.com/prabhuignoto/react-dark-weather',
     description:
       'A Beautiful Weather app that displays weather conditions in real time.',
-    appUrl: '',
+    appUrl: 'https://darkweather.netlify.com',
     logo: 'weathernowLogo',
   },
   {
