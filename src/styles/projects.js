@@ -7,7 +7,7 @@ const Section = Styled.div`
 `;
 
 const Wrapper = Styled.div`
-  padding: 3rem 3rem;
+  /* padding: 3rem 3rem; */
   font-family: 'Lato', sans-serif;
   z-index:1;
 `;

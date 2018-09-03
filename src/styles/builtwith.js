@@ -10,7 +10,6 @@ export const Wrapper = Styled.div`
   align-items: center;
   justify-content: flex-start;
   margin: 0.5rem;
-  margin-right: auto;
   font-size: 1rem;
   flex-wrap: wrap;
 `;
