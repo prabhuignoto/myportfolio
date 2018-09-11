@@ -32,3 +32,4 @@ export { default as StackSVG } from '../assets/stack-overflow-brands.svg';
 export { default as LinkedinSVG } from '../assets/linkedin-brands.svg';
 export { default as TwitterSVG } from '../assets/twitter-brands.svg';
 export { default as At } from '../assets/at-solid.svg';
+export { default as GraphqlSVG } from '../assets/graphql.svg';

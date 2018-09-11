@@ -14,15 +14,6 @@ class TechSkills extends Component {
     this.ref = React.createRef();
   }
 
-  componentDidMount() {
-    // ScrollReveal().reveal(this.ref.current, {
-    //   delay: 200,
-    //   duration: 1000,
-    //   scale: 0.85,
-    //   opacity: 0.5,
-    // });
-  }
-
   render() {
     const { designPicture } = this.props;
     return (

@@ -23,6 +23,15 @@ export const reactTools = [{
   name: 'React-Router',
   icon: 'ReactRouterSVG',
 }, {
+  name: 'Apollo',
+  icon: '',
+}, {
+  name: 'GraphQL',
+  icon: 'GraphqlSVG',
+}, {
+  name: 'Prisma',
+  icon: '',
+}, {
   name: 'Vuex',
   icon: 'VueSVG',
 }, {
