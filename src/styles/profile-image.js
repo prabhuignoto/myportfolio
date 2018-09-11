@@ -1,24 +1,24 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-export const ImageWrapper = Styled.div`
+export const ImageWrapper = Styled('div')`
   height: 12rem;
   width: 12rem;
   border-radius: 50%;
 `;
 
-export const IconWrapper = Styled.div`
+export const IconWrapper = Styled('div')`
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 `;
 
-export const Icon = Styled.img`
+export const Icon = Styled('img')`
   max-height: 100%;
   max-width: 100%;
 `;
 
-export const Links = Styled.ul`
+export const Links = Styled('ul')`
   margin: 0.1rem;
   padding: 1rem;
   display: flex;
@@ -28,7 +28,7 @@ export const Links = Styled.ul`
   list-style: none;
 `;
 
-export const Link = Styled.li`
+export const Link = Styled('li')`
   width: 100%;
   font-size: 1rem;
   margin: 0;
@@ -47,7 +47,7 @@ export const Link = Styled.li`
   /* background: #d5d4d3; */
 `;
 
-export const Wrapper = Styled.div`
+export const Wrapper = Styled('div')`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,10 +1,10 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 import ReactSVG from '../assets/react.svg';
 import TypeScript from '../assets/typescript.svg';
 import VueSVG from '../assets/vue.svg';
 import Redux from '../assets/redux.svg';
 
-export const Wrapper = Styled.div`
+export const Wrapper = Styled('div')`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,21 +14,21 @@ export const Wrapper = Styled.div`
   flex-wrap: wrap;
 `;
 
-export const ItemWrapper = Styled.div`
+export const ItemWrapper = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-left: 1rem;
 `;
 
-export const ItemLabel = Styled.span`
+export const ItemLabel = Styled('span')`
   display: block;
   text-transform: capitalize;
   margin-left: 0.25rem;
   font-size: 0.9rem;
 `;
 
-export const Item = Styled.div`
+export const Item = Styled('div')`
   padding: 0.75rem;
   width: 0.75rem;
   height: 0.75rem;

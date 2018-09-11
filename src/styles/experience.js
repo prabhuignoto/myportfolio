@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-export const Wrapper = Styled.div`
+export const Wrapper = Styled('div')`
 display: flex;
 min-height: 35rem;
 justify-content: center;
@@ -8,7 +8,7 @@ align-items: flex-start;
 margin-top: 2rem;
 `;
 
-export const Company = Styled.div`
+export const Company = Styled('div')`
 display: flex;
 position: relative;
 align-items: center;
@@ -28,7 +28,7 @@ justify-content: center;
 }
 `;
 
-export const Figure = Styled.figure`
+export const Figure = Styled('figure')`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@ export const Figure = Styled.figure`
   width: 10rem;
 `;
 
-export const Text = Styled.p`
+export const Text = Styled('p')`
   font-size: 1.5rem;
   font-weight: 500;
   width: 100%;

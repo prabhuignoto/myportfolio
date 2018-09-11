@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 import Img from 'gatsby-image';
 import { object } from 'prop-types';
 import NavBar from './navbar';
@@ -9,11 +9,11 @@ import Profile from './profile';
 import AboutMe from './aboutme';
 
 
-const Hero = Styled.section`
+const Hero = Styled('section')`
   position: relative;
 `;
 
-const HeroBackdrop = Styled.div`
+const HeroBackdrop = Styled('div')`
   position: absolute;
   top: -1rem;
   left: 0;

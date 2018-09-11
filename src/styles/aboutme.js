@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-export const About = Styled.div`
+export const About = Styled('div')`
   z-index: 150;
   color: #000;
   padding: 2rem;
@@ -14,12 +14,12 @@ export const About = Styled.div`
   font-family: 'Comfortaa',sans-serif;
 `;
 
-export const Mark = Styled.span`
+export const Mark = Styled('span')`
   position: relative;
   margin: 0 0.25rem;
 `;
 
-export const ImageWrapper = Styled.div`
+export const ImageWrapper = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;

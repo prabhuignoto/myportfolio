@@ -1,10 +1,10 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as Images from './images';
 import { uiFworkBoxes } from '../data/skillsData';
 
-const List = Styled.ul`
+const List = Styled('ul')`
   /* width: 100%; */
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@ const List = Styled.ul`
   flex-direction: column;
 `;
 
-const ListItem = Styled.li`
+const ListItem = Styled('li')`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@ const ListItem = Styled.li`
   padding: 0.5rem;
 `;
 
-const ImgWrapper = Styled.div`
+const ImgWrapper = Styled('div')`
   width: 40px;
   height: 40px;
   margin-right: 1rem;
@@ -30,24 +30,24 @@ const ImgWrapper = Styled.div`
   justify-content: center;
 `;
 
-const Img = Styled.img`
+const Img = Styled('img')`
   max-height: 100%;
   max-width: 100%;
 `;
 
-const ListItemText = Styled.span`
+const ListItemText = Styled('span')`
   display: block;
   color: #000;
   font-size: 1rem;
 `;
 
-const Hdr = Styled.header`
+const Hdr = Styled('header')`
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   font-weight: 500;
 `;
 
-const Wrapper = Styled.div`
+const Wrapper = Styled('div')`
   height: 100%;
   display: flex;
   align-items: center;

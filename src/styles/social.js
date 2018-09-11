@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-const Wrapper = Styled.div`
+const Wrapper = Styled('div')`
   display: flex;
   align-items: center;
   flex-direction: ${p => (p.direction ? p.direction : 'row')};
@@ -12,7 +12,7 @@ const Wrapper = Styled.div`
   height: 100%;
 `;
 
-const Item = Styled.div`
+const Item = Styled('div')`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,7 +22,7 @@ const Item = Styled.div`
   }
 `;
 
-const IconWrapper = Styled.a`
+const IconWrapper = Styled('a')`
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,7 @@ const IconWrapper = Styled.a`
   justify-content: center;
 `;
 
-const Icon = Styled.i`
+const Icon = Styled('i')`
   display: block;
   width: 3rem;
   height: 3rem;
@@ -46,7 +46,7 @@ const Icon = Styled.i`
   cursor: pointer;
 `;
 
-const Label = Styled.span`
+const Label = Styled('span')`
   display: block;
   font-size: 0.8rem;
   color: #13293d;

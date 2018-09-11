@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-const Content = Styled.div`
+const Content = Styled('div')`
   position: relative;
   box-shadow: 0 0 13px 5px rgba(0,0,0,0.2);
   &::before {
@@ -23,7 +23,7 @@ const Content = Styled.div`
 `;
 
 
-const Container = Styled.section`
+const Container = Styled('section')`
   min-height: 80vh;
   padding: 0;
 `;

@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-export const Footer = Styled.footer`
+export const Footer = Styled('footer')`
   background: #d8d8d7;
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@ export const Footer = Styled.footer`
   padding: 2.5rem 1rem;
 `;
 
-export const FooterWrapper = Styled.div`
+export const FooterWrapper = Styled('div')`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,7 +16,7 @@ export const FooterWrapper = Styled.div`
   height: 100%;
 `;
 
-export const Link = Styled.a`
+export const Link = Styled('a')`
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@ export const Link = Styled.a`
   margin-left: 0.25rem;
 `;
 
-export const Text = Styled.div`
+export const Text = Styled('div')`
   display: block;
   white-space: nowrap;
   font-size: 0.75rem;
@@ -34,7 +34,7 @@ export const Text = Styled.div`
   margin: 0 0.25rem;
 `;
 
-export const GatsbyWrapper = Styled.div`
+export const GatsbyWrapper = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ export const GatsbyWrapper = Styled.div`
   /* margin-left: 2rem; */
 `;
 
-export const Copyright = Styled.div`
+export const Copyright = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;

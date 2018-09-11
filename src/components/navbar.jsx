@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
 import { any } from 'prop-types';
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 import Social from './social';
 
-const LogoWrapper = Styled.div`
+const LogoWrapper = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;

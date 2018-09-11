@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-const Wrapper = Styled.div`
+const Wrapper = Styled('div')`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,7 +9,7 @@ const Wrapper = Styled.div`
   margin: 0.5rem;
 `;
 
-const TimeComponent = Styled.span`
+const TimeComponent = Styled('span')`
   display: block;
   padding: 0.25rem;
   color: #000;

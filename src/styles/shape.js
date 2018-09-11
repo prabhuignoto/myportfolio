@@ -1,7 +1,7 @@
 import Styled, {
-} from 'styled-components';
+} from 'react-emotion';
 
-const Shapes = Styled.div`
+export const Shapes = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@ const Shapes = Styled.div`
   margin-right: auto;
 `;
 
-const ShapeContent = Styled.div`
+export const ShapeContent = Styled('div')`
   transform: skew(0deg);
   color: #fff;
   font-size: 1.5rem;
@@ -33,7 +33,7 @@ const ShapeContent = Styled.div`
 `;
 
 
-const Shape = Styled.div`
+export const Shape = Styled('div')`
   height: 100%;
   width: ${(p) => {
     switch (p.type) {
@@ -46,9 +46,3 @@ const Shape = Styled.div`
   box-shadow: 0 0 10px 1 rgba(0,0,0,0.5);
   /* filter: blur(2px) sepia(0.5) brightness(1.1) scale(1.1); */
 `;
-
-export {
-  Shapes,
-  Shape,
-  ShapeContent,
-};

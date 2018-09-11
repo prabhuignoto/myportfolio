@@ -1,8 +1,8 @@
 import React from 'react';
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 import { string } from 'prop-types';
 
-const Header = Styled.header`
+const Header = Styled('header')`
   width: 100%;
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;

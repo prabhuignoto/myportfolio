@@ -1,9 +1,9 @@
 import React from 'react';
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 import { string } from 'prop-types';
 
 
-const DescriptionWrapper = Styled.div`
+const DescriptionWrapper = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@ const DescriptionWrapper = Styled.div`
   padding: 1rem;
 `;
 
-const DescriptionContent = Styled.span`
+const DescriptionContent = Styled('span')`
   display: block;
   font-size: 1.35rem;
   font-family: 'Lato', sans-serif;

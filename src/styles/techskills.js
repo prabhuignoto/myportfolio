@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 
-export const Wrapper = Styled.ul`
+export const Wrapper = Styled('ul')`
   position: relative;
   margin-bottom: 6rem;
   display: flex;
@@ -9,7 +9,7 @@ export const Wrapper = Styled.ul`
   padding: 0;
 `;
 
-export const ItemWrapper = Styled.ul`
+export const ItemWrapper = Styled('ul')`
   width: 100%;
   list-style: none;
   margin: 1rem;
@@ -22,7 +22,7 @@ export const ItemWrapper = Styled.ul`
   z-index: 1;
 `;
 
-export const Item = Styled.li`
+export const Item = Styled('li')`
   width: 100%;
   height: 6.5rem;
   line-height: 5rem;
@@ -34,7 +34,7 @@ export const Item = Styled.li`
   cursor: pointer;
 `;
 
-export const Overlay = Styled.div`
+export const Overlay = Styled('div')`
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -44,7 +44,7 @@ export const Overlay = Styled.div`
   background: transparent;
 `;
 
-export const ImageWrapper = Styled.div`
+export const ImageWrapper = Styled('div')`
   display: block;
   width: 100%;
   height: 60vh;

@@ -1,18 +1,18 @@
-import Styled from 'styled-components';
+import Styled from 'react-emotion';
 import GitSVG from '../assets/github.svg';
 
-const Section = Styled.div`
+export const Section = Styled('div')`
   position: relative;
   padding: 0;
 `;
 
-const Wrapper = Styled.div`
+export const Wrapper = Styled('div')`
   /* padding: 3rem 3rem; */
   font-family: 'Lato', sans-serif;
   z-index:1;
 `;
 
-const Project = Styled.div`
+export const Project = Styled('div')`
   position: relative;
   margin-bottom: 2.5rem;
   box-shadow: 0px 0 10px 2px rgba(0,0,0,0.15);
@@ -32,7 +32,7 @@ const Project = Styled.div`
   }
 `;
 
-const GitLink = Styled.a`
+export const GitLink = Styled('a')`
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -42,7 +42,7 @@ const GitLink = Styled.a`
   /* margin-left: auto; */
 `;
 
-const GitIcon = Styled.i`
+export const GitIcon = Styled('i')`
   display: block;
   width: 25px;
   height: 25px;
@@ -53,16 +53,16 @@ const GitIcon = Styled.i`
   margin-bottom: 0.25rem;
 `;
 
-const GitIconText = Styled.span`
+export const GitIconText = Styled('span')`
   font-size: 0.85rem;
   margin-left: 0.5rem;
 `;
 
-const ImageWrapper = Styled.div`
+export const ImageWrapper = Styled('div')`
   width: 100%;
 `;
 
-const Img = Styled.div`
+export const Img = Styled('div')`
   width: 100%;
   height: 100%;
   background: url(${p => p.src});
@@ -71,7 +71,7 @@ const Img = Styled.div`
   background-position: 50%;
 `;
 
-const Figure = Styled.figure`
+export const Figure = Styled('figure')`
   /* width: 25rem; */
   width: auto;
   height: 23rem;
@@ -81,13 +81,13 @@ const Figure = Styled.figure`
   justify-content: center;
 `;
 
-const Footer = Styled.footer`
+export const Footer = Styled('footer')`
   width: 100%;
   padding: 0.5rem 0.25rem;
   border-top: none;
 `;
 
-const FooterWrapper = Styled.div`
+export const FooterWrapper = Styled('div')`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -96,7 +96,7 @@ const FooterWrapper = Styled.div`
   width: 100%;
 `;
 
-const ApplogoWrapper = Styled.figure`
+export const ApplogoWrapper = Styled('figure')`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,17 +104,17 @@ const ApplogoWrapper = Styled.figure`
   margin-top: 1rem;
 `;
 
-const AppLogo = Styled.img`
+export const AppLogo = Styled('img')`
   border-radius: 4px;
 `;
 
-const AppImageWrapper = Styled.div`
+export const AppImageWrapper = Styled('div')`
   display: block;
   height: 3rem;
   width: 14rem;
 `;
 
-const AppDescription = Styled.p`
+export const AppDescription = Styled('p')`
   font-size: 1rem;
   font-weight: 700;
   width: 100%;
@@ -124,28 +124,9 @@ const AppDescription = Styled.p`
   margin-top: 1rem;
 `;
 
-const CardContentWrapper = Styled.div`
+export const CardContentWrapper = Styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 `;
-
-export {
-  Wrapper,
-  Section,
-  AppLogo,
-  AppDescription,
-  CardContentWrapper,
-  ApplogoWrapper,
-  Footer,
-  Figure,
-  Img,
-  FooterWrapper,
-  Project,
-  ImageWrapper,
-  GitIconText,
-  GitIcon,
-  GitLink,
-  AppImageWrapper,
-};

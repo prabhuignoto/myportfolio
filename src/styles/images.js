@@ -1,72 +1,34 @@
 
-import VueSVG from '../assets/vue.svg';
-import ReduxSVG from '../assets/redux.svg';
-import SagaSVG from '../assets/redux-saga.svg';
-import ReactSVG from '../assets/react.svg';
-import ReactRouterSVG from '../assets/react-router.svg';
-import HTMLSVG from '../assets/html-5.svg';
-import CSS3SVG from '../assets/css3.svg';
-import GruntSVG from '../assets/grunt.svg';
-import GulpSVG from '../assets/gulp.svg';
-import WebpackSVG from '../assets/webpack.svg';
-import SassSVG from '../assets/sass-1.svg';
-import NodeSVG from '../assets/nodejs-icon.svg';
-import SailsSVG from '../assets/sails.svg';
-import ExpressSVG from '../assets/express-109.svg';
-import vsSVG from '../assets/visual-studio-code.svg';
-import atomSVG from '../assets/atom-4.svg';
-import jsSVG from '../assets/logo-javascript.svg';
-import tsSVG from '../assets/typescript.svg';
-import flowSVG from '../assets/flow.svg';
-import karmaSVG from '../assets/karma.svg';
-import jestSVG from '../assets/jest.svg';
-import MochaSVG from '../assets/mocha-1.svg';
-import GatsbySVG from '../assets/gatsby.svg';
-import NextSVG from '../assets/next.svg';
-import jquerySVG from '../assets/jquery-1.svg';
-import BulmaSVG from '../assets/bulma.svg';
-import HeartSVG from '../assets/heart-solid.svg';
-import CopyrightSVG from '../assets/copyright-regular.svg';
-import GithubSVG from '../assets/github-brands.svg';
-import StackSVG from '../assets/stack-overflow-brands.svg';
-import LinkedinSVG from '../assets/linkedin-brands.svg';
-import TwitterSVG from '../assets/twitter-brands.svg';
-import At from '../assets/at-solid.svg';
-
-export {
-  VueSVG,
-  ReduxSVG,
-  SagaSVG,
-  ReactSVG,
-  ReactRouterSVG,
-  HTMLSVG,
-  CSS3SVG,
-  GruntSVG,
-  GulpSVG,
-  WebpackSVG,
-  SassSVG,
-  NodeSVG,
-  SailsSVG,
-  ExpressSVG,
-  vsSVG,
-  atomSVG,
-  jsSVG,
-  tsSVG,
-  flowSVG,
-  karmaSVG,
-  jestSVG,
-  MochaSVG,
-  GatsbySVG,
-  NextSVG,
-  BulmaSVG,
-  jquerySVG,
-  HeartSVG,
-  CopyrightSVG,
-  GithubSVG,
-  StackSVG,
-  LinkedinSVG,
-  ChevronDownSVG,
-  TwitterSVG,
-  MailSVG,
-  At,
-};
+export { default as VueSVG } from '../assets/vue.svg';
+export { default as ReduxSVG } from '../assets/redux.svg';
+export { default as SagaSVG } from '../assets/redux-saga.svg';
+export { default as ReactSVG } from '../assets/react.svg';
+export { default as ReactRouterSVG } from '../assets/react-router.svg';
+export { default as HTMLSVG } from '../assets/html-5.svg';
+export { default as CSS3SVG } from '../assets/css3.svg';
+export { default as GruntSVG } from '../assets/grunt.svg';
+export { default as GulpSVG } from '../assets/gulp.svg';
+export { default as WebpackSVG } from '../assets/webpack.svg';
+export { default as SassSVG } from '../assets/sass-1.svg';
+export { default as NodeSVG } from '../assets/nodejs-icon.svg';
+export { default as SailsSVG } from '../assets/sails.svg';
+export { default as ExpressSVG } from '../assets/express-109.svg';
+export { default as vsSVG } from '../assets/visual-studio-code.svg';
+export { default as atomSVG } from '../assets/atom-4.svg';
+export { default as jsSVG } from '../assets/logo-javascript.svg';
+export { default as tsSVG } from '../assets/typescript.svg';
+export { default as flowSVG } from '../assets/flow.svg';
+export { default as karmaSVG } from '../assets/karma.svg';
+export { default as jestSVG } from '../assets/jest.svg';
+export { default as MochaSVG } from '../assets/mocha-1.svg';
+export { default as GatsbySVG } from '../assets/gatsby.svg';
+export { default as NextSVG } from '../assets/next.svg';
+export { default as jquerySVG } from '../assets/jquery-1.svg';
+export { default as BulmaSVG } from '../assets/bulma.svg';
+export { default as HeartSVG } from '../assets/heart-solid.svg';
+export { default as CopyrightSVG } from '../assets/copyright-regular.svg';
+export { default as GithubSVG } from '../assets/github-brands.svg';
+export { default as StackSVG } from '../assets/stack-overflow-brands.svg';
+export { default as LinkedinSVG } from '../assets/linkedin-brands.svg';
+export { default as TwitterSVG } from '../assets/twitter-brands.svg';
+export { default as At } from '../assets/at-solid.svg';
