@@ -729,9 +729,9 @@ pre tt:after {
 }
 
 .shape-image-wrapper {
-  filter: blur(1px) sepia(0.1) brightness(1.25);
+  filter: blur(3px) sepia(0.1) brightness(1.25);
   transform: scale(1.01);
-  clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
+  /* clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%); */
   top: -1rem;
   position: absolute;
 }
@@ -746,7 +746,7 @@ pre tt:after {
 }
 
 .tool-image-outer-wrapper-2 {
-  clip-path: polygon(0 0, 64% 0, 100% 100%, 28% 100%);
+  /* clip-path: polygon(0 0, 64% 0, 100% 100%, 28% 100%); */
 }
 
 .tool-image-outer-wrapper {
