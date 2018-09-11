@@ -1,7 +1,4 @@
 import Styled from 'styled-components';
-import Linkedin from '../assets/linkedin-icon.svg';
-import Github from '../assets/github-octocat.svg';
-import Overflow from '../assets/stackoverflow-com.svg';
 
 const Wrapper = Styled.div`
   display: flex;
@@ -37,16 +34,6 @@ const Icon = Styled.i`
   display: block;
   width: 3rem;
   height: 3rem;
-  background: url(${(p) => {
-    if (p.type === 'linkedin') {
-      return Linkedin;
-    } if (p.type === 'github') {
-      return Github;
-    } if (p.type === 'stack') {
-      return Overflow;
-    }
-    return '';
-  }});
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: ${(p) => {
