@@ -39,6 +39,7 @@ const ListItemText = Styled('span')`
   display: block;
   color: #000;
   font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
 `;
 
 const Hdr = Styled('header')`

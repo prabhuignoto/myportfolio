@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
-// import ScrollReveal from 'scrollreveal';
+import ScrollReveal from 'scrollreveal';
 import { shape } from 'prop-types';
 import { Wrapper, ImageWrapper } from '../styles/techskills';
 import SectionHeader from './section-header';
@@ -12,6 +12,15 @@ class TechSkills extends Component {
     super(props);
     this.state = {};
     this.ref = React.createRef();
+  }
+
+  componentDidMount() {
+    ScrollReveal().reveal(this.ref.current, {
+      delay: 200,
+      duration: 1000,
+      scale: 0.85,
+      opacity: 0.5,
+    });
   }
 
   render() {

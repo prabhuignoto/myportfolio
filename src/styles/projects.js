@@ -44,8 +44,8 @@ export const GitLink = Styled('a')`
 
 export const GitIcon = Styled('i')`
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   background: url(${GitSVG});
   background-repeat: no-repeat;
   background-size: contain;
