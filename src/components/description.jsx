@@ -15,7 +15,7 @@ const DescriptionWrapper = Styled('div')`
 const DescriptionContent = Styled('span')`
   display: block;
   font-size: 1.35rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: ${p => (p.color ? p.color : '#fff')};
 `;

@@ -24,12 +24,12 @@ export const Tagline = Styled('ul')`
 
 export const TaglineItem = Styled('li')`
   margin: 0.5rem 2rem;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 500;
   position: relative;
   color:  #000;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
   display: flex;

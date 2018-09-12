@@ -25,7 +25,6 @@ import {
   AppImageWrapper,
 } from '../styles/projects';
 
-
 const gatsbyImgStyle = {
   maxHeight: '100%',
   maxWidth: '100%',
@@ -38,7 +37,6 @@ const gatsbyImgStyle = {
   marginLeft: 'auto',
   marginRight: 'auto',
 };
-
 
 export default class Projects extends Component {
   constructor(props) {
@@ -53,14 +51,27 @@ export default class Projects extends Component {
       <div className="section projects" ref={this.ref}>
         <Wrapper className="container">
           <SectionHeader title="My Recent Work" color="#404040" />
-          <Description text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works" color="#746764" />
+          <Description
+            text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works"
+            color="#746764"
+          />
           <div className="columns is-centered is-multiline">
             {data.map(x => (
-              <div className="column is-half-tablet is-one-third-desktop" key={x.id}>
+              <div
+                className="column is-half-tablet is-one-third-desktop"
+                key={x.id}
+              >
                 <Project className="card">
-                  <div className="card-content is-paddingless" style={{ padding: '0.5rem' }}>
+                  <div
+                    className="card-content is-paddingless"
+                    style={{ padding: '0.5rem' }}
+                  >
                     <CardContentWrapper>
-                      <a href={x.appUrl} target="new" style={{ height: '5rem', width: '100%' }}>
+                      <a
+                        href={x.appUrl}
+                        target="new"
+                        style={{ height: '5rem', width: '100%' }}
+                      >
                         <ApplogoWrapper>
                           <AppImageWrapper>
                             <Image
@@ -86,8 +97,10 @@ export default class Projects extends Component {
                   </ImageWrapper>
                   <Footer className="card-footer">
                     <FooterWrapper className="">
-                      <BuiltWith tech={x.tech} showLabel={false} />
-                      <a href={x.appUrl} target="new" style={{marginRight: 'auto'}}>View demo</a>
+                      {/* <BuiltWith tech={x.tech} showLabel={false} /> */}
+                      <a href={x.appUrl} target="new" style={{marginLeft: '1rem', marginRight: 'auto'}}>
+                        {'View demo'}
+                      </a>
                       <GitLink
                         href={x.git}
                         target="new"
@@ -111,16 +124,17 @@ export default class Projects extends Component {
   }
 }
 
-
 Projects.propTypes = {
-  data: arrayOf(shape({
-    id: number,
-    name: string,
-    mock: shape(ImgType),
-    tech: arrayOf(string),
-    git: string,
-    description: string,
-    appUrl: string,
-    logo: shape(ImgType),
-  })).isRequired,
+  data: arrayOf(
+    shape({
+      id: number,
+      name: string,
+      mock: shape(ImgType),
+      tech: arrayOf(string),
+      git: string,
+      description: string,
+      appUrl: string,
+      logo: shape(ImgType),
+    }),
+  ).isRequired,
 };

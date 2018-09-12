@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
           link={[
-            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700|Comfortaa:400,700' },
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,500,700' },
           ]}
         />
         <div

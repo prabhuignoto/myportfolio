@@ -4,14 +4,10 @@ export const About = Styled('div')`
   z-index: 150;
   color: #000;
   padding: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   border-radius: 4px;
-  /* background: rgba(231, 216, 199, 0.5); */
-  /* border-radius: 3px; */
-  /* box-shadow: 0 0 10px 5px rgba(0,0,0,0.5); */
-  /* text-shadow: 2px 1px 2px rgba(0,0,0,0.25); */
-  font-family: 'Comfortaa',sans-serif;
+  font-family: 'Raleway',sans-serif;
 `;
 
 export const Mark = Styled('span')`

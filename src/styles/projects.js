@@ -8,7 +8,7 @@ export const Section = Styled('div')`
 
 export const Wrapper = Styled('div')`
   /* padding: 3rem 3rem; */
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   z-index:1;
 `;
 
@@ -39,7 +39,7 @@ export const GitLink = Styled('a')`
   align-items: center;
   justify-content: flex-start;
   padding: 0.5rem;
-  /* margin-left: auto; */
+  margin-left: auto;
 `;
 
 export const GitIcon = Styled('i')`

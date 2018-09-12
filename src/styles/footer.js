@@ -30,7 +30,7 @@ export const Text = Styled('div')`
   display: block;
   white-space: nowrap;
   font-size: 0.75rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0 0.25rem;
 `;
 

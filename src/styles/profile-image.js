@@ -7,8 +7,8 @@ export const ImageWrapper = Styled('div')`
 `;
 
 export const IconWrapper = Styled('div')`
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 `;
@@ -30,21 +30,19 @@ export const Links = Styled('ul')`
 
 export const Link = Styled('li')`
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin: 0;
   text-align: center;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   padding: 0.25rem;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  /* background: #d5d4d3; */
 `;
 
 export const Wrapper = Styled('div')`

@@ -34,9 +34,9 @@ class hero extends Component {
     const { heroImage, profileImage, prabhuLogo } = this.props;
     return (
       <Hero className="hero is-large" style={this.style}>
-        {/* <HeroBackdrop>
+        <HeroBackdrop>
           <Img sizes={heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
-        </HeroBackdrop> */}
+        </HeroBackdrop>
         <div className="hero-head">
           <NavBar prabhuLogo={prabhuLogo} />
         </div>
