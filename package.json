@@ -28,6 +28,7 @@
     "react-emotion": "^9.2.8",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
+    "react-spring": "^5.7.2",
     "scrollreveal": "^4.0.0"
   },
   "keywords": [

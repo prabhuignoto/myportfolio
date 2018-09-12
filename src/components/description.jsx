@@ -17,7 +17,7 @@ const DescriptionContent = Styled('span')`
   font-size: 1.35rem;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  color: ${p => (p.color ? p.color : '#fff')};
+  color: ${p => (p.color ? '#000' : '#fff')};
 `;
 
 

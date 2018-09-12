@@ -104,7 +104,7 @@ export const pageQuery = graphql`
     }
     newSquirrelLogo: imageSharp(fluid: {originalName: { regex: "/newsquirrel-logo/"}}) {
       sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     newSquirrelMock: imageSharp(fluid: {originalName: { regex: "/newsquirrel-mockup/"}}) {
@@ -114,7 +114,7 @@ export const pageQuery = graphql`
     }
     nutrivueLogo: imageSharp(fluid: {originalName: { regex: "/nutrivue-logo/"}}) {
       sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     nutrivueMock: imageSharp(fluid: {originalName: { regex: "/nutrivue-mockup/"}}) {
@@ -124,7 +124,7 @@ export const pageQuery = graphql`
     }
     weathernowLogo: imageSharp(fluid: {originalName: { regex: "/weathernow-logo/"}}) {
       sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     weathernowMock: imageSharp(fluid: {originalName: { regex: "/weathernow-mock/"}}) {
