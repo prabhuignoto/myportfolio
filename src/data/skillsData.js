@@ -78,6 +78,14 @@ export const Node = [{
   icon: 'SailsSVG',
 }];
 
+export const Container = [{
+  name: 'Docker',
+  icon: 'DockerSVG',
+}, {
+  name: 'Kubernetes',
+  icon: 'KubernetesSVG',
+}];
+
 export const Editors = [{
   name: 'Visual Studio Code',
   icon: 'vsSVG',

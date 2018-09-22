@@ -25,15 +25,12 @@ class hero extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.style = {
-      position: 'relative',
-    };
   }
 
   render() {
     const { heroImage, profileImage, prabhuLogo } = this.props;
     return (
-      <Hero className="hero is-medium" style={this.style}>
+      <Hero className="hero is-medium">
         <HeroBackdrop>
           <Img sizes={heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
         </HeroBackdrop>
