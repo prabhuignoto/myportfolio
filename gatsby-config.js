@@ -9,13 +9,13 @@ module.exports = {
       path: `${__dirname}/src/assets/`,
     },
   },
-  // {
-  //   resolve: 'gatsby-plugin-google-analytics',
-  //   options: {
-  //     trackingId: 'UA-34193630-5',
-  //     head: false,
-  //   },
-  // },
+  {
+    resolve: 'gatsby-plugin-google-analytics',
+    options: {
+      trackingId: 'UA-34193630-5',
+      head: false,
+    },
+  },
   {
     resolve: 'gatsby-plugin-nprogress',
     options: {
