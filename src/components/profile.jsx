@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Wrapper, Tagline, TaglineItem,
+  Wrapper, Tagline, TaglineItem, TaglineText,
 } from '../styles/profile';
 
 
@@ -8,15 +8,21 @@ const Profile = () => (
   <Wrapper>
     <Tagline>
       <TaglineItem>
-        {'Frontend engineer'}
+        <TaglineText color="">
+          {'Developer'}
+        </TaglineText>
       </TaglineItem>
       {/* <Separator className="is-hidden-mobile" /> */}
-      <TaglineItem>
-        {'Fullstack developer'}
+      <TaglineItem color="">
+        <TaglineText>
+          {'Designer'}
+        </TaglineText>
       </TaglineItem>
       {/* <Separator className="is-hidden-mobile" /> */}
-      <TaglineItem>
-        {'UI Architect'}
+      <TaglineItem color="">
+        <TaglineText>
+          {'Architect'}
+        </TaglineText>
       </TaglineItem>
     </Tagline>
   </Wrapper>

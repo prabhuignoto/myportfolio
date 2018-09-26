@@ -29,7 +29,7 @@ export const Link = Styled('a')`
 export const Text = Styled('div')`
   display: block;
   white-space: nowrap;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: 'Raleway', sans-serif;
   margin: 0 0.25rem;
 `;

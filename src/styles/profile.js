@@ -13,13 +13,12 @@ export const Tagline = Styled('ul')`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  /* margin: 1rem; */
-  /* background: rgba(255,255,255,0.8); */
+  /* padding: 1rem; */
   flex-wrap: wrap;
   flex-direction: row;
   background: #d5d4d3;
   width: 100%;
+  height: 4rem;
 `;
 
 export const TaglineItem = Styled('li')`
@@ -27,7 +26,7 @@ export const TaglineItem = Styled('li')`
   font-size: 1.25rem;
   font-weight: 500;
   position: relative;
-  color:  #000;
+  color:  #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -35,6 +34,14 @@ export const TaglineItem = Styled('li')`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #747274;
+  transform: skew(-30deg);
+  height: 100%;
+  padding: 0.5rem 1.5rem;
+`;
+
+export const TaglineText = Styled('span')`
+  transform: skew(30deg);
 `;
 
 export const Separator = Styled('span')`
