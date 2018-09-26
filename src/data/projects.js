@@ -6,7 +6,8 @@ export default [
     tech: ['react', 'typescript', 'redux', 'saga'],
     git: 'https://github.com/prabhuignoto/react-dark-weather',
     description:
-      'A Beautiful Weather app that displays weather conditions in real time.',
+      `WeatherNow is a modern weather app with very strong foundations.
+        Powered by the Darkweather API, the app provides accurate forecast and current weather conditions in realtime.`,
     appUrl: 'https://darkweather.netlify.com',
     logo: 'weathernowLogo',
   },
@@ -17,7 +18,8 @@ export default [
     tech: ['react', 'typescript', 'redux', 'saga'],
     git: 'https://github.com/prabhuignoto/react-news',
     description:
-      'Read Top headlines and search millions of news articles from across the web.',
+      `Newsquirrel is a simple yet elegant app designed to make the daily news reading more enjoyable.
+       Read headlines that are making waves and quickly search through millions of articles.`,
     appUrl: 'https://squirrel.prabhumurthy.com',
     logo: 'newSquirrelLogo',
   },
@@ -28,7 +30,8 @@ export default [
     tech: ['vue'],
     git: 'https://github.com/prabhuignoto/nutrivue',
     description:
-      'Get to know about the nutrients that make up your food.',
+      `Nutrivue provides detailed information about the nutrients that make up your food.
+        Find your favorite branded food or a common food and know their calories and nutritional information.`,
     appUrl: 'https://nutrivue.netlify.com',
     logo: 'nutrivueLogo',
   },
