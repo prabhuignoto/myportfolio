@@ -15,16 +15,11 @@ const sectionData = [
 class ShapeView extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
   }
 
   render() {
-    return (
-      <Shape
-        {...this.props}
-      />
-    );
+    return <Shape {...this.props} />;
   }
 }
 
@@ -32,7 +27,15 @@ const ShapesView = ({ heroImage }) => (
   <Shapes className="">
     {sectionData.map(x => (
       <ShapeView key={x.name} type={x.type} name={x.name}>
-        <Img sizes={heroImage.sizes} alt="hero-image-mirror" className="shape-image-wrapper" outerWrapperClassName="shape-image-outer-wrapper" />
+        <Img
+          sizes={heroImage.sizes}
+          alt="hero-image-mirror"
+          className="shape-image-wrapper"
+          outerWrapperClassName="shape-image-outer-wrapper"
+          placeholderStyle={{
+            display: 'none',
+          }}
+        />
       </ShapeView>
     ))}
   </Shapes>

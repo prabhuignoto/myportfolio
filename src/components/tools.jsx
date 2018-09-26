@@ -36,6 +36,9 @@ export default class Skills extends Component {
                   <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="UI Libs">
                     <Skillbox title="" items={Data.reactTools} />
                   </Content>
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Container Orchestration">
+                    <Skillbox title="" items={Data.Container} />
+                  </Content>
                 </div>
                 <div className="tile is-parent is-vertical">
                   <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Server">
@@ -54,9 +57,6 @@ export default class Skills extends Component {
               </div>
             </div>
             <div className="tile is-parent is-vertical">
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Container Orchestration">
-                <Skillbox title="" items={Data.Container} />
-              </Content>
               <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="HTML &amp; Styling">
                 <Skillbox title="" items={Data.www} />
               </Content>

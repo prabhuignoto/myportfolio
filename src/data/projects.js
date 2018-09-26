@@ -18,7 +18,7 @@ export default [
     git: 'https://github.com/prabhuignoto/react-news',
     description:
       'Read Top headlines and search millions of news articles from across the web.',
-    appUrl: 'https://news-squirrel.netlify.com',
+    appUrl: 'https://squirrel.prabhumurthy.com',
     logo: 'newSquirrelLogo',
   },
   {

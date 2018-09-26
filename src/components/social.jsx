@@ -21,6 +21,7 @@ class Social extends Component {
               alt="linkedin"
               src={LinkedinSVG}
               style={{ marginBottom: 0, marginRight: '0.25rem' }}
+              placeholderStyle={{ height: '100%' }}
             />
           </IconWrapper>
         </Item>

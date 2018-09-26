@@ -8,14 +8,13 @@ import Shapes from './shapes';
 import Profile from './profile';
 import AboutMe from './aboutme';
 
-
 const Hero = Styled('section')`
   position: relative;
 `;
 
 const HeroBackdrop = Styled('div')`
   position: absolute;
-  top: -1rem;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -31,14 +30,23 @@ class hero extends Component {
     const { heroImage, profileImage, prabhuLogo } = this.props;
     return (
       <Hero className="hero is-medium">
-        <HeroBackdrop>
-          <Img sizes={heroImage.sizes} className="hero-image-wrapper" outerWrapperClassName="hero-image-outer-wrapper" />
-        </HeroBackdrop>
         <div className="hero-head">
           <NavBar prabhuLogo={prabhuLogo} />
         </div>
-        <div className="hero-body">
-          <Shapes heroImage={heroImage} />
+        <div className="hero-body" style={{ position: 'relative' }}>
+          <div className="hero-backdrop">
+            <Img
+              sizes={heroImage.sizes}
+              className="hero-image-wrapper"
+              outerWrapperClassName="hero-image-outer-wrapper"
+              placeholderStyle={{
+                width: '100%', height: '55rem',
+              }}
+            />
+          </div>
+          <div className="hero-backdrop">
+            <Shapes heroImage={heroImage} />
+          </div>
           <div
             className="container"
           >
@@ -53,7 +61,7 @@ class hero extends Component {
                 }}
               >
                 <div className="columns is-centered is-multiline is-gapless">
-                  <div className="column is-3-desktop is-12-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                  <div className="column is-3-desktop is-12-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <ProfileImage profileImage={profileImage} />
                   </div>
                   <div className="column is-9-desktop is-12-tablet">
@@ -68,8 +76,7 @@ class hero extends Component {
             </div>
           </div>
         </div>
-        <div className="hero-foot">
-        </div>
+        <div className="hero-foot" />
       </Hero>
     );
   }

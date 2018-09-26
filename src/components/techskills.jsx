@@ -29,13 +29,23 @@ class TechSkills extends Component {
       <Wrapper className="section">
         <div className="container" ref={this.ref} style={{ width: '100%' }}>
           <SectionHeader title="My SKills" color="#404040" />
-          <Description text="Building Applications with strong foundations is very essential for any robust web applications. I am skilled in these areas and i meticulously follow these principles during the design and development." color="#746764" />
+          <Description
+            text="Building Applications with strong foundations is very essential for any robust web applications. I am skilled in these areas and i meticulously follow these principles during the design and development."
+            color="#746764"
+          />
           <ImageWrapper>
             <Img
               sizes={designPicture.sizes}
               className="design-image-wrapper"
               outerWrapperClassName="design-image-outer-wrapper"
               imgStyle={{ objectFit: 'contain' }}
+              placeholderStyle={{
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                height: '50vh',
+                width: '100%',
+              }}
             />
           </ImageWrapper>
         </div>

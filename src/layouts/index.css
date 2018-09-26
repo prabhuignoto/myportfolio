@@ -732,7 +732,7 @@ pre tt:after {
   filter: blur(3px) sepia(0.1) brightness(1.25);
   transform: scale(1.01);
   clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%);
-  top: -1rem;
+  top: 0;
   position: absolute;
 }
 
@@ -751,4 +751,12 @@ pre tt:after {
 
 .tool-image-outer-wrapper {
   filter: blur(2px) sepia(0.25) brightness(1.1) scale(1.1);
+}
+
+.hero-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

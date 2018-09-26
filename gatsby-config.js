@@ -9,11 +9,18 @@ module.exports = {
       path: `${__dirname}/src/assets/`,
     },
   },
+  // {
+  //   resolve: 'gatsby-plugin-google-analytics',
+  //   options: {
+  //     trackingId: 'UA-34193630-5',
+  //     head: false,
+  //   },
+  // },
   {
-    resolve: 'gatsby-plugin-google-analytics',
+    resolve: 'gatsby-plugin-nprogress',
     options: {
-      trackingId: 'UA-34193630-5',
-      head: true,
+      color: 'tomato',
+      showSpinner: true,
     },
   },
   'gatsby-plugin-react-helmet',
