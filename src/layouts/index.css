@@ -760,3 +760,35 @@ pre tt:after {
   width: 100%;
   height: 100%;
 }
+
+/* .profile-image-wrapper {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+} */
+
+.social-list {
+  display: flex;
+  align-items: center;
+  flex-direction: 'row';
+  width: 100%;
+  min-width: 16rem;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  border-radius: 3px;
+  height: 100%;
+}
+
+.tagline {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  min-height: 4rem;
+  height: 0px;
+  background: rgb(213, 212, 211);
+}

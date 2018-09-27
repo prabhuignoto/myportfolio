@@ -17,7 +17,6 @@ export const Project = Styled('div')`
   margin-bottom: 2.5rem;
   box-shadow: 0px 0 10px 2px rgba(0,0,0,0.15);
   border-radius: 5px;
-  /* background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(232,241,242,1) 100%); */
   &:after {
     content: '';
     display: block;
@@ -116,7 +115,7 @@ export const AppImageWrapper = Styled('div')`
 
 export const AppDescription = Styled('p')`
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   width: 100%;
   text-align: center;
   padding: 1rem;

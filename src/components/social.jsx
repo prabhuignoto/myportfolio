@@ -12,7 +12,7 @@ class Social extends Component {
 
   render() {
     return (
-      <Wrapper role="list">
+      <Wrapper role="list" className="social-list">
         <Item role="listitem">
           <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new" title="LinkedIn">
             <img

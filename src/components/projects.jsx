@@ -77,6 +77,7 @@ export default class Projects extends Component {
                             <Image
                               sizes={x.logo.sizes}
                               imgStyle={gatsbyImgStyle}
+                              placeholderStyle={{ width: '70%' }}
                             />
                           </AppImageWrapper>
                         </ApplogoWrapper>
@@ -92,13 +93,14 @@ export default class Projects extends Component {
                         sizes={x.mock.sizes}
                         alt={x.name}
                         imgStyle={gatsbyImgStyle}
+                        placeholderStyle={{ width: '100%' }}
                       />
                     </Figure>
                   </ImageWrapper>
                   <Footer className="card-footer">
                     <FooterWrapper className="">
                       {/* <BuiltWith tech={x.tech} showLabel={false} /> */}
-                      <a href={x.appUrl} target="new" style={{marginLeft: '1rem', marginRight: 'auto'}}>
+                      <a href={x.appUrl} target="new" style={{ marginLeft: '1rem', marginRight: 'auto' }}>
                         {'View demo'}
                       </a>
                       <GitLink

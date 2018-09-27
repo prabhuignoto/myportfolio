@@ -3,7 +3,7 @@ import Styled from 'react-emotion';
 const Wrapper = Styled('div')`
   display: flex;
   align-items: center;
-  flex-direction: ${p => (p.direction ? p.direction : 'row')};
+  flex-direction: 'row';
   width: 100%;
   min-width: 16rem;
   justify-content: space-evenly;

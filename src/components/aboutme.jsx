@@ -32,12 +32,6 @@ export default function AboutMe() {
             {'highly secure ,fast performing.'}
           </Mark>
         </p>
-        <p>
-          {'I have extensive experience in designing and building web apps that are '}
-          <Mark>
-            {'highly secure & fast performing.'}
-          </Mark>
-        </p>
       </About>
     </div>
 

@@ -13,7 +13,7 @@ import { At, Mobile } from '../styles/images';
 
 const ProfileImage = ({ profileImage }) => (
   <Wrapper>
-    <ImageWrapper>
+    <ImageWrapper className="profile-img-wrapper">
       <Img
         sizes={profileImage.sizes}
         className="profile-image-wrapper"
