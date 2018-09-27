@@ -12,7 +12,10 @@ export const About = Styled('div')`
 
 export const Mark = Styled('span')`
   position: relative;
-  margin: 0 0.25rem;
+  margin: 0 0.1rem;
+  background: rgba(213, 212, 211, 0.5);
+  padding: 0.15rem 0.25rem;
+  border-radius: 2px;
 `;
 
 export const ImageWrapper = Styled('div')`

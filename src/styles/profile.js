@@ -18,11 +18,12 @@ export const Tagline = Styled('ul')`
   flex-direction: row;
   background: #d5d4d3;
   width: 100%;
-  height: 4rem;
+  min-height: 4rem;
+  height: 0;
 `;
 
 export const TaglineItem = Styled('li')`
-  margin: 0.5rem 2rem;
+  margin-right: 2rem;
   font-size: 1.25rem;
   font-weight: 500;
   position: relative;
@@ -34,7 +35,8 @@ export const TaglineItem = Styled('li')`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #747274;
+  /* background: #747274; */
+  background: ${p => (p.color ? p.color : '#747274')};
   transform: skew(-30deg);
   height: 100%;
   padding: 0.5rem 1.5rem;

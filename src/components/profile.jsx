@@ -6,20 +6,20 @@ import {
 
 const Profile = () => (
   <Wrapper>
-    <Tagline>
-      <TaglineItem>
-        <TaglineText color="">
+    <Tagline className="is-hidden-mobile">
+      <TaglineItem color="#bfb2a6">
+        <TaglineText>
           {'Developer'}
         </TaglineText>
       </TaglineItem>
       {/* <Separator className="is-hidden-mobile" /> */}
-      <TaglineItem color="">
+      <TaglineItem>
         <TaglineText>
           {'Designer'}
         </TaglineText>
       </TaglineItem>
       {/* <Separator className="is-hidden-mobile" /> */}
-      <TaglineItem color="">
+      <TaglineItem color="#ee694f">
         <TaglineText>
           {'Architect'}
         </TaglineText>
