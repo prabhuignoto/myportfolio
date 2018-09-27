@@ -23,6 +23,14 @@ module.exports = {
       showSpinner: true,
     },
   },
+  {
+    resolve: 'gatsby-plugin-web-font-loader',
+    options: {
+      google: {
+        families: ['Raleway:400,500'],
+      },
+    },
+  },
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-sass',
   'gatsby-transformer-sharp',
