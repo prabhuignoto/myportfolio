@@ -34,16 +34,16 @@ class hero extends Component {
           <NavBar prabhuLogo={prabhuLogo} />
         </div>
         <div className="hero-body" style={{ position: 'relative' }}>
-          <div className="hero-backdrop">
+          {/* <div className="hero-backdrop">
             <Img
               sizes={heroImage.sizes}
               className="hero-image-wrapper"
               outerWrapperClassName="hero-image-outer-wrapper"
               placeholderStyle={{
-                width: '100%', height: '55rem',
+                width: '100%', height: '40rem',
               }}
             />
-          </div>
+          </div> */}
           <div className="hero-backdrop">
             <Shapes heroImage={heroImage} />
           </div>

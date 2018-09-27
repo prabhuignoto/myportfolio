@@ -24,7 +24,7 @@ class ShapeView extends Component {
 }
 
 const ShapesView = ({ heroImage }) => (
-  <Shapes className="">
+  <Shapes className="shapes">
     {sectionData.map(x => (
       <ShapeView key={x.name} type={x.type} name={x.name}>
         <Img
@@ -33,7 +33,7 @@ const ShapesView = ({ heroImage }) => (
           className="shape-image-wrapper"
           outerWrapperClassName="shape-image-outer-wrapper"
           placeholderStyle={{
-            display: 'none',
+            height: '46rem',
           }}
         />
       </ShapeView>
