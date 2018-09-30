@@ -8,7 +8,7 @@ export default [
     description:
       `WeatherNow is a modern weather app with very strong foundations.
         Powered by the Darkweather API, the app provides accurate forecast and current weather conditions in realtime.`,
-    appUrl: 'https://darkweather.netlify.com',
+    appUrl: 'https://weathernow.prabhumurthy.com',
     logo: 'weathernowLogo',
   },
   {
