@@ -35,7 +35,7 @@ module.exports = {
   'gatsby-plugin-sass',
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
-  // 'gatsby-plugin-offline',
+  'gatsby-plugin-offline',
   // 'gatsby-plugin-manifest',
   ],
 };
