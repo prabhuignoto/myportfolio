@@ -32,6 +32,15 @@ const ProfileImage = ({ profileImage }) => (
           {'Contact me'}
         </a>
       </LinkItem>
+      <LinkItem>
+        <a
+          href="https://novoresume.com/a/prabhu.m.murthy.1"
+          style={{ color: '#404040', marginRight: '0.25rem', fontSize: '1rem' }}
+          target="_new"
+        >
+          {'View Resume'}
+        </a>
+      </LinkItem>
     </Links>
   </Wrapper>
 );
