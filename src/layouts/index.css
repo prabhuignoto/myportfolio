@@ -776,11 +776,11 @@ pre tt:after {
   height: 100%;
 }
 
-/* .profile-image-wrapper {
+.profile-image-wrapper {
   height: 12rem;
   width: 12rem;
   border-radius: 50%;
-} */
+}
 
 .social-list {
   display: flex;
