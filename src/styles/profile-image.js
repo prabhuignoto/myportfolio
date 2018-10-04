@@ -41,7 +41,7 @@ export const Link = Styled('li')`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 `;
 

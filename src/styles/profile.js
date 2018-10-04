@@ -29,7 +29,7 @@ export const TaglineItem = Styled('li')`
   position: relative;
   color:  #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
   display: flex;

@@ -27,7 +27,7 @@ module.exports = {
     resolve: 'gatsby-plugin-web-font-loader',
     options: {
       google: {
-        families: ['Raleway:400,500'],
+        families: ['Open Sans:400,500'],
       },
     },
   },
@@ -37,6 +37,6 @@ module.exports = {
   'gatsby-plugin-sharp',
   'gatsby-plugin-offline',
   'gatsby-plugin-netlify',
-  // 'gatsby-plugin-manifest',
+  'gatsby-plugin-manifest',
   ],
 };

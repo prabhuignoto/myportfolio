@@ -8,7 +8,7 @@ export const Section = Styled('div')`
 
 export const Wrapper = Styled('div')`
   /* padding: 3rem 3rem; */
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   z-index:1;
 `;
 
