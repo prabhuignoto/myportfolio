@@ -1,8 +1,8 @@
 import Styled from 'react-emotion';
 
 export const ImageWrapper = Styled('div')`
-  height: 12rem;
-  width: 12rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
 `;
 
@@ -46,8 +46,8 @@ export const Link = Styled('li')`
 `;
 
 export const Wrapper = Styled('div')`
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 3rem; */
 `;

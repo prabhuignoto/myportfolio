@@ -3,13 +3,8 @@ import Img from 'gatsby-image';
 import { any } from 'prop-types';
 import {
   ImageWrapper,
-  Links,
-  IconWrapper,
-  Link as LinkItem,
-  Icon,
   Wrapper,
 } from '../styles/profile-image';
-import { At, Mobile } from '../styles/images';
 
 const ProfileImage = ({ profileImage }) => (
   <Wrapper>
@@ -20,11 +15,8 @@ const ProfileImage = ({ profileImage }) => (
         placeholderStyle={{ height: '100%', width: '100%' }}
       />
     </ImageWrapper>
-    <Links>
+    {/* <Links>
       <LinkItem>
-        {/* <IconWrapper>
-          <Icon src={At} alt="at-email" />
-        </IconWrapper> */}
         <a
           href="mailto:prabhu.m.murthy@gmail.com"
           style={{ color: '#404040', marginRight: '0.25rem', fontSize: '1rem' }}
@@ -41,7 +33,7 @@ const ProfileImage = ({ profileImage }) => (
           {'View Resume'}
         </a>
       </LinkItem>
-    </Links>
+    </Links> */}
   </Wrapper>
 );
 

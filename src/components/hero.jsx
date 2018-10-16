@@ -61,10 +61,10 @@ class hero extends Component {
                 }}
               >
                 <div className="columns is-centered is-multiline is-gapless">
-                  <div className="column is-3-desktop is-12-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  {/* <div className="profile-image-container" style={{ position: 'absolute', zIndex: 100, top: '-5rem' }}>
                     <ProfileImage profileImage={profileImage} />
-                  </div>
-                  <div className="column is-9-desktop is-12-tablet">
+                  </div> */}
+                  <div className="column is-12-desktop is-12-tablet">
                     <AboutMe />
                   </div>
                   <div className="column is-12-desktop is-12-tablet">

@@ -32,6 +32,21 @@ export default function AboutMe() {
             {'highly secure ,fast performing.'}
           </Mark>
         </p>
+        <div>
+          <a
+            href="mailto:prabhu.m.murthy@gmail.com"
+            style={{ marginRight: '0.5rem', fontSize: '1.25rem' }}
+          >
+            {'Contact me'}
+          </a>
+          <a
+            href="https://novoresume.com/a/prabhu.m.murthy.1"
+            style={{ marginRight: '0.25rem', fontSize: '1.25rem' }}
+            target="_new"
+          >
+            {'View Resume'}
+          </a>
+        </div>
       </About>
     </div>
 
