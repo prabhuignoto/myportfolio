@@ -2,9 +2,10 @@ html {
   font-family: 'Lato', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
-html.wf-loading {
   display: none;
+}
+html.wf-active {
+  display: block;
 }
 body {
   margin: 0;
