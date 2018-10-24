@@ -132,6 +132,16 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes_withWebp_tracedSVG
       }
     }
+    boxyLogo: imageSharp(fluid: {originalName: { regex: "/boxy-logo/"}}) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    boxyMock: imageSharp(fluid: {originalName: { regex: "/boxy-mock/"}}) {
+      sizes(maxWidth: 900) {
+        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+      }
+    }
     
   }
 `;

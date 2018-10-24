@@ -15,7 +15,7 @@ export default [
     id: 2,
     name: 'Newsquirrel',
     mock: 'newSquirrelMock',
-    tech: ['react', 'typescript', 'redux', 'saga'],
+    tech: ['react', 'typescript', 'apollo', 'graphql'],
     git: 'https://github.com/prabhuignoto/react-news',
     description:
       `Newsquirrel is a simple yet elegant app designed to make the daily news reading more enjoyable.
@@ -25,6 +25,18 @@ export default [
   },
   {
     id: 3,
+    name: 'Boxy',
+    mock: 'boxyMock',
+    tech: ['vue', 'express', 'graphql', 'apollo'],
+    git: 'https://github.com/prabhuignoto/boxy',
+    description:
+      `Boxy is a modern webapp created to make access to Dropbox data easier and simple.
+       Boxy is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
+    appUrl: '',
+    logo: 'boxyLogo',
+  },
+  {
+    id: 4,
     name: 'Nutrivue',
     mock: 'nutrivueMock',
     tech: ['vue'],
