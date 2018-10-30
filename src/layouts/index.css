@@ -751,7 +751,7 @@ pre tt:after {
   /* clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%); */
   top: 0;
   position: absolute;
-  height: 46rem;
+  /* height: 46rem; */
 }
 
 .tool-image-outer-wrapper,

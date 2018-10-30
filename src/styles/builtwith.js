@@ -3,22 +3,27 @@ import ReactSVG from '../assets/react.svg';
 import TypeScript from '../assets/typescript.svg';
 import VueSVG from '../assets/vue.svg';
 import Redux from '../assets/redux.svg';
+import GraphQLSVG from '../assets/graphql.svg';
+import NodeSVG from '../assets/nodejs-icon.svg';
+import ApolloSVG from '../assets/apollo.svg';
 
 export const Wrapper = Styled('div')`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  margin: 0.5rem;
+  justify-content: flex-end;
+  /* margin: 0.5rem; */
+  margin-left: auto;
   font-size: 1rem;
   flex-wrap: wrap;
+  margin-right: 0.5rem;
 `;
 
 export const ItemWrapper = Styled('div')`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-left: 1rem;
+  justify-content: flex-end;
+  /* margin-left: 1rem; */
 `;
 
 export const ItemLabel = Styled('span')`
@@ -30,20 +35,21 @@ export const ItemLabel = Styled('span')`
 
 export const Item = Styled('div')`
   padding: 0.75rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0.5rem 0 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 0.5rem;
   background: url(${(p) => {
-    if (p.name === 'react') {
-      return ReactSVG;
-    } if (p.name === 'typescript') {
-      return TypeScript;
-    } if (p.name === 'vue') {
-      return VueSVG;
-    } if (p.name === 'redux') {
-      return Redux;
+    switch (p.name) {
+      case 'react': return ReactSVG;
+      case 'typescript': return TypeScript;
+      case 'vue': return VueSVG;
+      case 'redux': return Redux;
+      case 'graphql': return GraphQLSVG;
+      case 'node': return NodeSVG;
+      case 'apollo': return ApolloSVG;
+      default:
+        return '';
     }
-    return '';
   }});
   background-size: contain;
   background-repeat: no-repeat;

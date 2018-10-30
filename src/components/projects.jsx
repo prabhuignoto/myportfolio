@@ -58,7 +58,7 @@ export default class Projects extends Component {
           <div className="columns is-centered is-multiline">
             {data.map(x => (
               <div
-                className="column is-half-tablet is-one-third-desktop"
+                className="column is-half-tablet is-half-desktop"
                 key={x.id}
               >
                 <Project className="card">
@@ -67,21 +67,22 @@ export default class Projects extends Component {
                     style={{ padding: '0.5rem' }}
                   >
                     <CardContentWrapper>
-                      <a
+                      {/* <a
                         href={x.appUrl}
                         target="new"
                         style={{ height: '5rem', width: '100%' }}
-                      >
-                        <ApplogoWrapper>
-                          <AppImageWrapper>
-                            <Image
-                              sizes={x.logo.sizes}
-                              imgStyle={gatsbyImgStyle}
-                              placeholderStyle={{ width: '70%' }}
-                            />
-                          </AppImageWrapper>
-                        </ApplogoWrapper>
-                      </a>
+                      > */}
+                      <ApplogoWrapper>
+                        <AppImageWrapper>
+                          <Image
+                            sizes={x.logo.sizes}
+                            imgStyle={gatsbyImgStyle}
+                            placeholderStyle={{ width: '70%' }}
+                          />
+                        </AppImageWrapper>
+                        <BuiltWith tech={x.tech} showLabel={false} />
+                      </ApplogoWrapper>
+                      {/* </a> */}
                       <AppDescription>
                         {x.description}
                       </AppDescription>
@@ -99,7 +100,6 @@ export default class Projects extends Component {
                   </ImageWrapper>
                   <Footer className="card-footer">
                     <FooterWrapper className="">
-                      {/* <BuiltWith tech={x.tech} showLabel={false} /> */}
                       <a href={x.appUrl} target="new" style={{ marginLeft: '1rem', marginRight: 'auto' }}>
                         {'View demo'}
                       </a>

@@ -33,7 +33,7 @@ const ShapesView = ({ heroImage }) => (
           className="shape-image-wrapper"
           outerWrapperClassName="shape-image-outer-wrapper"
           placeholderStyle={{
-            height: '46rem',
+            // height: '46rem',
           }}
         />
       </ShapeView>

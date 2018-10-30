@@ -72,7 +72,7 @@ export const Img = Styled('div')`
 
 export const Figure = Styled('figure')`
   width: auto;
-  height: 18rem;
+  height: 25rem;
   padding: 0.25rem;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@ export const Figure = Styled('figure')`
 
 export const Footer = Styled('footer')`
   width: 100%;
-  padding: 0.5rem 0.25rem;
+  padding: 1rem 0.25rem;
   border-top: none;
 `;
 
@@ -99,7 +99,8 @@ export const ApplogoWrapper = Styled('figure')`
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  width: 100%;
 `;
 
 export const AppLogo = Styled('img')`
