@@ -32,7 +32,7 @@ export default [
     description:
       `Boxy is a modern webapp created to make access to Dropbox data easier and simple.
        Boxy is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
-    appUrl: '',
+    appUrl: 'https://boxy-app.netlify.com',
     logo: 'boxyLogo',
   },
   {
