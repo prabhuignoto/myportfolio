@@ -2,7 +2,7 @@ import Styled from 'react-emotion';
 
 const Content = Styled('div')`
   position: relative;
-  box-shadow: 0 0 13px 5px rgba(0,0,0,0.2);
+  /* box-shadow: 0 0 13px 5px rgba(0,0,0,0.2); */
   &::before {
     content: '${p => p.heading}';
     display: block;

@@ -15,7 +15,7 @@ export const Wrapper = Styled('div')`
 export const Project = Styled('div')`
   position: relative;
   margin-bottom: 2.5rem;
-  box-shadow: 0px 0 10px 2px rgba(0,0,0,0.15);
+  /* box-shadow: 0px 0 10px 2px rgba(0,0,0,0.15); */
   border-radius: 5px;
   &:after {
     content: '';
@@ -109,8 +109,9 @@ export const AppLogo = Styled('img')`
 
 export const AppImageWrapper = Styled('div')`
   display: block;
-  height: 3rem;
-  width: 14rem;
+  height: 4rem;
+  width: 8rem;
+  margin-left: 1rem;
 `;
 
 export const AppDescription = Styled('p')`

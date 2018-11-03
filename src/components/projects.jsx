@@ -58,7 +58,7 @@ export default class Projects extends Component {
           <div className="columns is-centered is-multiline">
             {data.map(x => (
               <div
-                className="column is-half-tablet is-half-desktop"
+                className="column is-half-tablet is-two-fifths-desktop"
                 key={x.id}
               >
                 <Project className="card">

@@ -43,7 +43,7 @@ export default [
     git: 'https://github.com/prabhuignoto/nutrivue',
     description:
       `Nutrivue provides detailed information about the nutrients that make up your food.
-        Find your favorite branded food or a common food and know their calories and nutritional information.`,
+        Find your favorite food and know their calories and nutritional information.`,
     appUrl: 'https://nutrivue.netlify.com',
     logo: 'nutrivueLogo',
   },
