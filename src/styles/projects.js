@@ -77,6 +77,9 @@ export const Figure = Styled('figure')`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 15rem;
+  }
 `;
 
 export const Footer = Styled('footer')`
