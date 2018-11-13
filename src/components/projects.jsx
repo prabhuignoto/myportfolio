@@ -105,7 +105,7 @@ export default class Projects extends Component {
                       </a>
                       <GitLink
                         href={x.git}
-                        target="new"
+                        target="_new"
                         className="is-pulled-right"
                         title="View this Project on Github"
                       >

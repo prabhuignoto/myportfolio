@@ -142,6 +142,15 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes_withWebp_tracedSVG
       }
     }
-    
+    worldtimeLogo: imageSharp(fluid: {originalName: { regex: "/worldtime-logo/"}}) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    worldtimeMock: imageSharp(fluid: {originalName: { regex: "/worldtime-mock/"}}) {
+      sizes(maxWidth: 900) {
+        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+      }
+    }
   }
 `;
