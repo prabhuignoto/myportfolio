@@ -6,7 +6,7 @@ export default [{
   git: 'https://github.com/prabhuignoto/react-news',
   description: `Newsquirrel is a simple yet elegant app designed to make the daily news reading more enjoyable.
        Read headlines that are making waves and quickly search through millions of articles.`,
-  appUrl: 'https://squirrel.prabhumurthy.com',
+  appUrl: 'https://newsquirrel.netlify.com',
   logo: 'newSquirrelLogo',
 },
 {
