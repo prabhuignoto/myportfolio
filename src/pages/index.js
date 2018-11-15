@@ -25,7 +25,6 @@ export default class Index extends Component {
         families: ['Open Sans:n4,n5,n6'],
       },
       active: () => {
-        debugger;
         this.setState({
           fontsLoaded: true,
         });
