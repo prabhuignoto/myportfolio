@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import WebfontLoader from 'webfontloader';
 import Hero from '../components/hero';
 import Experience from '../components/experience';
 import Projects from '../components/projects';
@@ -20,7 +19,9 @@ export default class Index extends Component {
   }
 
   componentDidMount() {
-    WebfontLoader.load({
+    // eslint-disable-next-line global-require
+    const fontloader = require('webfontloader');
+    fontloader.load({
       google: {
         families: ['Open Sans:n4,n5,n6'],
       },
