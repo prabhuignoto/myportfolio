@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import WebfontLoader from 'webfontloader';
 import Hero from '../components/hero';
 import Experience from '../components/experience';
 import Projects from '../components/projects';
@@ -13,10 +14,23 @@ import Layout from '../components/layout';
 export default class Index extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      fontsLoaded: false,
+    };
   }
 
   componentDidMount() {
+    WebfontLoader.load({
+      google: {
+        families: ['Open Sans:n4,n5,n6'],
+      },
+      active: () => {
+        debugger;
+        this.setState({
+          fontsLoaded: true,
+        });
+      },
+    });
   }
 
   render() {
@@ -30,20 +44,26 @@ export default class Index extends Component {
       mock: this.props.data[x.mock],
       logo: this.props.data[x.logo],
     }));
+    const { fontsLoaded } = this.state;
     return (
-      <Layout>
-        <Hero heroImage={heroImage} profileImage={profileImage} prabhuLogo={prabhuLogo} />
-        <Projects data={projectsData} />
-        <Skills designPicture={designPicture} />
-        <Tools toolImage={toolImage} />
-        <Experience
-          honeywellLogo={honeywellLogo}
-          juniperLogo={juniperLogo}
-          techmLogo={techmLogo}
-          jpmcLogo={jpmcLogo}
-        />
-        <Footer />
-      </Layout>
+      <Fragment>
+        {fontsLoaded
+          ? (
+            <Layout>
+              <Hero heroImage={heroImage} profileImage={profileImage} prabhuLogo={prabhuLogo} />
+              <Projects data={projectsData} />
+              <Skills designPicture={designPicture} />
+              <Tools toolImage={toolImage} />
+              <Experience
+                honeywellLogo={honeywellLogo}
+                juniperLogo={juniperLogo}
+                techmLogo={techmLogo}
+                jpmcLogo={jpmcLogo}
+              />
+              <Footer />
+            </Layout>
+          ) : null }
+      </Fragment>
     );
   }
 }

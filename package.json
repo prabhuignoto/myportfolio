@@ -5,8 +5,9 @@
   "author": "prabhu.m.murthy@gmail.com",
   "dependencies": {
     "@types/luxon": "^1.2.2",
+    "@types/webfontloader": "^1.6.29",
     "emotion": "^9.2.8",
-    "gatsby": "^2.0.47",
+    "gatsby": "^2.0.50",
     "gatsby-image": "^2.0.9",
     "gatsby-plugin-emotion": "^2.0.6",
     "gatsby-plugin-google-analytics": "^2.0.7",
@@ -14,7 +15,7 @@
     "gatsby-plugin-netlify": "^2.0.0",
     "gatsby-plugin-netlify-cache": "^1.0.0",
     "gatsby-plugin-nprogress": "^2.0.5",
-    "gatsby-plugin-offline": "^2.0.13",
+    "gatsby-plugin-offline": "^2.0.15",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-plugin-sass": "^2.0.1",
@@ -28,7 +29,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-emotion": "^9.2.8",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "webfontloader": "^1.6.28"
   },
   "keywords": [
     "personal portfolio"
@@ -46,7 +48,7 @@
     "@types/enzyme": "^3.1.13",
     "@types/enzyme-to-json": "^1.5.2",
     "@types/jest": "^23.3.1",
-    "@types/react": "^16.7.3",
+    "@types/react": "^16.7.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "codecov": "^3.0.4",

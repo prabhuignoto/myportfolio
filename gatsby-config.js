@@ -24,14 +24,6 @@ module.exports = {
     },
   },
   {
-    resolve: 'gatsby-plugin-web-font-loader',
-    options: {
-      google: {
-        families: ['Open Sans:400,500'],
-      },
-    },
-  },
-  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       name: 'Prabhu Murthy',
