@@ -120,3 +120,8 @@ export const reactFW = [{
   name: 'Gatsby JS',
   icon: 'GatsbySVG',
 }];
+
+export const CVS = [{
+  name: 'GIT',
+  icon: 'GithubSVG',
+}];

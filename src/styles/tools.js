@@ -4,7 +4,7 @@ const Content = Styled('div')`
   position: relative;
   /* box-shadow: 0 0 13px 5px rgba(0,0,0,0.2); */
   &::before {
-    content: '${p => p.heading}';
+    /* content: '${p => p.heading}';
     display: block;
     position: absolute;
     top: 0.5rem;
@@ -18,7 +18,7 @@ const Content = Styled('div')`
     border-radius: 4px;
     padding: 0.25rem 0.5rem;
     background: #E8F1F2;
-    color: #000;
+    color: #000; */
   }
 `;
 

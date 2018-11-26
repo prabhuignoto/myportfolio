@@ -13,12 +13,6 @@ export default class Skills extends Component {
   }
 
   componentDidMount() {
-    // ScrollReveal().reveal(this.ref.current, {
-    //   delay: 200,
-    //   duration: 1000,
-    //   scale: 0.85,
-    //   opacity: 0.5,
-    // });
   }
 
   render() {
@@ -30,41 +24,44 @@ export default class Skills extends Component {
             <div className="tile is-vertical is-8">
               <div className="tile">
                 <div className="tile is-parent is-vertical">
-                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="UI Libs">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                     <Skillbox title="" items={Data.uiFworkBoxes} />
                   </Content>
-                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="UI Libs">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                     <Skillbox title="" items={Data.reactTools} />
                   </Content>
-                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Container Orchestration">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} >
                     <Skillbox title="" items={Data.Container} />
                   </Content>
                 </div>
                 <div className="tile is-parent is-vertical">
-                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Server">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                     <Skillbox title="" items={Data.Node} />
                   </Content>
-                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="React F/W">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                     <Skillbox title="" items={Data.reactFW} />
                   </Content>
-                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Testing F/W">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                     <Skillbox title="" items={Data.test} />
                   </Content>
-                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Type System">
+                  <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                     <Skillbox title="" items={Data.types} />
                   </Content>
                 </div>
               </div>
             </div>
             <div className="tile is-parent is-vertical">
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="HTML &amp; Styling">
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                 <Skillbox title="" items={Data.www} />
               </Content>
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Tool Chain">
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                 <Skillbox title="" items={Data.ToolChain} />
               </Content>
-              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }} heading="Editors">
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                 <Skillbox title="" items={Data.Editors} />
+              </Content>
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
+                <Skillbox title="" items={Data.CVS} />
               </Content>
             </div>
           </div>

@@ -2,7 +2,6 @@ import Styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as Images from './images';
-import { uiFworkBoxes } from '../data/skillsData';
 
 const List = Styled('ul')`
   /* width: 100%; */
