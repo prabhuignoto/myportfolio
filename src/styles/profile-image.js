@@ -1,4 +1,4 @@
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 
 export const ImageWrapper = Styled('div')`
   height: 10rem;

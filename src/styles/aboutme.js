@@ -1,4 +1,4 @@
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 
 export const About = Styled('div')`
   z-index: 150;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 import Img from 'gatsby-image';
 import { object } from 'prop-types';
 import NavBar from './navbar';

@@ -1,4 +1,4 @@
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 import GitSVG from '../assets/github.svg';
 
 export const Section = Styled('div')`

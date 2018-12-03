@@ -1,4 +1,4 @@
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as Images from './images';

@@ -1,4 +1,4 @@
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 
 export const Footer = Styled('footer')`
   background: #d8d8d7;

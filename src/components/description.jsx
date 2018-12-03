@@ -1,5 +1,5 @@
 import React from 'react';
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 import { string } from 'prop-types';
 
 

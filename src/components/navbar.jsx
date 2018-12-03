@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
 import { any } from 'prop-types';
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 import Social from './social';
 
 const LogoWrapper = Styled('div')`

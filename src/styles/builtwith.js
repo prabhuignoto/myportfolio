@@ -1,4 +1,4 @@
-import Styled from 'react-emotion';
+import Styled from '@emotion/styled';
 import ReactSVG from '../assets/react.svg';
 import TypeScript from '../assets/typescript.svg';
 import VueSVG from '../assets/vue.svg';

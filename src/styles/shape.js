@@ -1,5 +1,5 @@
 import Styled, {
-} from 'react-emotion';
+} from '@emotion/styled';
 
 export const Shapes = Styled('div')`
   display: flex;
