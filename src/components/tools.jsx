@@ -58,10 +58,13 @@ export default class Skills extends Component {
                 <Skillbox title="" items={Data.ToolChain} />
               </Content>
               <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
-                <Skillbox title="" items={Data.Editors} />
+                <Skillbox title="" items={Data.Cloud} />
               </Content>
               <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
                 <Skillbox title="" items={Data.CVS} />
+              </Content>
+              <Content className="tile is-child box" style={{ background: '#fff', boxShadow: '' }}>
+                <Skillbox title="" items={Data.Editors} />
               </Content>
             </div>
           </div>

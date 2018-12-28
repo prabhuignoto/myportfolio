@@ -35,3 +35,5 @@ export { default as At } from '../assets/at-solid.svg';
 export { default as GraphqlSVG } from '../assets/graphql.svg';
 export { default as KubernetesSVG } from '../assets/kubernets.svg';
 export { default as DockerSVG } from '../assets/docker.svg';
+export { default as NetlifySVG } from '../assets/netlify.svg';
+export { default as HerokuSVG } from '../assets/heroku.svg';
