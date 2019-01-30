@@ -84,42 +84,42 @@ export const pageQuery = graphql`
     }
     prabhuLogo: imageSharp(fluid:{ originalName: { regex: "/prabhu/"} }) {
       sizes(maxWidth: 600) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG,
+        ...GatsbyImageSharpSizes,
       }
     }
     designPicture: imageSharp(fluid: { originalName: { regex: "/design/"}}) {
       sizes(maxWidth: 1800) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     toolImage: imageSharp(fluid: {originalName: { regex: "/andyone/"}}) {
       sizes(maxWidth: 2000) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     profileImage: imageSharp(fluid: {originalName: { regex: "/profile-pic/"}}) {
       sizes(maxWidth: 337) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     honeywellLogo: imageSharp(fluid: {originalName: { regex: "/honeywell/"}}) {
       sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     juniperLogo: imageSharp(fluid: { originalName: { regex: "/juniper/"}}) {
       sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     techmLogo: imageSharp(fluid: {originalName: { regex: "/techm/"}}) {
       sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     jpmcLogo: imageSharp(fluid: {originalName: { regex: "/jpmc/"}}) {
       sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     newSquirrelLogo: imageSharp(fluid: {originalName: { regex: "/newsquirrel-logo/"}}) {
@@ -129,7 +129,7 @@ export const pageQuery = graphql`
     }
     newSquirrelMock: imageSharp(fluid: {originalName: { regex: "/newsquirrel-mockup/"}}) {
       sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     nutrivueLogo: imageSharp(fluid: {originalName: { regex: "/nutrivue-logo/"}}) {
@@ -139,7 +139,7 @@ export const pageQuery = graphql`
     }
     nutrivueMock: imageSharp(fluid: {originalName: { regex: "/nutrivue-mockup/"}}) {
       sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     weathernowLogo: imageSharp(fluid: {originalName: { regex: "/weathernow-logo/"}}) {
@@ -149,7 +149,7 @@ export const pageQuery = graphql`
     }
     weathernowMock: imageSharp(fluid: {originalName: { regex: "/weathernow-mock/"}}) {
       sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     boxyLogo: imageSharp(fluid: {originalName: { regex: "/boxy-logo/"}}) {
@@ -159,7 +159,7 @@ export const pageQuery = graphql`
     }
     boxyMock: imageSharp(fluid: {originalName: { regex: "/boxy-mock/"}}) {
       sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
     worldtimeLogo: imageSharp(fluid: {originalName: { regex: "/worldtime-logo/"}}) {
@@ -169,7 +169,7 @@ export const pageQuery = graphql`
     }
     worldtimeMock: imageSharp(fluid: {originalName: { regex: "/worldtime-mock/"}}) {
       sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes_withWebp_tracedSVG
+        ...GatsbyImageSharpSizes
       }
     }
   }
