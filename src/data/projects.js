@@ -10,6 +10,17 @@ export default [{
   logo: 'newSquirrelLogo',
 },
 {
+  id: 6,
+  name: 'Flixatic',
+  mock: 'flixaticMock',
+  tech: ['react', 'node', 'typescript', 'graphql', 'apollo'],
+  git: 'https://github.com/prabhuignoto/flixatic',
+  description: `Flixatic is built to bring the latest news and reviews of the most happening
+      movies and series from the Netflix platform. The app provides movie buffs with all the vital info they need.`,
+  appUrl: 'https://flixatic.netlify.com',
+  logo: 'flixaticLogo',
+},
+{
   id: 3,
   name: 'Boxy',
   mock: 'boxyMock',

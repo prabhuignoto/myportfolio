@@ -172,5 +172,15 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    flixaticLogo: imageSharp(fluid: {originalName: { regex: "/flixatic-logo/"}}) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    flixaticMock: imageSharp(fluid: {originalName: { regex: "/flixatic-mock/"}}) {
+      sizes(maxWidth: 900) {
+        ...GatsbyImageSharpSizes
+      }
+    }
   }
 `;
