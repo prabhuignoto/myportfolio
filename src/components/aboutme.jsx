@@ -40,7 +40,7 @@ export default function AboutMe() {
             {'Contact me'}
           </a>
           <a
-            href="https://novoresume.com/a/prabhu.m.murthy.1"
+            href="https://novoresume.com/a/prabhu.m.murthy.2"
             style={{ marginRight: '0.25rem', fontSize: '1.25rem' }}
             target="_new"
           >
