@@ -19,7 +19,7 @@ export default function AboutMe() {
         <p>
           {'My core expertise are building frontend apps using industry standard f/w & libs such as'}
           <Mark>
-            {'React, Vue, Redux & Apollo client.'}
+            {'React, Vue, Angular & Apollo client.'}
           </Mark>
           {'I also design & build application servers using '}
           <Mark>

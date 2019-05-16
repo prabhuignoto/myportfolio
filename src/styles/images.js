@@ -37,3 +37,5 @@ export { default as KubernetesSVG } from '../assets/kubernets.svg';
 export { default as DockerSVG } from '../assets/docker.svg';
 export { default as NetlifySVG } from '../assets/netlify.svg';
 export { default as HerokuSVG } from '../assets/heroku.svg';
+export { default as AngularSVG } from '../assets/angular.svg';
+export { default as PrismaSVG } from '../assets/prisma.svg';

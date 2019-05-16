@@ -12,8 +12,8 @@ export const uiFworkBoxes = [
     icon: 'VueSVG',
   },
   {
-    name: 'jQuery',
-    icon: 'jquerySVG',
+    name: 'Angular',
+    icon: 'AngularSVG',
   },
 ];
 
@@ -40,20 +40,12 @@ export const reactTools = [
   },
   {
     name: 'Prisma',
-    icon: '',
+    icon: 'PrismaSVG',
   },
   {
     name: 'Vuex',
     icon: 'VueSVG',
-  },
-  {
-    name: 'Recompose',
-    icon: '',
-  },
-  {
-    name: 'Reselect',
-    icon: '',
-  },
+  }
 ];
 
 export const www = [
