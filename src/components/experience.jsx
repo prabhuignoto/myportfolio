@@ -13,7 +13,7 @@ const ImgStyle = {
 };
 
 const Experience = ({
-  juniperLogo, honeywellLogo, jpmcLogo, techmLogo,
+  juniperLogo, honeywellLogo, jpmcLogo, cumulusLogo,
 }) => (
   <Wrapper className="section">
     <div className="container">
@@ -45,7 +45,7 @@ const Experience = ({
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Img sizes={techmLogo.sizes} alt="Tech Mahindra" imgStyle={ImgStyle} />
+              <Img sizes={cumulusLogo.sizes} alt="Cumulus Networks" imgStyle={ImgStyle} />
             </Figure>
           </Company>
         </div>
@@ -59,7 +59,7 @@ Experience.propTypes = {
   juniperLogo: shape(ImgType).isRequired,
   honeywellLogo: shape(ImgType).isRequired,
   jpmcLogo: shape(ImgType).isRequired,
-  techmLogo: shape(ImgType).isRequired,
+  cumulusLogo: shape(ImgType).isRequired,
 };
 
 export default Experience;

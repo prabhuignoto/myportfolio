@@ -37,7 +37,7 @@ export default class Index extends Component {
     const {
       data: {
         heroImage, profileImage, honeywellLogo, juniperLogo,
-        techmLogo, jpmcLogo, toolImage, prabhuLogo, designPicture,
+        techmLogo, jpmcLogo, toolImage, prabhuLogo, designPicture, cumulusLogo
       },
     } = this.props;
     const projectsData = ProjectsData.map(x => Object.assign({}, x, {
@@ -59,6 +59,7 @@ export default class Index extends Component {
                 juniperLogo={juniperLogo}
                 techmLogo={techmLogo}
                 jpmcLogo={jpmcLogo}
+                cumulusLogo={cumulusLogo}
               />
               <Footer />
             </Layout>
@@ -77,7 +78,7 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: imageSharp(fluid:{ originalName:{ regex: "/redblack-2/"}} ) {
+    heroImage: imageSharp(fluid:{ originalName:{ regex: "/wood/"}} ) {
       sizes(maxWidth: 2500) {
         ...GatsbyImageSharpSizes
       }
@@ -118,6 +119,11 @@ export const pageQuery = graphql`
       }
     }
     jpmcLogo: imageSharp(fluid: {originalName: { regex: "/jpmc/"}}) {
+      sizes(maxWidth: 800) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    cumulusLogo: imageSharp(fluid: {originalName: { regex: "/cumulus/"}}) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
