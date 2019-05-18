@@ -12,16 +12,16 @@ export default function AboutMe() {
         <p>
           {'I\'m a'}
           <Mark>
-            {'Fullstack'}
+            {' Fullstack'}
           </Mark>
-          {'javascript developer, designer and web applications architect and deeply passionate about developing apps that scale well.'}
+          {' javascript developer, designer and web applications architect and deeply passionate about developing apps that scale well.'}
         </p>
         <p>
-          {'My core expertise are building frontend apps using industry standard f/w & libs such as'}
+          {'My core expertise is building frontend apps using industry standard f/w & libs such as'}
           <Mark>
-            {'React, Vue, Angular & Apollo client.'}
+            {'React, Vue and Angular.'}
           </Mark>
-          {'I also design & build application servers using '}
+          {' I also design & build application servers using '}
           <Mark>
             {'Node JS, Graph QL, Apollo Server & Sails JS'}
           </Mark>
@@ -29,7 +29,7 @@ export default function AboutMe() {
         <p>
           {'I have extensive experience in designing and building high quality web apps that are '}
           <Mark>
-            {'highly secure ,fast performing.'}
+            {'highly secure and fast performing.'}
           </Mark>
         </p>
         <div>
