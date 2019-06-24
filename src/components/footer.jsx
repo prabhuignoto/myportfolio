@@ -36,7 +36,7 @@ const FooterView = () => (
         <div className="column is-3-desktop">
           <Copyright>
             <Text>
-              {'2018'}
+              {'2019'}
             </Text>
             <img src={CopyrightSVG} alt="copyright" height="13" width="13" style={{ marginBottom: 0 }} />
             <Text>
