@@ -50,10 +50,10 @@ export default class Projects extends Component {
     return (
       <div className="section projects" ref={this.ref}>
         <Wrapper className="container">
-          <SectionHeader title="My Recent Work" color="#404040" />
+          <SectionHeader title="My Recent Work" color="#AD1A25" />
           <Description
             text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works"
-            color="#746764"
+            color="#37647C"
           />
           <div className="columns is-centered is-multiline">
             {data.map(x => (

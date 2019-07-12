@@ -7,17 +7,17 @@ import {
 const Profile = () => (
   <Wrapper>
     <Tagline className="is-hidden-mobile tagline">
-      <TaglineItem color="#227B9A">
+      <TaglineItem color="#AD1A25">
         <TaglineText>
           {'Developer'}
         </TaglineText>
       </TaglineItem>
-      <TaglineItem color="#5EB4CE">
+      <TaglineItem color="#37647D">
         <TaglineText>
           {'Designer'}
         </TaglineText>
       </TaglineItem>
-      <TaglineItem color="#A989C2">
+      <TaglineItem color="#23212D">
         <TaglineText>
           {'Architect'}
         </TaglineText>

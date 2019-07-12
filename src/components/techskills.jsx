@@ -19,7 +19,7 @@ class TechSkills extends Component {
     return (
       <Wrapper className="section">
         <div className="container" ref={this.ref} style={{ width: '100%' }}>
-          <SectionHeader title="Skills" color="#404040" />
+          <SectionHeader title="Skills" color="#AD1A25" />
           <Description
             text="Building Applications with strong foundations is very essential for any robust web applications. I am skilled in these areas and i meticulously follow these principles during the design and development."
             color="#746764"

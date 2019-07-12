@@ -49,7 +49,7 @@ const Icon = Styled('i')`
 const Label = Styled('span')`
   display: block;
   font-size: 0.8rem;
-  color: #13293d;
+  color: #37647C;
   white-space: nowrap;
   text-align: center;
   &:hover {
