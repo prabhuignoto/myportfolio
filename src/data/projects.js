@@ -17,7 +17,7 @@ export default [{
   git: 'https://github.com/prabhuignoto/flixatic',
   description: `Flixatic is built to bring the latest news and reviews of the most happening
       movies and series from the Netflix platform. The app provides movie buffs with all the vital info they need.`,
-  appUrl: 'https://flixatic.netlify.com',
+  appUrl: 'https://github.com/prabhuignoto/flixatic',
   logo: 'flixaticLogo',
 },
 {
@@ -28,7 +28,7 @@ export default [{
   git: 'https://github.com/prabhuignoto/boxy',
   description: `Boxy is a modern webapp created to make access to Dropbox data easier and simple.
        Boxy is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
-  appUrl: 'https://boxy-app.netlify.com',
+  appUrl: 'https://github.com/prabhuignoto/boxy',
   logo: 'boxyLogo',
 },
 {
@@ -39,7 +39,7 @@ export default [{
   git: 'https://github.com/prabhuignoto/react-dark-weather',
   description: `WeatherNow is a modern weather app with very strong foundations.
         Powered by the Darkweather API, the app provides accurate forecast and current weather conditions in realtime.`,
-  appUrl: 'https://darkweather.netlify.com',
+  appUrl: 'https://github.com/prabhuignoto/react-dark-weather',
   logo: 'weathernowLogo',
 },
 {
