@@ -188,5 +188,15 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    vSlideMock: imageSharp(fluid: {originalName: { regex: "/v-slide-mock/"}}) {
+      sizes(maxWidth: 900) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    vSlideLogo: imageSharp(fluid: {originalName: { regex: "/v-slide-logo/"}}) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
   }
 `;

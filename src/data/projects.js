@@ -10,6 +10,17 @@ export default [{
   logo: 'newSquirrelLogo',
 },
 {
+  id: 7,
+  name: 'V-Slide',
+  mock: 'vSlideMock',
+  tech: ['vue', 'typescript'],
+  git: 'https://github.com/prabhuignoto',
+  description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
+  V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
+  appUrl: 'https://v-slide.netlify.com',
+  logo: 'vSlideLogo',
+},
+{
   id: 6,
   name: 'Flixatic',
   mock: 'flixaticMock',
