@@ -17,19 +17,19 @@ export default function AboutMe() {
           {' javascript developer, designer and web applications architect and deeply passionate about developing apps that scale well.'}
         </p>
         <p>
-          {'My core expertise is building frontend apps using industry standard f/w & libs such as'}
+          My core expertise is building frontend apps using industry standard f/w & libs such as
           <Mark>
-            {'React, Vue and Angular.'}
+            React, Vue and Angular.
           </Mark>
           {' I also design & build application servers using '}
           <Mark>
-            {'Node JS, Graph QL, Apollo Server & Sails JS'}
+            Node JS, Graph QL, Apollo Server & Sails JS
           </Mark>
         </p>
         <p>
           {'I have extensive experience in designing and building high quality web apps that are '}
           <Mark>
-            {'highly secure and fast performing.'}
+            highly secure and fast performing.
           </Mark>
         </p>
         <div>
@@ -37,14 +37,14 @@ export default function AboutMe() {
             href="mailto:prabhu.m.murthy@gmail.com"
             style={{ marginRight: '0.5rem', fontSize: '1.25rem' }}
           >
-            {'Contact me'}
+            Contact me
           </a>
           <a
-            href="https://novoresume.com/a/prabhu.m.murthy.2"
+            href="https://app.enhancv.com/share/eaa533b7?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
             style={{ marginRight: '0.25rem', fontSize: '1.25rem' }}
             target="_new"
           >
-            {'View Resume'}
+            View Resume
           </a>
         </div>
       </About>
