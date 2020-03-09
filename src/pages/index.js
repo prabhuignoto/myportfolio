@@ -80,7 +80,7 @@ Index.propTypes = {
 export const pageQuery = graphql`
   query HeroImageQuery {
     heroImage: imageSharp(fluid:{ originalName:{ regex: "/marjanblan/"}} ) {
-      sizes(maxWidth: 3000) {
+      sizes(maxWidth: 4000) {
         ...GatsbyImageSharpSizes
       }
     }

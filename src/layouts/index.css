@@ -742,8 +742,8 @@ pre tt:after {
   margin-right: auto;
 }
 .shape-image-wrapper {
-  filter: blur(1px) sepia(0.1) brightness(1.25);
-  transform: scale(1.01);
+  /* filter: blur(1px) sepia(0.1) brightness(1.25); */
+  /* transform: scale(1.01); */
   /* clip-path: polygon(40% 0%,100% 0%,60% 100%,0% 100%); */
   top: 0;
   position: absolute;
