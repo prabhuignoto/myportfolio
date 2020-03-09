@@ -37,16 +37,17 @@ export default class Index extends Component {
     const {
       data: {
         heroImage, profileImage, honeywellLogo, juniperLogo,
-        techmLogo, jpmcLogo, toolImage, prabhuLogo, designPicture, cumulusLogo
+        techmLogo, jpmcLogo, toolImage, prabhuLogo, designPicture, cumulusLogo,
       },
     } = this.props;
-    const projectsData = ProjectsData.map(x => Object.assign({}, x, {
+    const projectsData = ProjectsData.map((x) => ({
+      ...x,
       mock: this.props.data[x.mock],
       logo: this.props.data[x.logo],
     }));
     const { fontsLoaded } = this.state;
     return (
-      <Fragment>
+      <>
         {fontsLoaded
           ? (
             <Layout>
@@ -64,7 +65,7 @@ export default class Index extends Component {
               <Footer />
             </Layout>
           ) : null }
-      </Fragment>
+      </>
     );
   }
 }
@@ -78,8 +79,8 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: imageSharp(fluid:{ originalName:{ regex: "/nihon/"}} ) {
-      sizes(maxWidth: 2000) {
+    heroImage: imageSharp(fluid:{ originalName:{ regex: "/marjanblan/"}} ) {
+      sizes(maxWidth: 3000) {
         ...GatsbyImageSharpSizes
       }
     }

@@ -72,7 +72,7 @@ export const Img = Styled('div')`
 
 export const Figure = Styled('figure')`
   width: auto;
-  height: 25rem;
+  height: 18rem;
   padding: 0.25rem;
   display: flex;
   align-items: center;

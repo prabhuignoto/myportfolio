@@ -58,7 +58,7 @@ export default class Projects extends Component {
           <div className="columns is-centered is-multiline">
             {data.map(x => (
               <div
-                className="column is-half-tablet is-two-fifths-desktop"
+                className="column is-half-tablet is-one-third-desktop"
                 key={x.id}
               >
                 <Project className="card">
@@ -111,6 +111,7 @@ export default class Projects extends Component {
                       >
                         <GitIcon />
                         <GitIconText>
+                          {'Github'}
                           {/* {'View this Project on Github'} */}
                         </GitIconText>
                       </GitLink>
