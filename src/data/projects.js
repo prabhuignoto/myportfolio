@@ -20,17 +20,17 @@ export default [{
   appUrl: 'https://v-slide.netlify.com',
   logo: 'vSlideLogo',
 },
-{
-  id: 6,
-  name: 'Flixatic',
-  mock: 'flixaticMock',
-  tech: ['react', 'node', 'typescript', 'graphql', 'apollo'],
-  git: 'https://github.com/prabhuignoto/flixatic',
-  description: `Flixatic is built to bring the latest news and reviews of the most happening
-      movies and series from the Netflix platform. The app provides movie buffs with all the vital info they need.`,
-  appUrl: 'https://github.com/prabhuignoto/flixatic',
-  logo: 'flixaticLogo',
-},
+// {
+//   id: 6,
+//   name: 'Flixatic',
+//   mock: 'flixaticMock',
+//   tech: ['react', 'node', 'typescript', 'graphql', 'apollo'],
+//   git: 'https://github.com/prabhuignoto/flixatic',
+//   description: `Flixatic is built to bring the latest news and reviews of the most happening
+//       movies and series from the Netflix platform. The app provides movie buffs with all the vital info they need.`,
+//   appUrl: 'https://github.com/prabhuignoto/flixatic',
+//   logo: 'flixaticLogo',
+// },
 {
   id: 3,
   name: 'Boxy',
