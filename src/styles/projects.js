@@ -84,7 +84,7 @@ export const Figure = Styled('figure')`
 
 export const Footer = Styled('footer')`
   width: 100%;
-  padding: 1rem 0.25rem;
+  padding: 0.25rem;
   border-top: none;
 `;
 
