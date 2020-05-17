@@ -20,16 +20,19 @@ export default class Index extends Component {
 
   componentDidMount() {
     // eslint-disable-next-line global-require
-    const fontloader = require('webfontloader');
-    fontloader.load({
-      google: {
-        families: ['Open Sans:n4,n5,n6'],
-      },
-      active: () => {
-        this.setState({
-          fontsLoaded: true,
-        });
-      },
+    // const fontloader = require('webfontloader');
+    // fontloader.load({
+    //   google: {
+    //     families: ['Open Sans:n4,n5,n6'],
+    //   },
+    //   active: () => {
+    //     this.setState({
+    //       fontsLoaded: true,
+    //     });
+    //   },
+    // });
+    this.setState({
+      fontsLoaded: true,
     });
   }
 
