@@ -15,7 +15,7 @@ const FooterView = () => (
         <div className="column is-3-desktop">
           <FooterWrapper>
             <Text>
-              Designed by me and built with
+              Designed by and built with
             </Text>
             <img height="18" width="18" src={HeartSVG} alt="love" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
           </FooterWrapper>
@@ -28,7 +28,7 @@ const FooterView = () => (
             <Link href="www.gatsbyjs.org" target="new">
               <img height="18" width="20" src={GatsbySVG} alt="gatsby" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
               <Text>
-                Gatsby
+                Gatsby JS
               </Text>
             </Link>
           </GatsbyWrapper>
