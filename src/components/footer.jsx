@@ -15,7 +15,7 @@ const FooterView = () => (
         <div className="column is-3-desktop">
           <FooterWrapper>
             <Text>
-              {'Designed by me and built with'}
+              Designed by me and built with
             </Text>
             <img height="18" width="18" src={HeartSVG} alt="love" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
           </FooterWrapper>
@@ -23,12 +23,12 @@ const FooterView = () => (
         <div className="column is-3-desktop">
           <GatsbyWrapper>
             <Text>
-              {'Powered By'}
+              Powered By
             </Text>
             <Link href="www.gatsbyjs.org" target="new">
               <img height="18" width="20" src={GatsbySVG} alt="gatsby" style={{ marginBottom: '0', margin: '0 0.25rem' }} />
               <Text>
-                {'Gatsby'}
+                Gatsby
               </Text>
             </Link>
           </GatsbyWrapper>
@@ -36,11 +36,11 @@ const FooterView = () => (
         <div className="column is-3-desktop">
           <Copyright>
             <Text>
-              {'2019'}
+              {new Date().getFullYear()}
             </Text>
             <img src={CopyrightSVG} alt="copyright" height="13" width="13" style={{ marginBottom: 0 }} />
             <Text>
-              {'Prabhu Murthy'}
+              Prabhu Murthy
             </Text>
           </Copyright>
         </div>
