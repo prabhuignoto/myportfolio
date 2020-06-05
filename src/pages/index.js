@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Hero from '../components/hero';
@@ -182,13 +182,13 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    flixaticLogo: imageSharp(fluid: {originalName: { regex: "/flixatic-logo/"}}) {
+    flixyLogo: imageSharp(fluid: {originalName: { regex: "/flixy-logo/"}}) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    flixaticMock: imageSharp(fluid: {originalName: { regex: "/flixatic-mock/"}}) {
-      sizes(maxWidth: 900) {
+    flixyMock: imageSharp(fluid: {originalName: { regex: "/flixy-mock/"}}) {
+      sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }

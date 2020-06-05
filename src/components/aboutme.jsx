@@ -1,36 +1,33 @@
 import React from 'react';
 import { Mark, About } from '../styles/aboutme';
 
-
 export default function AboutMe() {
   return (
-    <div className="box" style={{ position: 'relative', backgroundColor: 'transparent', boxShadow: 'none' }}>
+    <div
+      className="box"
+      style={{
+        position: 'relative',
+        backgroundColor: 'transparent',
+        boxShadow: 'none',
+      }}
+    >
       <About className="content">
-        <p>
-          {'Hey I\'m Prabhu Murthy'}
-        </p>
+        <p>{'Hey I\'m Prabhu Murthy'}</p>
         <p>
           {'I\'m a'}
-          <Mark>
-            {' Fullstack'}
-          </Mark>
-          {' javascript developer, designer and web applications architect and deeply passionate about developing apps that scale well.'}
+          <Mark>{' Fullstack'}</Mark>
+          {' javascript developer, designer and web applications architect.'}
         </p>
         <p>
-          My core expertise is building frontend apps using industry standard f/w & libs such as
-          <Mark>
-            React, Vue and Angular.
-          </Mark>
+          My expertise is building frontend apps using industry standard f/w &
+          libs such as React, Vue, Angular, Svelte.
           {' I also design & build application servers using '}
-          <Mark>
-            Node JS, Graph QL, Apollo Server & Sails JS
-          </Mark>
+          <Mark>Node JS, Graph QL, Apollo Server & Sails JS</Mark>
         </p>
         <p>
-          {'I have extensive experience in designing and building high quality web apps that are '}
-          <Mark>
-            highly secure and fast performing.
-          </Mark>
+          I have extensive fullstack experience in designing and building high
+          quality web apps from the ground up
+          <Mark>that are secure and fast performing.</Mark>
         </p>
         <div>
           <a
@@ -40,7 +37,7 @@ export default function AboutMe() {
             Contact me
           </a>
           <a
-            href="https://app.enhancv.com/share/eaa533b7?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+            href="https://app.enhancv.com/share/cbbd06c3?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
             style={{ marginRight: '0.25rem', fontSize: '1.25rem' }}
             target="_new"
           >
@@ -49,6 +46,5 @@ export default function AboutMe() {
         </div>
       </About>
     </div>
-
   );
 }
