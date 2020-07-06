@@ -10,6 +10,17 @@ export default [
     logo: 'flixyLogo',
   },
   {
+    id: 3,
+    name: 'Boxy',
+    mock: 'boxyMock',
+    tech: ['vue', 'node', 'typescript', 'graphql', 'apollo'],
+    git: 'https://github.com/prabhuignoto/boxy',
+    description: `Boxd is a modern webapp created to make access to Dropbox data easier and simple.
+       Boxd is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
+    appUrl: 'https://github.com/prabhuignoto/boxy',
+    logo: 'boxyLogo',
+  },
+  {
     id: 2,
     name: 'Newsquirrel',
     mock: 'newSquirrelMock',
@@ -30,17 +41,6 @@ export default [
   V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
     appUrl: 'https://v-slide.netlify.com',
     logo: 'vSlideLogo',
-  },
-  {
-    id: 3,
-    name: 'Boxy',
-    mock: 'boxyMock',
-    tech: ['vue', 'node', 'typescript', 'graphql', 'apollo'],
-    git: 'https://github.com/prabhuignoto/boxy',
-    description: `Boxy is a modern webapp created to make access to Dropbox data easier and simple.
-       Boxy is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
-    appUrl: 'https://github.com/prabhuignoto/boxy',
-    logo: 'boxyLogo',
   },
   {
     id: 1,
