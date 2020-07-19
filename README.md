@@ -1,5 +1,4 @@
-[![CircleCI](https://circleci.com/gh/prabhuignoto/myportfolio.svg?style=shield)](https://circleci.com/gh/prabhuignoto/myportfolio)
-[![codecov](https://codecov.io/gh/prabhuignoto/myportfolio/branch/master/graph/badge.svg)](https://codecov.io/gh/prabhuignoto/myportfolio)
+[![Build Status](https://dev.azure.com/prabhummurthy/portfoilio/_apis/build/status/prabhuignoto.myportfolio?branchName=master)](https://dev.azure.com/prabhummurthy/portfoilio/_build/latest?definitionId=3&branchName=master)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
