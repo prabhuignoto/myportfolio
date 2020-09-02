@@ -56,7 +56,7 @@ export default class Projects extends Component {
             color="#37647C"
           />
           <div className="columns is-centered is-multiline">
-            {data.map(x => (
+            {data.map((x) => (
               <div
                 className="column is-half-tablet is-one-third-desktop"
                 key={x.id}
@@ -101,7 +101,7 @@ export default class Projects extends Component {
                   <Footer className="card-footer">
                     <FooterWrapper className="">
                       <a href={x.appUrl} target="new" style={{ marginLeft: '1rem', marginRight: 'auto' }}>
-                        {'View demo'}
+                        View demo
                       </a>
                       <GitLink
                         href={x.git}
@@ -111,7 +111,7 @@ export default class Projects extends Component {
                       >
                         <GitIcon />
                         <GitIconText>
-                          {'Github'}
+                          Github
                           {/* {'View this Project on Github'} */}
                         </GitIconText>
                       </GitLink>

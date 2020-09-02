@@ -7,7 +7,7 @@ export const About = Styled('div')`
   font-size: 1.25rem;
   font-weight: 400;
   border-radius: 4px;
-  font-family: 'Open Sans',sans-serif;
+  /* font-family: 'Open Sans',sans-serif; */
 `;
 
 export const Mark = Styled('span')`

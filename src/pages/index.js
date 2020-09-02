@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Hero from '../components/hero';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import Experience from '../components/experience';
-import Projects from '../components/projects';
-import Tools from '../components/tools';
 import Footer from '../components/footer';
-import ProjectsData from '../data/projects';
-import Skills from '../components/techskills';
+import Hero from '../components/hero';
 import Layout from '../components/layout';
+import Projects from '../components/projects';
+import Skills from '../components/techskills';
+import Tools from '../components/tools';
+import ProjectsData from '../data/projects';
 
 export default class Index extends Component {
   constructor(props) {
@@ -39,8 +39,16 @@ export default class Index extends Component {
   render() {
     const {
       data: {
-        heroImage, profileImage, honeywellLogo, juniperLogo,
-        techmLogo, jpmcLogo, toolImage, prabhuLogo, designPicture, cumulusLogo,
+        heroImage,
+        profileImage,
+        honeywellLogo,
+        juniperLogo,
+        techmLogo,
+        jpmcLogo,
+        toolImage,
+        prabhuLogo,
+        designPicture,
+        cumulusLogo,
       },
     } = this.props;
     const projectsData = ProjectsData.map((x) => ({
@@ -51,28 +59,30 @@ export default class Index extends Component {
     const { fontsLoaded } = this.state;
     return (
       <>
-        {fontsLoaded
-          ? (
-            <Layout>
-              <Hero heroImage={heroImage} profileImage={profileImage} prabhuLogo={prabhuLogo} />
-              <Projects data={projectsData} />
-              <Skills designPicture={designPicture} />
-              <Tools toolImage={toolImage} />
-              <Experience
-                honeywellLogo={honeywellLogo}
-                juniperLogo={juniperLogo}
-                techmLogo={techmLogo}
-                jpmcLogo={jpmcLogo}
-                cumulusLogo={cumulusLogo}
-              />
-              <Footer />
-            </Layout>
-          ) : null }
+        {fontsLoaded ? (
+          <Layout>
+            <Hero
+              heroImage={heroImage}
+              profileImage={profileImage}
+              prabhuLogo={prabhuLogo}
+            />
+            <Projects data={projectsData} />
+            <Skills designPicture={designPicture} />
+            <Tools toolImage={toolImage} />
+            <Experience
+              honeywellLogo={honeywellLogo}
+              juniperLogo={juniperLogo}
+              techmLogo={techmLogo}
+              jpmcLogo={jpmcLogo}
+              cumulusLogo={cumulusLogo}
+            />
+            <Footer />
+          </Layout>
+        ) : null}
       </>
     );
   }
 }
-
 
 Index.propTypes = {
   data: PropTypes.shape({
@@ -82,122 +92,156 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: imageSharp(fluid:{ originalName:{ regex: "/marjanblan/"}} ) {
+    heroImage: imageSharp(fluid: { originalName: { regex: "/marjanblan/" } }) {
       sizes(maxWidth: 4000) {
         ...GatsbyImageSharpSizes
       }
     }
-    prabhuLogo: imageSharp(fluid:{ originalName: { regex: "/prabhu/"} }) {
+    prabhuLogo: imageSharp(fluid: { originalName: { regex: "/prabhu/" } }) {
       sizes(maxWidth: 600) {
-        ...GatsbyImageSharpSizes,
+        ...GatsbyImageSharpSizes
       }
     }
-    designPicture: imageSharp(fluid: { originalName: { regex: "/design/"}}) {
+    designPicture: imageSharp(fluid: { originalName: { regex: "/design/" } }) {
       sizes(maxWidth: 1800) {
         ...GatsbyImageSharpSizes
       }
     }
-    toolImage: imageSharp(fluid: {originalName: { regex: "/andyone/"}}) {
+    toolImage: imageSharp(fluid: { originalName: { regex: "/andyone/" } }) {
       sizes(maxWidth: 2000) {
         ...GatsbyImageSharpSizes
       }
     }
-    profileImage: imageSharp(fluid: {originalName: { regex: "/profile-pic/"}}) {
+    profileImage: imageSharp(
+      fluid: { originalName: { regex: "/profile-pic/" } }
+    ) {
       sizes(maxWidth: 337) {
         ...GatsbyImageSharpSizes
       }
     }
-    honeywellLogo: imageSharp(fluid: {originalName: { regex: "/honeywell/"}}) {
+    honeywellLogo: imageSharp(
+      fluid: { originalName: { regex: "/honeywell/" } }
+    ) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    juniperLogo: imageSharp(fluid: { originalName: { regex: "/juniper/"}}) {
+    juniperLogo: imageSharp(fluid: { originalName: { regex: "/juniper/" } }) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    techmLogo: imageSharp(fluid: {originalName: { regex: "/techm/"}}) {
+    techmLogo: imageSharp(fluid: { originalName: { regex: "/techm/" } }) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    jpmcLogo: imageSharp(fluid: {originalName: { regex: "/jpmc/"}}) {
+    jpmcLogo: imageSharp(fluid: { originalName: { regex: "/jpmc/" } }) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    cumulusLogo: imageSharp(fluid: {originalName: { regex: "/cumulus/"}}) {
+    cumulusLogo: imageSharp(fluid: { originalName: { regex: "/cumulus/" } }) {
       sizes(maxWidth: 800) {
         ...GatsbyImageSharpSizes
       }
     }
-    newSquirrelLogo: imageSharp(fluid: {originalName: { regex: "/newsquirrel-logo/"}}) {
+    newSquirrelLogo: imageSharp(
+      fluid: { originalName: { regex: "/newsquirrel-logo/" } }
+    ) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    newSquirrelMock: imageSharp(fluid: {originalName: { regex: "/newsquirrel-mockup/"}}) {
+    newSquirrelMock: imageSharp(
+      fluid: { originalName: { regex: "/newsquirrel-mockup/" } }
+    ) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    nutrivueLogo: imageSharp(fluid: {originalName: { regex: "/nutrivue-logo/"}}) {
+    nutrivueLogo: imageSharp(
+      fluid: { originalName: { regex: "/nutrivue-logo/" } }
+    ) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    nutrivueMock: imageSharp(fluid: {originalName: { regex: "/nutrivue-mockup/"}}) {
+    nutrivueMock: imageSharp(
+      fluid: { originalName: { regex: "/nutrivue-mockup/" } }
+    ) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    weathernowLogo: imageSharp(fluid: {originalName: { regex: "/weathernow-logo/"}}) {
+    chronoLogo: imageSharp(
+      fluid: { originalName: { regex: "/chrono-logo/" } }
+    ) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    weathernowMock: imageSharp(fluid: {originalName: { regex: "/weathernow-mock/"}}) {
+    chronoMock: imageSharp(
+      fluid: { originalName: { regex: "/chrono-mock/" } }
+    ) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    boxyLogo: imageSharp(fluid: {originalName: { regex: "/boxy-logo/"}}) {
+    boxyLogo: imageSharp(fluid: { originalName: { regex: "/boxy-logo/" } }) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    boxyMock: imageSharp(fluid: {originalName: { regex: "/boxy-mock/"}}) {
+    boxyMock: imageSharp(fluid: { originalName: { regex: "/boxy-mock/" } }) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    worldtimeLogo: imageSharp(fluid: {originalName: { regex: "/worldtime-logo/"}}) {
+    smartTagzLogo: imageSharp(fluid: { originalName: { regex: "/smart-tagz-logo/" } }) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    worldtimeMock: imageSharp(fluid: {originalName: { regex: "/worldtime-mock/"}}) {
+    smartTagzMock: imageSharp(fluid: { originalName: { regex: "/smart-tagz-mock/" } }) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    flixyLogo: imageSharp(fluid: {originalName: { regex: "/flixy-logo/"}}) {
+    worldtimeLogo: imageSharp(
+      fluid: { originalName: { regex: "/worldtime-logo/" } }
+    ) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    flixyMock: imageSharp(fluid: {originalName: { regex: "/flixy-mock/"}}) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    vSlideMock: imageSharp(fluid: {originalName: { regex: "/v-slide-mock/"}}) {
+    worldtimeMock: imageSharp(
+      fluid: { originalName: { regex: "/worldtime-mock/" } }
+    ) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }
     }
-    vSlideLogo: imageSharp(fluid: {originalName: { regex: "/v-slide-logo/"}}) {
+    flixyLogo: imageSharp(fluid: { originalName: { regex: "/flixy-logo/" } }) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    flixyMock: imageSharp(fluid: { originalName: { regex: "/flixy-mock/" } }) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    vSlideMock: imageSharp(
+      fluid: { originalName: { regex: "/v-slide-mock/" } }
+    ) {
+      sizes(maxWidth: 900) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    vSlideLogo: imageSharp(
+      fluid: { originalName: { regex: "/v-slide-logo/" } }
+    ) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }

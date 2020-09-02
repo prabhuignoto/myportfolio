@@ -30,7 +30,7 @@ export const Text = Styled('div')`
   display: block;
   white-space: nowrap;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   margin: 0 0.25rem;
 `;
 

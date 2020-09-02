@@ -15,7 +15,7 @@ const DescriptionWrapper = Styled('div')`
 const DescriptionContent = Styled('span')`
   display: block;
   font-size: 1.35rem;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   text-align: center;
   color: ${p => (p.color ? '#000' : '#fff')};
 `;

@@ -38,7 +38,7 @@ const ListItemText = Styled('span')`
   display: block;
   color: #000;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 `;
 
 const Hdr = Styled('header')`

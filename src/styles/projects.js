@@ -8,7 +8,7 @@ export const Section = Styled('div')`
 
 export const Wrapper = Styled('div')`
   /* padding: 3rem 3rem; */
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   z-index:1;
 `;
 
@@ -64,7 +64,7 @@ export const ImageWrapper = Styled('div')`
 export const Img = Styled('div')`
   width: 100%;
   height: 100%;
-  background: url(${p => p.src});
+  background: url(${(p) => p.src});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50%;
@@ -119,9 +119,9 @@ export const AppImageWrapper = Styled('div')`
 
 export const AppDescription = Styled('p')`
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   min-height: 2rem;
   margin-top: 1rem;

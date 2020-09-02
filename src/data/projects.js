@@ -5,12 +5,13 @@ export default [
     mock: 'flixyMock',
     tech: ['react', 'node', 'typescript', 'graphql', 'apollo'],
     git: 'https://github.com/prabhuignoto/flixy',
-    description: 'Flixy is an open source attempt to bring enjoyable User experience to discover Movies & TV shows. Flixy boasts a modern interface with a flexible layout system that makes navigation easy and delightful.',
+    description:
+      'Flixy is an open source attempt to bring enjoyable User experience to discover Movies & TV shows. Flixy boasts a modern interface with a flexible layout system that makes navigation easy and delightful.',
     appUrl: 'https://movies.prabhumurthy.com',
     logo: 'flixyLogo',
   },
   {
-    id: 3,
+    id: 2,
     name: 'Boxy',
     mock: 'boxyMock',
     tech: ['vue', 'node', 'typescript', 'graphql', 'apollo'],
@@ -21,7 +22,40 @@ export default [
     logo: 'boxyLogo',
   },
   {
-    id: 2,
+    id: 3,
+    name: 'react-chrono',
+    mock: 'chronoMock',
+    tech: ['react', 'typescript', 'styled-components'],
+    git: 'https://github.com/prabhuignoto/react-chrono',
+    description: `react-chrono is a modern timeline component built for React.
+    The component is very flexible and supports multiple timeline modes with an option to run slideshow.`,
+    appUrl: 'https://react-chrono.vercel.app/',
+    logo: 'chronoLogo',
+  },
+  {
+    id: 4,
+    name: 'smart-tagz',
+    mock: 'smartTagzMock',
+    tech: ['vue', 'typescript'],
+    git: 'https://github.com/prabhuignoto/smart-tagz',
+    description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
+              V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
+    appUrl: 'https://smart-tagz.vercel.app/',
+    logo: 'smartTagzLogo',
+  },
+  {
+    id: 4,
+    name: 'V-Slide',
+    mock: 'vSlideMock',
+    tech: ['vue', 'typescript'],
+    git: 'https://github.com/prabhuignoto',
+    description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
+              V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
+    appUrl: 'https://v-slide.netlify.com',
+    logo: 'vSlideLogo',
+  },
+  {
+    id: 5,
     name: 'Newsquirrel',
     mock: 'newSquirrelMock',
     tech: ['react', 'node', 'typescript', 'apollo', 'graphql'],
@@ -32,29 +66,7 @@ export default [
     logo: 'newSquirrelLogo',
   },
   {
-    id: 7,
-    name: 'V-Slide',
-    mock: 'vSlideMock',
-    tech: ['vue', 'typescript'],
-    git: 'https://github.com/prabhuignoto',
-    description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
-  V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
-    appUrl: 'https://v-slide.netlify.com',
-    logo: 'vSlideLogo',
-  },
-  {
-    id: 1,
-    name: 'Weather Now',
-    mock: 'weathernowMock',
-    tech: ['react', 'typescript', 'redux'],
-    git: 'https://github.com/prabhuignoto/react-dark-weather',
-    description: `WeatherNow is a modern weather app with very strong foundations.
-        Powered by the Darkweather API, the app provides accurate forecast and current weather conditions in realtime.`,
-    appUrl: 'https://github.com/prabhuignoto/react-dark-weather',
-    logo: 'weathernowLogo',
-  },
-  {
-    id: 4,
+    id: 6,
     name: 'Worldtime',
     mock: 'worldtimeMock',
     tech: ['react', 'apollo', 'typescript', 'graphql', 'node'],
@@ -65,7 +77,7 @@ export default [
     logo: 'worldtimeLogo',
   },
   {
-    id: 5,
+    id: 7,
     name: 'Nutrivue',
     mock: 'nutrivueMock',
     tech: ['vue'],
