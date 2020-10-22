@@ -1,10 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-
-import "../layouts/index.css";
-import "../layouts/index.scss";
-import { StaticQuery, graphql } from "gatsby";
+import { graphql, StaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import '../layouts/index.css';
+import '../layouts/index.scss';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -22,13 +21,13 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
           ]}
         />
         <div
           style={{
-            margin: "0 auto",
+            margin: '0 auto',
             paddingTop: 0,
           }}
         >

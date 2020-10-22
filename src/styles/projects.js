@@ -17,6 +17,11 @@ export const Project = Styled('div')`
   margin-bottom: 2.5rem;
   /* box-shadow: 0px 0 10px 2px rgba(0,0,0,0.15); */
   border-radius: 5px;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+  background: #fff;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
   &:after {
     content: '';
     display: block;
@@ -86,6 +91,7 @@ export const Footer = Styled('footer')`
   width: 100%;
   padding: 0.25rem;
   border-top: none;
+  margin-top: auto;
 `;
 
 export const FooterWrapper = Styled('div')`

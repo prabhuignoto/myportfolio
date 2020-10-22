@@ -1,5 +1,37 @@
 export default [
   {
+    id: 3,
+    name: 'react-chrono',
+    mock: 'chronoMock',
+    tech: ['react', 'typescript', 'styled-components'],
+    git: 'https://github.com/prabhuignoto/react-chrono',
+    description: 'react-chrono is a modern timeline component for React with multiple layout modes (Horizontal, Vertical , Tree), slideshow and support for embedding images & videos.',
+    appUrl: 'https://react-chrono.vercel.app/',
+    logo: 'chronoLogo',
+  },
+  {
+    id: 8,
+    name: 'vue-float-menu',
+    mock: 'floatMock',
+    tech: ['vue', 'typescript'],
+    git: 'https://github.com/prabhuignoto/vue-float-menu',
+    description: `vue-float-menu is a smart draggable menu built for Vue 3.
+    Easily drag and place the menu anywhere on screen and the component will find a optimal menu orientation. Keyboard accessible and customizable color schemes.`,
+    appUrl: 'https://vue-float-menu.vercel.app/',
+    logo: 'floatLogo',
+  },
+  {
+    id: 4,
+    name: 'smart-tagz',
+    mock: 'smartTagzMock',
+    tech: ['vue', 'typescript'],
+    git: 'https://github.com/prabhuignoto/smart-tagz',
+    description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
+              V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
+    appUrl: 'https://smart-tagz.vercel.app/',
+    logo: 'smartTagzLogo',
+  },
+  {
     id: 1,
     name: 'Flixy',
     mock: 'flixyMock',
@@ -20,28 +52,6 @@ export default [
        Boxd is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
     appUrl: 'https://github.com/prabhuignoto/boxy',
     logo: 'boxyLogo',
-  },
-  {
-    id: 3,
-    name: 'react-chrono',
-    mock: 'chronoMock',
-    tech: ['react', 'typescript', 'styled-components'],
-    git: 'https://github.com/prabhuignoto/react-chrono',
-    description: `react-chrono is a modern timeline component built for React.
-    The component is very flexible and supports multiple timeline modes with an option to run slideshow.`,
-    appUrl: 'https://react-chrono.vercel.app/',
-    logo: 'chronoLogo',
-  },
-  {
-    id: 4,
-    name: 'smart-tagz',
-    mock: 'smartTagzMock',
-    tech: ['vue', 'typescript'],
-    git: 'https://github.com/prabhuignoto/smart-tagz',
-    description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
-              V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
-    appUrl: 'https://smart-tagz.vercel.app/',
-    logo: 'smartTagzLogo',
   },
   {
     id: 4,

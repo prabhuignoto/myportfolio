@@ -1,14 +1,14 @@
-import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import Experience from '../components/experience';
-import Footer from '../components/footer';
-import Hero from '../components/hero';
-import Layout from '../components/layout';
-import Projects from '../components/projects';
-import Skills from '../components/techskills';
-import Tools from '../components/tools';
-import ProjectsData from '../data/projects';
+import { graphql } from "gatsby";
+import PropTypes from "prop-types";
+import React, { Component } from "react";
+import Experience from "../components/experience";
+import Footer from "../components/footer";
+import Hero from "../components/hero";
+import Layout from "../components/layout";
+import Projects from "../components/projects";
+import Skills from "../components/techskills";
+import Tools from "../components/tools";
+import ProjectsData from "../data/projects";
 
 export default class Index extends Component {
   constructor(props) {
@@ -198,12 +198,26 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    smartTagzLogo: imageSharp(fluid: { originalName: { regex: "/smart-tagz-logo/" } }) {
+    smartTagzLogo: imageSharp(
+      fluid: { originalName: { regex: "/smart-tagz-logo/" } }
+    ) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }
     }
-    smartTagzMock: imageSharp(fluid: { originalName: { regex: "/smart-tagz-mock/" } }) {
+    smartTagzMock: imageSharp(
+      fluid: { originalName: { regex: "/smart-tagz-mock/" } }
+    ) {
+      sizes(maxWidth: 900) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    floatMock: imageSharp(fluid: { originalName: { regex: "/float-mock/" } }) {
+      sizes(maxWidth: 900) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    floatLogo: imageSharp(fluid: { originalName: { regex: "/float-logo/" } }) {
       sizes(maxWidth: 900) {
         ...GatsbyImageSharpSizes
       }

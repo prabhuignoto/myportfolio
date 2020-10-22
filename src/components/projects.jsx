@@ -1,29 +1,28 @@
-import React, { Component } from 'react';
 import Image from 'gatsby-image';
 import {
-  shape, string, arrayOf, number,
+  arrayOf, number, shape, string,
 } from 'prop-types';
+import React, { Component } from 'react';
+import {
+  AppDescription,
+  AppImageWrapper,
+  ApplogoWrapper,
+  CardContentWrapper,
+  Figure,
+  Footer,
+  FooterWrapper,
+  GitIcon,
+  GitIconText,
+  GitLink,
+  ImageWrapper,
+  Project,
+  Wrapper,
+} from '../styles/projects';
+import ImgType from '../types';
 // import ScrollReveal from 'scrollreveal';
 import BuiltWith from './builtwith';
-import SectionHeader from './section-header';
 import Description from './description';
-import ImgType from '../types';
-
-import {
-  Wrapper,
-  AppDescription,
-  CardContentWrapper,
-  ApplogoWrapper,
-  Footer,
-  Figure,
-  FooterWrapper,
-  Project,
-  ImageWrapper,
-  GitIconText,
-  GitIcon,
-  GitLink,
-  AppImageWrapper,
-} from '../styles/projects';
+import SectionHeader from './section-header';
 
 const gatsbyImgStyle = {
   maxHeight: '100%',
@@ -61,7 +60,7 @@ export default class Projects extends Component {
                 className="column is-half-tablet is-one-third-desktop"
                 key={x.id}
               >
-                <Project className="card">
+                <Project className="">
                   <div
                     className="card-content is-paddingless"
                     style={{ padding: '0.5rem' }}
@@ -77,18 +76,16 @@ export default class Projects extends Component {
                           <Image
                             sizes={x.logo.sizes}
                             imgStyle={gatsbyImgStyle}
-                            placeholderStyle={{ width: '70%' }}
+                            placeholderStyle={{ width: '100%' }}
                           />
                         </AppImageWrapper>
                         <BuiltWith tech={x.tech} showLabel={false} />
                       </ApplogoWrapper>
                       {/* </a> */}
-                      <AppDescription>
-                        {x.description}
-                      </AppDescription>
+                      <AppDescription>{x.description}</AppDescription>
                     </CardContentWrapper>
                   </div>
-                  <ImageWrapper className="card-image">
+                  {/* <ImageWrapper className="card-image">
                     <Figure className="img">
                       <Image
                         sizes={x.mock.sizes}
@@ -97,10 +94,14 @@ export default class Projects extends Component {
                         placeholderStyle={{ width: '100%' }}
                       />
                     </Figure>
-                  </ImageWrapper>
+                  </ImageWrapper> */}
                   <Footer className="card-footer">
                     <FooterWrapper className="">
-                      <a href={x.appUrl} target="new" style={{ marginLeft: '1rem', marginRight: 'auto' }}>
+                      <a
+                        href={x.appUrl}
+                        target="new"
+                        style={{ marginLeft: '1rem', marginRight: 'auto' }}
+                      >
                         View demo
                       </a>
                       <GitLink
