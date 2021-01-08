@@ -92,11 +92,9 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: file(
-      relativePath: { eq: "marjanblan-DLg7YmBgJp0-unsplash.jpg" }
-    ) {
+    heroImage: file(relativePath: { eq: "cave.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 3000) {
           ...GatsbyImageSharpFluid
         }
       }
