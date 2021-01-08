@@ -1,18 +1,15 @@
-import React from 'react';
-import Img from 'gatsby-image';
-import { any } from 'prop-types';
-import {
-  ImageWrapper,
-  Wrapper,
-} from '../styles/profile-image';
+import Img from "gatsby-image";
+import { any } from "prop-types";
+import React from "react";
+import { ImageWrapper, Wrapper } from "../styles/profile-image";
 
 const ProfileImage = ({ profileImage }) => (
   <Wrapper>
     <ImageWrapper className="profile-img-wrapper">
       <Img
-        sizes={profileImage.sizes}
+        fluid={profileImage.childImageSharp.fluid}
         className="profile-image-wrapper"
-        placeholderStyle={{ height: '100%', width: '100%' }}
+        placeholderStyle={{ height: "100%", width: "100%" }}
       />
     </ImageWrapper>
     {/* <Links>

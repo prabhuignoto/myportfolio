@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
 import Img from 'gatsby-image';
 // import ScrollReveal from 'scrollreveal';
 import { shape } from 'prop-types';
-import { Wrapper, ImageWrapper } from '../styles/techskills';
-import SectionHeader from './section-header';
-import Description from './description';
+import React, { Component } from 'react';
+import { ImageWrapper, Wrapper } from '../styles/techskills';
 import ImgType from '../types';
+import Description from './description';
+import SectionHeader from './section-header';
 
 class TechSkills extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class TechSkills extends Component {
           />
           <ImageWrapper>
             <Img
-              sizes={designPicture.sizes}
+              fluid={designPicture.childImageSharp.fluid}
               className="design-image-wrapper"
               outerWrapperClassName="design-image-outer-wrapper"
               imgStyle={{ objectFit: 'contain' }}

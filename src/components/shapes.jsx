@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
 import Img from 'gatsby-image';
 import { shape } from 'prop-types';
-import { Shapes, Shape } from '../styles/shape';
+import React, { Component } from 'react';
+import { Shape, Shapes } from '../styles/shape';
 import ImgType from '../types';
 
 const sectionData = [
@@ -25,16 +25,18 @@ class ShapeView extends Component {
 
 const ShapesView = ({ heroImage }) => (
   <Shapes className="shapes">
-    {sectionData.map(x => (
+    {sectionData.map((x) => (
       <ShapeView key={x.name} type={x.type} name={x.name}>
         <Img
-          sizes={heroImage.sizes}
+          fluid={heroImage}
           alt="hero-image-mirror"
           className="shape-image-wrapper"
           outerWrapperClassName="shape-image-outer-wrapper"
-          placeholderStyle={{
-            // height: '46rem',
-          }}
+          placeholderStyle={
+            {
+              // height: '46rem',
+            }
+          }
         />
       </ShapeView>
     ))}

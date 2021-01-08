@@ -24,16 +24,16 @@ module.exports = {
         showSpinner: false,
       },
     },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Prabhu Murthy',
-        description: 'Developer, Designer, Architect',
-        theme_color: '#747274',
-        background_color: '#ffffff',
-        display: 'minimal-ui',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-manifest',
+    //   options: {
+    //     name: 'Prabhu Murthy',
+    //     description: 'Developer, Designer, Architect',
+    //     theme_color: '#747274',
+    //     background_color: '#ffffff',
+    //     display: 'minimal-ui',
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-typography',
       options: {

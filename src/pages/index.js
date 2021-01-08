@@ -1,14 +1,14 @@
-import { graphql } from "gatsby";
-import PropTypes from "prop-types";
-import React, { Component } from "react";
-import Experience from "../components/experience";
-import Footer from "../components/footer";
-import Hero from "../components/hero";
-import Layout from "../components/layout";
-import Projects from "../components/projects";
-import Skills from "../components/techskills";
-import Tools from "../components/tools";
-import ProjectsData from "../data/projects";
+import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import Experience from '../components/experience';
+import Footer from '../components/footer';
+import Hero from '../components/hero';
+import Layout from '../components/layout';
+import Projects from '../components/projects';
+import Skills from '../components/techskills';
+import Tools from '../components/tools';
+import ProjectsData from '../data/projects';
 
 export default class Index extends Component {
   constructor(props) {
@@ -92,172 +92,216 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: imageSharp(fluid: { originalName: { regex: "/marjanblan/" } }) {
-      sizes(maxWidth: 4000) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    prabhuLogo: imageSharp(fluid: { originalName: { regex: "/prabhu/" } }) {
-      sizes(maxWidth: 600) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    designPicture: imageSharp(fluid: { originalName: { regex: "/design/" } }) {
-      sizes(maxWidth: 1800) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    toolImage: imageSharp(fluid: { originalName: { regex: "/andyone/" } }) {
-      sizes(maxWidth: 2000) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    profileImage: imageSharp(
-      fluid: { originalName: { regex: "/profile-pic/" } }
+    heroImage: file(
+      relativePath: { eq: "marjanblan-DLg7YmBgJp0-unsplash.jpg" }
     ) {
-      sizes(maxWidth: 337) {
-        ...GatsbyImageSharpSizes
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    honeywellLogo: imageSharp(
-      fluid: { originalName: { regex: "/honeywell/" } }
-    ) {
-      sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes
+    prabhuLogo: file(relativePath: { eq: "prabhu.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    juniperLogo: imageSharp(fluid: { originalName: { regex: "/juniper/" } }) {
-      sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes
+    designPicture: file(relativePath: { eq: "design.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    techmLogo: imageSharp(fluid: { originalName: { regex: "/techm/" } }) {
-      sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes
+    # toolImage: file(relativePath: { eq: "andyone" }) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 2000) {
+    #       ...GatsbyImageSharpFluid
+    #     }
+    #   }
+    # }
+    profileImage: file(relativePath: { eq: "profile-pic.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 337) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    jpmcLogo: imageSharp(fluid: { originalName: { regex: "/jpmc/" } }) {
-      sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes
+    honeywellLogo: file(relativePath: { eq: "honeywell.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    cumulusLogo: imageSharp(fluid: { originalName: { regex: "/cumulus/" } }) {
-      sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes
+    juniperLogo: file(relativePath: { eq: "juniper.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    newSquirrelLogo: imageSharp(
-      fluid: { originalName: { regex: "/newsquirrel-logo/" } }
-    ) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    techmLogo: file(relativePath: { eq: "techm.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    newSquirrelMock: imageSharp(
-      fluid: { originalName: { regex: "/newsquirrel-mockup/" } }
-    ) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    jpmcLogo: file(relativePath: { eq: "jpmc.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    nutrivueLogo: imageSharp(
-      fluid: { originalName: { regex: "/nutrivue-logo/" } }
-    ) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    cumulusLogo: file(relativePath: { eq: "cumulus.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    nutrivueMock: imageSharp(
-      fluid: { originalName: { regex: "/nutrivue-mockup/" } }
-    ) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    newSquirrelLogo: file(relativePath: { eq: "newsquirrel-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    chronoLogo: imageSharp(
-      fluid: { originalName: { regex: "/chrono-logo/" } }
-    ) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    newSquirrelMock: file(relativePath: { eq: "newsquirrel-mockup.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    chronoMock: imageSharp(
-      fluid: { originalName: { regex: "/chrono-mock/" } }
-    ) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    nutrivueLogo: file(relativePath: { eq: "nutrivue-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    boxyLogo: imageSharp(fluid: { originalName: { regex: "/boxy-logo/" } }) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    nutrivueMock: file(relativePath: { eq: "nutrivue-mockup.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    boxyMock: imageSharp(fluid: { originalName: { regex: "/boxy-mock/" } }) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    chronoLogo: file(relativePath: { eq: "chrono-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    smartTagzLogo: imageSharp(
-      fluid: { originalName: { regex: "/smart-tagz-logo/" } }
-    ) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    chronoMock: file(relativePath: { eq: "chrono-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    smartTagzMock: imageSharp(
-      fluid: { originalName: { regex: "/smart-tagz-mock/" } }
-    ) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    boxyLogo: file(relativePath: { eq: "boxy-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    floatMock: imageSharp(fluid: { originalName: { regex: "/float-mock/" } }) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    boxyMock: file(relativePath: { eq: "boxy-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    floatLogo: imageSharp(fluid: { originalName: { regex: "/float-logo/" } }) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    smartTagzLogo: file(relativePath: { eq: "smart-tagz-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    worldtimeLogo: imageSharp(
-      fluid: { originalName: { regex: "/worldtime-logo/" } }
-    ) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    smartTagzMock: file(relativePath: { eq: "smart-tagz-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    worldtimeMock: imageSharp(
-      fluid: { originalName: { regex: "/worldtime-mock/" } }
-    ) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    floatMock: file(relativePath: { eq: "float-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    flixyLogo: imageSharp(fluid: { originalName: { regex: "/flixy-logo/" } }) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    floatLogo: file(relativePath: { eq: "float-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    flixyMock: imageSharp(fluid: { originalName: { regex: "/flixy-mock/" } }) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    worldtimeLogo: file(relativePath: { eq: "worldtime-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    vSlideMock: imageSharp(
-      fluid: { originalName: { regex: "/v-slide-mock/" } }
-    ) {
-      sizes(maxWidth: 900) {
-        ...GatsbyImageSharpSizes
+    worldtimeMock: file(relativePath: { eq: "worldtime-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-    vSlideLogo: imageSharp(
-      fluid: { originalName: { regex: "/v-slide-logo/" } }
-    ) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+    flixyLogo: file(relativePath: { eq: "flixy-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    flixyMock: file(relativePath: { eq: "flixy-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    vSlideMock: file(relativePath: { eq: "v-slide-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    vSlideLogo: file(relativePath: { eq: "v-slide-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    vDockMock: file(relativePath: { eq: "vue-dock-mock.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    vueDockLogo: file(relativePath: { eq: "vue-dock-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

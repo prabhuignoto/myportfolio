@@ -1,40 +1,33 @@
-import Image from 'gatsby-image';
-import {
-  arrayOf, number, shape, string,
-} from 'prop-types';
-import React, { Component } from 'react';
+import Image from "gatsby-image";
+import { arrayOf, number, shape, string } from "prop-types";
+import React, { Component } from "react";
 import {
   AppDescription,
   AppImageWrapper,
   ApplogoWrapper,
   CardContentWrapper,
-  Figure,
   Footer,
   FooterWrapper,
-  GitIcon,
-  GitIconText,
-  GitLink,
-  ImageWrapper,
   Project,
   Wrapper,
-} from '../styles/projects';
-import ImgType from '../types';
+} from "../styles/projects";
+import ImgType from "../types";
 // import ScrollReveal from 'scrollreveal';
-import BuiltWith from './builtwith';
-import Description from './description';
-import SectionHeader from './section-header';
+import BuiltWith from "./builtwith";
+import Description from "./description";
+import SectionHeader from "./section-header";
 
 const gatsbyImgStyle = {
-  maxHeight: '100%',
-  maxWidth: '100%',
-  width: 'auto',
-  height: 'auto',
-  top: '50%',
-  transform: 'translateY(-50%)',
+  maxHeight: "100%",
+  maxWidth: "100%",
+  width: "auto",
+  height: "auto",
+  top: "50%",
+  transform: "translateY(-50%)",
   right: 0,
   left: 0,
-  marginLeft: 'auto',
-  marginRight: 'auto',
+  marginLeft: "auto",
+  marginRight: "auto",
 };
 
 export default class Projects extends Component {
@@ -63,7 +56,7 @@ export default class Projects extends Component {
                 <Project className="">
                   <div
                     className="card-content is-paddingless"
-                    style={{ padding: '0.5rem' }}
+                    style={{ padding: "0.5rem" }}
                   >
                     <CardContentWrapper>
                       {/* <a
@@ -74,9 +67,9 @@ export default class Projects extends Component {
                       <ApplogoWrapper>
                         <AppImageWrapper>
                           <Image
-                            sizes={x.logo.sizes}
+                            fluid={x.logo.childImageSharp.fluid}
                             imgStyle={gatsbyImgStyle}
-                            placeholderStyle={{ width: '100%' }}
+                            placeholderStyle={{ width: "100%" }}
                           />
                         </AppImageWrapper>
                         <BuiltWith tech={x.tech} showLabel={false} />
@@ -88,7 +81,7 @@ export default class Projects extends Component {
                   {/* <ImageWrapper className="card-image">
                     <Figure className="img">
                       <Image
-                        sizes={x.mock.sizes}
+                        fluid={x.mock.childImageSharp.fluid}
                         alt={x.name}
                         imgStyle={gatsbyImgStyle}
                         placeholderStyle={{ width: '100%' }}
@@ -97,14 +90,32 @@ export default class Projects extends Component {
                   </ImageWrapper> */}
                   <Footer className="card-footer">
                     <FooterWrapper className="">
+                      <span
+                        style={{
+                          position: "relative",
+                          display: "block",
+                          height: "40px",
+                          width: "160px",
+                        }}
+                      >
+                        <iframe
+                          src={`https://ghbtns.com/github-btn.html?user=prabhuignoto&repo=${x.repo}&type=star&count=true&size=large`}
+                          frameBorder="0"
+                          scrolling="0"
+                          width="150"
+                          height="30"
+                          title="GitHub"
+                          style={{ marginLeft: "8px" }}
+                        />
+                      </span>
                       <a
                         href={x.appUrl}
                         target="new"
-                        style={{ marginLeft: '1rem', marginRight: 'auto' }}
+                        style={{ marginLeft: "auto", marginRight: "1rem" }}
                       >
                         View demo
                       </a>
-                      <GitLink
+                      {/* <GitLink
                         href={x.git}
                         target="_new"
                         className="is-pulled-right"
@@ -113,9 +124,9 @@ export default class Projects extends Component {
                         <GitIcon />
                         <GitIconText>
                           Github
-                          {/* {'View this Project on Github'} */}
+                          {/* {'View this Project on Github'}
                         </GitIconText>
-                      </GitLink>
+                      </GitLink> */}
                     </FooterWrapper>
                   </Footer>
                 </Project>
@@ -139,6 +150,6 @@ Projects.propTypes = {
       description: string,
       appUrl: string,
       logo: shape(ImgType),
-    }),
+    })
   ).isRequired,
 };

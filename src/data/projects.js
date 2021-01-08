@@ -5,9 +5,11 @@ export default [
     mock: 'chronoMock',
     tech: ['react', 'typescript', 'styled-components'],
     git: 'https://github.com/prabhuignoto/react-chrono',
-    description: 'react-chrono is a modern timeline component for React with multiple layout modes (Horizontal, Vertical , Tree), slideshow and support for embedding images & videos.',
+    description:
+      'react-chrono is a modern timeline component for React with multiple layout modes (Horizontal, Vertical , Tree), slideshow and support for embedding images & videos.',
     appUrl: 'https://react-chrono.vercel.app/',
     logo: 'chronoLogo',
+    repo: 'react-chrono',
   },
   {
     id: 8,
@@ -16,9 +18,22 @@ export default [
     tech: ['vue', 'typescript'],
     git: 'https://github.com/prabhuignoto/vue-float-menu',
     description: `vue-float-menu is a smart draggable menu built for Vue 3.
-    Easily drag and place the menu anywhere on screen and the component will find a optimal menu orientation. Keyboard accessible and customizable color schemes.`,
+    Easily drag and place the menu anywhere on screen and the component will find a optimal menu orientation.`,
     appUrl: 'https://vue-float-menu.vercel.app/',
     logo: 'floatLogo',
+    repo: 'vue-float-menu',
+  },
+  {
+    id: 6,
+    name: 'vue-dock-menu',
+    mock: 'vDockMock',
+    tech: ['vue', 'typescript'],
+    git: 'https://github.com/prabhuignoto/vue-dock-menu',
+    description:
+    'vue-dock-menu is a smart menubar component that can transform into a sidebar. The menubar can also be easily docked to any four sides of the screen',
+    appUrl: 'https://vue-dock-menu.vercel.app/',
+    logo: 'vueDockLogo',
+    repo: 'vue-dock-menu',
   },
   {
     id: 4,
@@ -26,10 +41,11 @@ export default [
     mock: 'smartTagzMock',
     tech: ['vue', 'typescript'],
     git: 'https://github.com/prabhuignoto/smart-tagz',
-    description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
-              V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
+    description: `smart-tagz is a smart input-tags component for built for Vue.
+    Intelligent parsing, smart deletion and many more cool features`,
     appUrl: 'https://smart-tagz.vercel.app/',
     logo: 'smartTagzLogo',
+    repo: 'smart-tagz',
   },
   {
     id: 1,
@@ -38,31 +54,34 @@ export default [
     tech: ['react', 'node', 'typescript', 'graphql', 'apollo'],
     git: 'https://github.com/prabhuignoto/flixy',
     description:
-      'Flixy is an open source attempt to bring enjoyable User experience to discover Movies & TV shows. Flixy boasts a modern interface with a flexible layout system that makes navigation easy and delightful.',
+    'Flixy is an open source attempt to bring enjoyable User experience to discover Movies & TV shows. Flixy boasts a modern interface with a flexible layout system that makes navigation easy and delightful.',
     appUrl: 'https://movies.prabhumurthy.com',
     logo: 'flixyLogo',
+    repo: 'flixy',
   },
   {
     id: 2,
     name: 'Boxy',
     mock: 'boxyMock',
     tech: ['vue', 'node', 'typescript', 'graphql', 'apollo'],
-    git: 'https://github.com/prabhuignoto/boxy',
+    git: 'https://github.com/prabhuignoto/boxd',
     description: `Boxd is a modern webapp created to make access to Dropbox data easier and simple.
-       Boxd is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
-    appUrl: 'https://github.com/prabhuignoto/boxy',
+    Boxd is built with Vue.js, and the goal was to create an intuitive user interface experience.`,
+    appUrl: 'https://github.com/prabhuignoto/boxd',
     logo: 'boxyLogo',
+    repo: 'boxd',
   },
   {
-    id: 4,
+    id: 9,
     name: 'V-Slide',
     mock: 'vSlideMock',
     tech: ['vue', 'typescript'],
-    git: 'https://github.com/prabhuignoto',
+    git: 'https://github.com/prabhuignoto/v-slide',
     description: `V-Slide is a simple Carousel component built with Vue JS for Vue JS.
-              V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
+    V-Slide packs some great features like slide show mode, thumbnail previews, touch support and many more.`,
     appUrl: 'https://v-slide.netlify.com',
     logo: 'vSlideLogo',
+    repo: 'v-slide',
   },
   {
     id: 5,
@@ -71,20 +90,10 @@ export default [
     tech: ['react', 'node', 'typescript', 'apollo', 'graphql'],
     git: 'https://github.com/prabhuignoto/react-news',
     description: `Newsquirrel is a simple yet elegant app designed to make the daily news reading more enjoyable.
-       Read headlines that are making waves and quickly search through millions of articles.`,
+    Read headlines that are making waves and quickly search through millions of articles.`,
     appUrl: 'https://newsquirrel.netlify.com',
     logo: 'newSquirrelLogo',
-  },
-  {
-    id: 6,
-    name: 'Worldtime',
-    mock: 'worldtimeMock',
-    tech: ['react', 'apollo', 'typescript', 'graphql', 'node'],
-    git: 'https://github.com/prabhuignoto/react-worldtime',
-    description: `With worldtime you can navigate through different timezones of the world with great ease.
-    Completely responsive and built to run on mobile devices, tablets and desktops.`,
-    appUrl: 'https://worldtime.netlify.com',
-    logo: 'worldtimeLogo',
+    repo: 'react-news',
   },
   {
     id: 7,
@@ -93,8 +102,9 @@ export default [
     tech: ['vue'],
     git: 'https://github.com/prabhuignoto/nutrivue',
     description: `Nutrivue provides detailed information about the nutrients that make up your food.
-        Find your favorite food and know their calories and nutritional information.`,
+    Find your favorite food and know their calories and nutritional information.`,
     appUrl: 'https://nutrivue.netlify.com',
     logo: 'nutrivueLogo',
+    repo: 'nutrivue',
   },
 ];
