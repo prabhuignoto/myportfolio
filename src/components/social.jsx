@@ -13,7 +13,7 @@ class Social extends Component {
   render() {
     return (
       <Wrapper role="list" className="social-list">
-        <Item role="listitem">
+        {/* <Item role="listitem">
           <IconWrapper href="http://www.linkedin.com/in/prabhu-murthy-09b36637" target="new" title="LinkedIn">
             <img
               height="23px"
@@ -24,7 +24,7 @@ class Social extends Component {
               placeholderStyle={{ height: '100%' }}
             />
           </IconWrapper>
-        </Item>
+        </Item> */}
         <Item role="listitem">
           <IconWrapper href="http://github.com/prabhuignoto" target="new" title="Github">
             <img
