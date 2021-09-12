@@ -7,7 +7,7 @@
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
-    "@types/luxon": "^2.0.2",
+    "@types/luxon": "^2.0.3",
     "@types/react-helmet": "^6.1.2",
     "@types/webfontloader": "^1.6.33",
     "gatsby": "^3.13.0",
@@ -15,7 +15,7 @@
     "gatsby-plugin-emotion": "^6.13.0",
     "gatsby-plugin-google-analytics": "^3.13.0",
     "gatsby-plugin-manifest": "^3.13.0",
-    "gatsby-plugin-netlify": "^3.13.0",
+    "gatsby-plugin-netlify": "^3.14.0",
     "gatsby-plugin-netlify-cache": "^2.0.0",
     "gatsby-plugin-nprogress": "^3.13.0",
     "gatsby-plugin-offline": "^4.13.0",
@@ -33,7 +33,7 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.20",
-    "sharp": "^0.29.0",
+    "sharp": "^0.29.1",
     "typography": "^0.16.21",
     "webfontloader": "^1.6.28"
   },
@@ -68,10 +68,10 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.25.1",
     "gatsby-plugin-purgecss": "^6.0.2",
-    "jest": "^27.1.0",
+    "jest": "^27.1.1",
     "jest-svg-transformer": "^1.0.0",
     "node-sass": "5.0.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.4.0"
   },
   "repository": {
     "type": "git",
