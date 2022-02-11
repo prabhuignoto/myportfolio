@@ -70,7 +70,7 @@
     "gatsby-plugin-purgecss": "^6.1.0",
     "jest": "^27.4.7",
     "jest-svg-transformer": "^1.0.0",
-    "node-sass": "5.0.0",
+    "node-sass": "7.0.0",
     "prettier": "^2.5.1"
   },
   "repository": {
