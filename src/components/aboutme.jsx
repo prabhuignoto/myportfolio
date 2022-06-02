@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mark, About } from '../styles/aboutme';
+import React from "react";
+import { About } from "../styles/aboutme";
 
 export default function AboutMe() {
   return (
@@ -12,22 +12,16 @@ export default function AboutMe() {
       }}
     >
       <About className="content">
-        <p>{"Hey I'm Prabhu Murthy"}</p>
+        <p>Hello, my name is Prabhu Murthy</p>
         <p>
-          {"I'm a"}
-          <Mark>{" Fullstack"}</Mark>
-          {" javascript developer, designer and web applications architect."}
+          I'm a full-stack javascript developer, web application architect, and
+          designer.
         </p>
         <p>
-          My expertise is building frontend apps using industry standard f/w &
-          libs such as React, Vue, Angular, Svelte.
-          {" I also design & build application servers using "}
-          <Mark>Node JS, Graph QL, Apollo Server & Sails JS</Mark>
-        </p>
-        <p>
-          I have extensive fullstack experience in designing and building high
-          quality web apps from the ground up
-          <Mark>that are secure and fast performing.</Mark>
+          My area of expertise is frontend app development using industry
+          standard frameworks and libraries such as React, Vue, Angular, and
+          Svelte. I also use Node JS, Graph QL, Apollo Server, and Sails JS to
+          design and build application servers.
         </p>
         <div>
           <a
@@ -36,13 +30,13 @@ export default function AboutMe() {
           >
             Contact me
           </a>
-          <a
+          {/* <a
             href="https://app.enhancv.com/share/0c0a2492?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
             style={{ marginRight: "0.25rem", fontSize: "1.25rem" }}
             target="_new"
           >
             View Resume
-          </a>
+          </a> */}
         </div>
       </About>
     </div>

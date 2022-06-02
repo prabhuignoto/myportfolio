@@ -44,7 +44,7 @@ export default class Projects extends Component {
         <Wrapper className="container">
           <SectionHeader title="My Recent Work" color="#AD1A25" />
           <Description
-            text="I design and develop apps that are beautiful, responsive and highly performant. Here are my recent works"
+            text="I create libraries that are both customizable and performant. Here are some of my most recent works."
             color="#37647C"
           />
           <div className="columns is-centered is-multiline">
@@ -113,7 +113,7 @@ export default class Projects extends Component {
                         target="new"
                         style={{ marginLeft: "auto", marginRight: "1rem" }}
                       >
-                        View demo
+                        View Project
                       </a>
                       {/* <GitLink
                         href={x.git}

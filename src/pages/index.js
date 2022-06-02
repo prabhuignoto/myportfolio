@@ -1,14 +1,14 @@
-import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import Experience from '../components/experience';
-import Footer from '../components/footer';
-import Hero from '../components/hero';
-import Layout from '../components/layout';
-import Projects from '../components/projects';
-import Skills from '../components/techskills';
-import Tools from '../components/tools';
-import ProjectsData from '../data/projects';
+import { graphql } from "gatsby";
+import PropTypes from "prop-types";
+import React, { Component } from "react";
+import Experience from "../components/experience";
+import Footer from "../components/footer";
+import Hero from "../components/hero";
+import Layout from "../components/layout";
+import Projects from "../components/projects";
+import Skills from "../components/techskills";
+import Tools from "../components/tools";
+import ProjectsData from "../data/projects";
 
 export default class Index extends Component {
   constructor(props) {
@@ -57,30 +57,26 @@ export default class Index extends Component {
       logo: this.props.data[x.logo],
     }));
     const { fontsLoaded } = this.state;
-    return (
-      <>
-        {fontsLoaded ? (
-          <Layout>
-            <Hero
-              heroImage={heroImage}
-              profileImage={profileImage}
-              prabhuLogo={prabhuLogo}
-            />
-            <Projects data={projectsData} />
-            <Skills designPicture={designPicture} />
-            <Tools toolImage={toolImage} />
-            <Experience
-              honeywellLogo={honeywellLogo}
-              juniperLogo={juniperLogo}
-              techmLogo={techmLogo}
-              jpmcLogo={jpmcLogo}
-              cumulusLogo={cumulusLogo}
-            />
-            <Footer />
-          </Layout>
-        ) : null}
-      </>
-    );
+    return fontsLoaded ? (
+      <Layout>
+        <Hero
+          heroImage={heroImage}
+          profileImage={profileImage}
+          prabhuLogo={prabhuLogo}
+        />
+        <Projects data={projectsData} />
+        <Skills designPicture={designPicture} />
+        <Tools toolImage={toolImage} />
+        <Experience
+          honeywellLogo={honeywellLogo}
+          juniperLogo={juniperLogo}
+          techmLogo={techmLogo}
+          jpmcLogo={jpmcLogo}
+          cumulusLogo={cumulusLogo}
+        />
+        <Footer />
+      </Layout>
+    ) : null;
   }
 }
 
@@ -92,9 +88,9 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query HeroImageQuery {
-    heroImage: file(relativePath: { eq: "cave.jpg" }) {
+    heroImage: file(relativePath: { eq: "christian-holzinger.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 3000) {
+        fluid(maxWidth: 2500) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -296,6 +292,20 @@ export const pageQuery = graphql`
       }
     }
     vueDockLogo: file(relativePath: { eq: "vue-dock-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cremeLogo: file(relativePath: { eq: "react-creme-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wizardryLogo: file(relativePath: { eq: "react-wizardry-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
