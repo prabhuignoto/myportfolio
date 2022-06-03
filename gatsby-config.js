@@ -1,26 +1,29 @@
 module.exports = {
+  flags: {
+    PARALLEL_QUERY_RUNNING: true,
+  },
   siteMetadata: {
-    title: 'Prabhu Murthy - Developer, Designer',
+    title: "Prabhu Murthy - Developer, Designer",
   },
   plugins: [
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'assets',
+        name: "assets",
         path: `${__dirname}/src/assets/`,
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: 'UA-34193630-5',
+        trackingId: "UA-34193630-5",
         head: false,
       },
     },
     {
-      resolve: 'gatsby-plugin-nprogress',
+      resolve: "gatsby-plugin-nprogress",
       options: {
-        color: 'tomato',
+        color: "tomato",
         showSpinner: false,
       },
     },
@@ -35,16 +38,16 @@ module.exports = {
     //   },
     // },
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: 'src/typography',
+        pathToConfigModule: "src/typography",
       },
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     // 'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
+    "gatsby-plugin-netlify",
   ],
 };
