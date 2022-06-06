@@ -1,7 +1,4 @@
 module.exports = {
-  flags: {
-    PARALLEL_QUERY_RUNNING: true,
-  },
   siteMetadata: {
     title: "Prabhu Murthy - Developer, Designer",
   },
