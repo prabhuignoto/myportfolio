@@ -1,4 +1,4 @@
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { shape } from "prop-types";
 import React from "react";
 import { Company, Figure, Wrapper } from "../styles/experience";
@@ -26,44 +26,40 @@ const Experience = ({ juniperLogo, honeywellLogo, jpmcLogo, cumulusLogo }) => (
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Img
-                fluid={juniperLogo.childImageSharp.fluid}
+              <GatsbyImage
+                image={juniperLogo.childImageSharp.gatsbyImageData}
                 alt="Juniper Networks"
-                imgStyle={ImgStyle}
-              />
+                imgStyle={ImgStyle} />
             </Figure>
           </Company>
         </div>
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Img
-                fluid={honeywellLogo.childImageSharp.fluid}
+              <GatsbyImage
+                image={honeywellLogo.childImageSharp.gatsbyImageData}
                 alt="Honeywell"
-                imgStyle={ImgStyle}
-              />
+                imgStyle={ImgStyle} />
             </Figure>
           </Company>
         </div>
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Img
-                fluid={jpmcLogo.childImageSharp.fluid}
+              <GatsbyImage
+                image={jpmcLogo.childImageSharp.gatsbyImageData}
                 alt="JP Morgan Chase"
-                imgStyle={ImgStyle}
-              />
+                imgStyle={ImgStyle} />
             </Figure>
           </Company>
         </div>
         <div className="column">
           <Company className="">
             <Figure className="image">
-              <Img
-                fluid={cumulusLogo.childImageSharp.fluid}
+              <GatsbyImage
+                image={cumulusLogo.childImageSharp.gatsbyImageData}
                 alt="Cumulus Networks"
-                imgStyle={ImgStyle}
-              />
+                imgStyle={ImgStyle} />
             </Figure>
           </Company>
         </div>

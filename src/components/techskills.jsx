@@ -1,4 +1,4 @@
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 // import ScrollReveal from 'scrollreveal';
 import { shape } from 'prop-types';
 import React, { Component } from 'react';
@@ -25,8 +25,8 @@ class TechSkills extends Component {
             color="#746764"
           />
           <ImageWrapper>
-            <Img
-              fluid={designPicture.childImageSharp.fluid}
+            <GatsbyImage
+              image={designPicture.childImageSharp.gatsbyImageData}
               className="design-image-wrapper"
               outerWrapperClassName="design-image-outer-wrapper"
               imgStyle={{ objectFit: 'contain' }}
@@ -36,8 +36,7 @@ class TechSkills extends Component {
                 top: 0,
                 height: '50vh',
                 width: '100%',
-              }}
-            />
+              }} />
           </ImageWrapper>
         </div>
       </Wrapper>

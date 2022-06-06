@@ -1,5 +1,5 @@
 import Styled from "@emotion/styled";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { any } from "prop-types";
 import React, { Component } from "react";
 import Social from "./social";
@@ -33,12 +33,11 @@ class navbar extends Component {
           <div className="navbar-brand">
             <div className="navbar-item" style={{ padding: 0 }}>
               <LogoWrapper>
-                <Img
-                  fluid={prabhuLogo.childImageSharp.fluid}
+                <GatsbyImage
+                  image={prabhuLogo.childImageSharp.gatsbyImageData}
                   alt="PM"
                   style={LogoStyle}
-                  imgStyle={{ marginBottom: 0, maxHeight: "100%" }}
-                />
+                  imgStyle={{ marginBottom: 0, maxHeight: "100%" }} />
               </LogoWrapper>
             </div>
           </div>

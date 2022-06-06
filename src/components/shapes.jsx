@@ -1,4 +1,4 @@
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import { shape } from 'prop-types';
 import React, { Component } from 'react';
 import { Shape, Shapes } from '../styles/shape';
@@ -27,8 +27,8 @@ const ShapesView = ({ heroImage }) => (
   <Shapes className="shapes">
     {sectionData.map((x) => (
       <ShapeView key={x.name} type={x.type} name={x.name}>
-        <Img
-          fluid={heroImage}
+        <GatsbyImage
+          image={heroImage}
           alt="hero-image-mirror"
           className="shape-image-wrapper"
           outerWrapperClassName="shape-image-outer-wrapper"
@@ -36,8 +36,7 @@ const ShapesView = ({ heroImage }) => (
             {
               // height: '46rem',
             }
-          }
-        />
+          } />
       </ShapeView>
     ))}
   </Shapes>

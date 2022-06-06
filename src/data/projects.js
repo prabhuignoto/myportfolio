@@ -48,7 +48,7 @@ export default [
     repo: "react-creme",
   },
   {
-    id: 8,
+    id: 10,
     name: "react-wizardry",
     mock: "wizardryMock",
     tech: ["react", "typescript"],

@@ -1,4 +1,4 @@
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { arrayOf, number, shape, string } from "prop-types";
 import React, { Component } from "react";
 import {
@@ -66,11 +66,10 @@ export default class Projects extends Component {
                       > */}
                       <ApplogoWrapper>
                         <AppImageWrapper>
-                          <Image
-                            fluid={x.logo.childImageSharp.fluid}
+                          <GatsbyImage
+                            image={x.logo.childImageSharp.gatsbyImageData}
                             imgStyle={gatsbyImgStyle}
-                            placeholderStyle={{ width: "100%" }}
-                          />
+                            placeholderStyle={{ width: "100%" }} />
                         </AppImageWrapper>
                         <BuiltWith tech={x.tech} showLabel={false} />
                       </ApplogoWrapper>

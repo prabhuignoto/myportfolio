@@ -45,7 +45,7 @@ class hero extends Component {
             /> */}
           </div>
           <div className="hero-backdrop">
-            <Shapes heroImage={heroImage.childImageSharp.fluid} />
+            <Shapes heroImage={heroImage.childImageSharp.gatsbyImageData} />
           </div>
           <div className="container">
             <div className="columns is-centered is-multiline">
