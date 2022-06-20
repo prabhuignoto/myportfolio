@@ -5,8 +5,8 @@
   "author": "prabhu.m.murthy@gmail.com",
   "dependencies": {
     "@emotion/core": "^11.0.0",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@types/luxon": "^2.3.2",
     "@types/react-helmet": "^6.1.5",
     "@types/webfontloader": "^1.6.34",
@@ -30,8 +30,8 @@
     "gatsby-transformer-sharp": "^4.16.0",
     "luxon": "^2.4.0",
     "prop-types": "^15.8.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.20",
     "sharp": "^0.30.6",
@@ -53,8 +53,8 @@
   "devDependencies": {
     "@types/enzyme": "^3.10.12",
     "@types/enzyme-to-json": "^1.5.4",
-    "@types/jest": "^28.1.1",
-    "@types/react": "^18.0.12",
+    "@types/jest": "^28.1.2",
+    "@types/react": "^18.0.14",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "codecov": "^3.8.3",
@@ -71,7 +71,7 @@
     "gatsby-plugin-purgecss": "^6.1.2",
     "jest": "^28.1.1",
     "jest-svg-transformer": "^1.0.0",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "sass": "^1.52.3"
   },
   "repository": {
